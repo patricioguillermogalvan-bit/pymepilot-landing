@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PymePilot - Automatización IA para distribuidoras B2B argentinas. Optimiza ventas, compras e inventario con inteligencia artificial.">
+    <meta name="keywords" content="automatización, IA, distribuidoras, B2B, Argentina, ventas, inventario, compras">
+    <title>PymePilot | Automatización IA para Distribuidoras B2B</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <!-- AOS Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- ========================================
+         HEADER / NAVIGATION
+    ======================================== -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                <span class="logo__icon">🚀</span>
+                <span class="logo__text">PymePilot</span>
+            </a>
+
+            <button class="nav__toggle" id="nav-toggle" aria-label="Abrir menú">
+                <span class="hamburger"></span>
+            </button>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#solucion" class="nav__link">Solución</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#diferenciadores" class="nav__link">Por qué nosotros</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#casos" class="nav__link">Casos de éxito</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#proceso" class="nav__link">Proceso</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#faq" class="nav__link">FAQ</a>
+                    </li>
+                    <li class="nav__item nav__item--cta">
+                        <a href="#contacto" class="btn btn--primary btn--small">Agendar Demo</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- ========================================
+             SECTION 1: HERO
+        ======================================== -->
+        <section class="hero" id="hero">
+            <div class="container hero__container">
+                <div class="hero__content" data-aos="fade-right">
+                    <div class="hero__badge">
+                        <span class="badge__icon">⚡</span>
+                        <span class="badge__text">+15 distribuidoras ya confían en nosotros</span>
+                    </div>
+
+                    <h1 class="hero__title">
+                        Automatización IA para <span class="text-gradient">Distribuidoras B2B</span> Argentinas
+                    </h1>
+
+                    <h2 class="hero__subtitle">
+                        Optimizá ventas, compras e inventario con inteligencia artificial.
+                        Sin cambiar tu sistema actual. Resultados en 30 días.
+                    </h2>
+
+                    <div class="hero__cta">
+                        <a href="#contacto" class="btn btn--primary btn--large">
+                            Agendar Demo Gratuita
+                            <svg class="btn__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                        <a href="#solucion" class="btn btn--link">
+                            Ver cómo funciona →
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero__visual" data-aos="fade-left" data-aos-delay="200">
+                    <!-- Placeholder para screenshot/video -->
+                    <div class="hero__placeholder">
+                        <div class="placeholder__content">
+                            <span class="placeholder__icon">📊</span>
+                            <p class="placeholder__text">Dashboard PymePilot</p>
+                            <small class="placeholder__note">Screenshot del sistema</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================
+             SECTION 2: PROBLEMA (PAIN POINTS)
+        ======================================== -->
+        <section class="problema" id="problema">
+            <div class="container">
+                <div class="section__header" data-aos="fade-up">
+                    <span class="section__tag">El Problema</span>
+                    <h2 class="section__title">¿Tu distribuidora enfrenta estos desafíos?</h2>
+                    <p class="section__subtitle">El 78% de las distribuidoras B2B pierden oportunidades por procesos manuales</p>
+                </div>
+
+                <div class="problema__grid">
+                    <article class="pain-card" data-aos="fade-up" data-aos-delay="100">
+                        <span class="pain-card__icon">📉</span>
+                        <h3 class="pain-card__title">Ventas Perdidas</h3>
+                        <p class="pain-card__text">
+                            Vendedores saturados que no pueden dar seguimiento a todos los clientes.
+                            <strong>Perdés hasta 30% de recompras</strong> por falta de contacto oportuno.
+                        </p>
+                        <div class="pain-card__stat">
+                            <span class="stat__number">-30%</span>
+                            <span class="stat__label">recompras perdidas</span>
+                        </div>
+                    </article>
+
+                    <article class="pain-card" data-aos="fade-up" data-aos-delay="200">
+                        <span class="pain-card__icon">📦</span>
+                        <h3 class="pain-card__title">Inventario Descontrolado</h3>
+                        <p class="pain-card__text">
+                            Stock que sobra de productos lentos mientras te quedás sin los que más se venden.
+                            <strong>Capital inmovilizado</strong> y roturas de stock constantes.
+                        </p>
+                        <div class="pain-card__stat">
+                            <span class="stat__number">25%</span>
+                            <span class="stat__label">capital en stock muerto</span>
+                        </div>
+                    </article>
+
+                    <article class="pain-card" data-aos="fade-up" data-aos-delay="300">
+                        <span class="pain-card__icon">⏰</span>
+                        <h3 class="pain-card__title">Procesos Manuales</h3>
+                        <p class="pain-card__text">
+                            Horas perdidas en Excel, WhatsApp y tareas repetitivas.
+                            Tu equipo trabaja <strong>más pero logra menos</strong>.
+                        </p>
+                        <div class="pain-card__stat">
+                            <span class="stat__number">15hs</span>
+                            <span class="stat__label">semanales en tareas manuales</span>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="problema__transition" data-aos="fade-up">
+                    <p class="transition__text">
+                        <strong>La buena noticia:</strong> Estos problemas tienen solución sin cambiar todo tu sistema.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================
+             SECTION 3: SOLUCIÓN (4 MÓDULOS)
+        ======================================== -->
+        <section class="solucion" id="solucion">
+            <div class="container">
+                <div class="section__header" data-aos="fade-up">
+                    <span class="section__tag">Nuestra Solución</span>
+                    <h2 class="section__title">4 Módulos que Transforman tu Operación</h2>
+                    <p class="section__subtitle">Implementación progresiva. Comenzá con uno, agregá los demás cuando quieras.</p>
+                </div>
+
+                <div class="solucion__grid">
+                    <!-- Módulo 1: Ventas -->
+                    <article class="modulo-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="modulo-card__header">
+                            <span class="modulo-card__icon">🎯</span>
+                            <span class="modulo-card__tag">Más Popular</span>
+                        </div>
+                        <h3 class="modulo-card__title">Automatización de Ventas</h3>
+                        <p class="modulo-card__description">
+                            IA que identifica clientes que no recompraron y genera alertas automáticas para tus vendedores.
+                        </p>
+                        <ul class="modulo-card__features">
+                            <li>✓ Detección de clientes dormidos</li>
+                            <li>✓ Alertas automáticas por WhatsApp</li>
+                            <li>✓ Sugerencias de productos personalizadas</li>
+                            <li>✓ Dashboard de seguimiento</li>
+                        </ul>
+                        <div class="modulo-card__footer">
+                            <div class="modulo-card__price">
+                                <span class="price__currency">USD</span>
+                                <span class="price__amount">500</span>
+                                <span class="price__period">/mes</span>
+                            </div>
+                            <div class="modulo-card__setup">
+                                <span class="setup__label">Setup:</span>
+                                <span class="setup__value">USD 1.500</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Módulo 2: Compras -->
+                    <article class="modulo-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="modulo-card__header">
+                            <span class="modulo-card__icon">🛒</span>
+                        </div>
+                        <h3 class="modulo-card__title">Optimización de Compras</h3>
+                        <p class="modulo-card__description">
+                            Predicción de demanda y sugerencias de compra basadas en histórico y tendencias.
+                        </p>
+                        <ul class="modulo-card__features">
+                            <li>✓ Predicción de demanda 30 días</li>
+                            <li>✓ Alertas de quiebre de stock</li>
+                            <li>✓ Sugerencias de cantidad óptima</li>
+                            <li>✓ Análisis de proveedores</li>
+                        </ul>
+                        <div class="modulo-card__footer">
+                            <div class="modulo-card__price">
+                                <span class="price__currency">USD</span>
+                                <span class="price__amount">400</span>
+                                <span class="price__period">/mes</span>
+                            </div>
+                            <div class="modulo-card__setup">
+                                <span class="setup__label">Setup:</span>
+                                <span class="setup__value">USD 1.200</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Módulo 3: Inventario -->
+                    <article class="modulo-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="modulo-card__header">
+                            <span class="modulo-card__icon">📊</span>
+                        </div>
+                        <h3 class="modulo-card__title">Control de Inventario</h3>
+                        <p class="modulo-card__description">
+                            Visibilidad total del stock con alertas inteligentes y análisis de rotación.
+                        </p>
+                        <ul class="modulo-card__features">
+                            <li>✓ Dashboard en tiempo real</li>
+                            <li>✓ Clasificación ABC automática</li>
+                            <li>✓ Alertas de stock mínimo</li>
+                            <li>✓ Reportes de rotación</li>
+                        </ul>
+                        <div class="modulo-card__footer">
+                            <div class="modulo-card__price">
+                                <span class="price__currency">USD</span>
+                                <span class="price__amount">350</span>
+                                <span class="price__period">/mes</span>
+                            </div>
+                            <div class="modulo-card__setup">
+                                <span class="setup__label">Setup:</span>
+                                <span class="setup__value">USD 1.000</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Módulo 4: Reportes -->
+                    <article class="modulo-card" data-aos="fade-up" data-aos-delay="400">
+                        <div class="modulo-card__header">
+                            <span class="modulo-card__icon">📈</span>
+                        </div>
+                        <h3 class="modulo-card__title">Reportes Ejecutivos</h3>
+                        <p class="modulo-card__description">
+                            Informes automáticos diarios/semanales directo a tu WhatsApp o email.
+                        </p>
+                        <ul class="modulo-card__features">
+                            <li>✓ Resumen diario de ventas</li>
+                            <li>✓ Alertas de desvíos</li>
+                            <li>✓ Comparativas período anterior</li>
+                            <li>✓ KPIs personalizados</li>
+                        </ul>
+                        <div class="modulo-card__footer">
+                            <div class="modulo-card__price">
+                                <span class="price__currency">USD</span>
+                                <span class="price__amount">250</span>
+                                <span class="price__period">/mes</span>
+                            </div>
+                            <div class="modulo-card__setup">
+                                <span class="setup__label">Setup:</span>
+                                <span class="setup__value">USD 800</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="solucion__cta" data-aos="fade-up">
+                    <p class="solucion__note">💡 <strong>Paquete completo:</strong> Los 4 módulos con 20% de descuento</p>
+                    <a href="#contacto" class="btn btn--primary">Solicitar Cotización Personalizada</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================
+             SECTION 4: DIFERENCIADORES
+        ======================================== -->
+        <section class="diferenciadores" id="diferenciadores">
+            <div class="container">
+                <div class="section__header" data-aos="fade-up">
+                    <span class="section__tag">Por Qué Elegirnos</span>
+                    <h2 class="section__title">¿Qué nos hace diferentes?</h2>
+                </div>
+
+                <!-- Tabla Comparativa -->
+                <div class="comparativa" data-aos="fade-up">
+                    <div class="comparativa__table-wrapper">
+                        <table class="comparativa__table">
+                            <thead>
+                                <tr>
+                                    <th class="comparativa__feature-header">Característica</th>
+                                    <th class="comparativa__header">ERPs Tradicionales</th>
+                                    <th class="comparativa__header">Agencias IA Genéricas</th>
+                                    <th class="comparativa__header comparativa__header--highlight">PymePilot</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="comparativa__feature">Tiempo de implementación</td>
+                                    <td class="comparativa__cell comparativa__cell--bad">6-12 meses</td>
+                                    <td class="comparativa__cell comparativa__cell--neutral">2-3 meses</td>
+                                    <td class="comparativa__cell comparativa__cell--good">2-4 semanas</td>
+                                </tr>
+                                <tr>
+                                    <td class="comparativa__feature">Inversión inicial</td>
+                                    <td class="comparativa__cell comparativa__cell--bad">USD 50.000+</td>
+                                    <td class="comparativa__cell comparativa__cell--neutral">USD 15.000+</td>
+                                    <td class="comparativa__cell comparativa__cell--good">Desde USD 800</td>
+                                </tr>
+                                <tr>
+                                    <td class="comparativa__feature">Especialización distribuidoras</td>
+                                    <td class="comparativa__cell comparativa__cell--bad">❌ Genérico</td>
+                                    <td class="comparativa__cell comparativa__cell--bad">❌ Genérico</td>
+                                    <td class="comparativa__cell comparativa__cell--good">✅ 100% enfocado</td>
+                                </tr>
+                                <tr>
+                                    <td class="comparativa__feature">Requiere cambiar sistema actual</td>
+                                    <td class="comparativa__cell comparativa__cell--bad">✅ Sí, migración total</td>
+                                    <td class="comparativa__cell comparativa__cell--neutral">⚠️ A veces</td>
+                                    <td class="comparativa__cell comparativa__cell--good">❌ No, se integra</td>
+                                </tr>
+                                <tr>
+                                    <td class="comparativa__feature">Soporte en español</td>
+                                    <td class="comparativa__cell comparativa__cell--neutral">⚠️ Limitado</td>
+                                    <td class="comparativa__cell comparativa__cell--neutral">⚠️ Variable</td>
+                                    <td class="comparativa__cell comparativa__cell--good">✅ 100% local</td>
+                                </tr>
+                                <tr>
+                                    <td class="comparativa__feature">Resultados visibles</td>
+                                    <td class="comparativa__cell comparativa__cell--bad">12+ meses</td>
+                                    <td class="comparativa__cell comparativa__cell--neutral">3-6 meses</td>
+                                    <td class="comparativa__cell comparativa__cell--good">30 días</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Cards Diferenciadores -->
+                <div class="diferenciadores__grid">
+                    <article class="diff-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="diff-card__icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                                <path d="M2 17l10 5 10-5"/>
+                                <path d="M2 12l10 5 10-5"/>
+                            </svg>
+                        </div>
+                        <h3 class="diff-card__title">Se Integra con tu Sistema</h3>
+                        <p class="diff-card__text">
+                            Trabajamos sobre tu ERP, sistema de facturación o Excel actual.
+                            No necesitás migrar ni cambiar nada.
+                        </p>
+                    </article>
+
+                    <article class="diff-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="diff-card__icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"/>
+                                <path d="M12 6v6l4 2"/>
+                            </svg>
+                        </div>
+                        <h3 class="diff-card__title">Implementación Express</h3>
+                        <p class="diff-card__text">
+                            En 2-4 semanas tenés el primer módulo funcionando.
+                            Sin proyectos eternos ni consultores permanentes.
+                        </p>
+                    </article>
+
+                    <article class="diff-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="diff-card__icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                <circle cx="9" cy="7" r="4"/>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                            </svg>
+                        </div>
+                        <h3 class="diff-card__title">Expertos en Distribución B2B</h3>
+                        <p class="diff-card__text">
+                            Conocemos los desafíos específicos: ciclos de recompra, vendedores de calle,
+                            logística compleja, márgenes ajustados.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================
+             SECTION 5: SOCIAL PROOF / CASOS DE ÉXITO
+        ======================================== -->
+        <section class="casos" id="casos">
+            <div class="container">
+                <div class="section__header" data-aos="fade-up">
+                    <span class="section__tag">Casos de Éxito</span>
+                    <h2 class="section__title">Resultados Reales de Distribuidoras Reales</h2>
+                </div>
+
+                <!-- Caso Destacado -->
+                <div class="caso-destacado" data-aos="fade-up">
+                    <div class="caso-destacado__content">
+                        <div class="caso-destacado__header">
+                            <span class="caso-destacado__company">IEY Distribuciones</span>
+                            <span class="caso-destacado__industry">Distribuidora de Insumos Industriales</span>
+                        </div>
+
+                        <blockquote class="caso-destacado__quote">
+                            "En 45 días recuperamos clientes que no compraban hace meses.
+                            El sistema detectó patrones que nosotros no veíamos."
+                        </blockquote>
+
+                        <div class="caso-destacado__results">
+                            <div class="result-item">
+                                <span class="result-item__number">+23%</span>
+                                <span class="result-item__label">Aumento en recompras</span>
+                            </div>
+                            <div class="result-item">
+                                <span class="result-item__number">-40%</span>
+                                <span class="result-item__label">Tiempo en reportes</span>
+                            </div>
+                            <div class="result-item">
+                                <span class="result-item__number">15 días</span>
+                                <span class="result-item__label">Tiempo de implementación</span>
+                            </div>
+                        </div>
+
+                        <p class="caso-destacado__author">
+                            <strong>Martín Rodríguez</strong> — Gerente Comercial
+                        </p>
+                    </div>
+
+                    <div class="caso-destacado__video">
+                        <!-- Placeholder para video YouTube -->
+                        <div class="video-placeholder">
+                            <div class="video-placeholder__content">
+                                <span class="video-placeholder__icon">▶️</span>
+                                <p class="video-placeholder__text">Video Testimonial</p>
+                                <small class="video-placeholder__note">YouTube Embed</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Área para más testimoniales -->
+                <div class="testimoniales-grid" data-aos="fade-up">
+                    <article class="testimonial-card">
+                        <div class="testimonial-card__stars">⭐⭐⭐⭐⭐</div>
+                        <p class="testimonial-card__text">
+                            "La integración fue transparente. No tuvimos que cambiar nada de nuestro sistema actual."
+                        </p>
+                        <div class="testimonial-card__author">
+                            <div class="author__avatar">JL</div>
+                            <div class="author__info">
+                                <strong>Juan López</strong>
+                                <span>Director, Distribuidora Centro</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="testimonial-card">
+                        <div class="testimonial-card__stars">⭐⭐⭐⭐⭐</div>
+                        <p class="testimonial-card__text">
+                            "Ahora recibo un resumen diario en WhatsApp. Tengo visibilidad total sin abrir Excel."
+                        </p>
+                        <div class="testimonial-card__author">
+                            <div class="author__avatar">MG</div>
+                            <div class="author__info">
+                                <strong>María García</strong>
+                                <span>Gerente, Distribuidora Norte</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="testimonial-card">
+                        <div class="testimonial-card__stars">⭐⭐⭐⭐⭐</div>
+                        <p class="testimonial-card__text">
+                            "Mis vendedores ahora saben exactamente a quién llamar cada día. Vendemos más con menos esfuerzo."
+                        </p>
+                        <div class="testimonial-card__author">
+                            <div class="author__avatar">CF</div>
+                            <div class="author__info">
+                                <strong>Carlos Fernández</strong>
+                                <span>Dueño, Distribuidora Sur</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================
+             SECTION 6: PROCESO (3 PASOS)
+        ======================================== -->
+        <section class="proceso" id="proceso">
+            <div class="container">
+                <div class="section__header" data-aos="fade-up">
+                    <span class="section__tag">Cómo Funciona</span>
+                    <h2 class="section__title">3 Pasos para Transformar tu Operación</h2>
+                    <p class="section__subtitle">Un proceso simple, sin disrupciones en tu día a día</p>
+                </div>
+
+                <div class="proceso__timeline">
+                    <article class="paso" data-aos="fade-up" data-aos-delay="100">
+                        <div class="paso__number">1</div>
+                        <div class="paso__content">
+                            <h3 class="paso__title">Diagnóstico Gratuito</h3>
+                            <p class="paso__description">
+                                Analizamos tu operación actual en una llamada de 30 minutos.
+                                Identificamos oportunidades de mejora y te mostramos qué resultados podés esperar.
+                            </p>
+                            <div class="paso__duration">
+                                <span class="duration__icon">📅</span>
+                                <span class="duration__text">30 minutos</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="paso" data-aos="fade-up" data-aos-delay="200">
+                        <div class="paso__number">2</div>
+                        <div class="paso__content">
+                            <h3 class="paso__title">Integración y Setup</h3>
+                            <p class="paso__description">
+                                Nos conectamos a tu sistema actual (ERP, Excel, o lo que uses).
+                                Configuramos las automatizaciones según tus procesos específicos.
+                            </p>
+                            <div class="paso__duration">
+                                <span class="duration__icon">⚙️</span>
+                                <span class="duration__text">2-4 semanas</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="paso" data-aos="fade-up" data-aos-delay="300">
+                        <div class="paso__number">3</div>
+                        <div class="paso__content">
+                            <h3 class="paso__title">Lanzamiento y Soporte</h3>
+                            <p class="paso__description">
+                                Capacitamos a tu equipo y lanzamos. Soporte continuo para ajustes
+                                y optimizaciones. Resultados visibles en los primeros 30 días.
+                            </p>
+                            <div class="paso__duration">
+                                <span class="duration__icon">🚀</span>
+                                <span class="duration__text">Resultados en 30 días</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="proceso__cta" data-aos="fade-up">
+                    <a href="#contacto" class="btn btn--primary btn--large">Comenzar con el Diagnóstico Gratuito</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================
+             SECTION 7: FAQ (ACCORDION)
+        ======================================== -->
+        <section class="faq" id="faq">
+            <div class="container">
+                <div class="section__header" data-aos="fade-up">
+                    <span class="section__tag">Preguntas Frecuentes</span>
+                    <h2 class="section__title">¿Tenés dudas? Acá las respondemos</h2>
+                </div>
+
+                <div class="faq__accordion" data-aos="fade-up">
+                    <details class="faq__item">
+                        <summary class="faq__question">
+                            ¿Funciona con mi sistema actual? ¿Qué pasa si uso Excel?
+                            <span class="faq__chevron">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M6 9l6 6 6-6"/>
+                                </svg>
+                            </span>
+                        </summary>
+                        <div class="faq__answer">
+                            <p>
+                                ¡Sí! Nos integramos con cualquier sistema: ERPs como Tango, Bejerman, SAP Business One,
+                                sistemas propios, o incluso Excel. No necesitás cambiar nada. Nos adaptamos a vos.
+                            </p>
+                        </div>
+                    </details>
+
+                    <details class="faq__item">
+                        <summary class="faq__question">
+                            ¿Cuánto tiempo toma ver resultados?
+                            <span class="faq__chevron">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M6 9l6 6 6-6"/>
+                                </svg>
+                            </span>
+                        </summary>
+                        <div class="faq__answer">
+                            <p>
+                                Los primeros resultados son visibles en 30 días. Algunos clientes reportan mejoras
+                                en la primera semana de uso. La implementación completa toma 2-4 semanas dependiendo
+                                del módulo.
+                            </p>
+                        </div>
+                    </details>
+
+                    <details class="faq__item">
+                        <summary class="faq__question">
+                            ¿Mis datos están seguros?
+                            <span class="faq__chevron">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M6 9l6 6 6-6"/>
+                                </svg>
+                            </span>
+                        </summary>
+                        <div class="faq__answer">
+                            <p>
+                                Absolutamente. Usamos encriptación de nivel bancario (AES-256). Tus datos nunca se
+                                comparten con terceros y cumplimos con todas las regulaciones de protección de datos
+                                argentinas. Podemos firmar NDA si lo necesitás.
+                            </p>
+                        </div>
+                    </details>
+
+                    <details class="faq__item">
+                        <summary class="faq__question">
+                            ¿Necesito contratar todos los módulos?
+                            <span class="faq__chevron">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M6 9l6 6 6-6"/>
+                                </svg>
+                            </span>
+                        </summary>
+                        <div class="faq__answer">
+                            <p>
+                                No. Podés comenzar con un solo módulo (el más popular es Automatización de Ventas)
+                                y agregar los demás cuando quieras. Cada módulo funciona de forma independiente.
+                            </p>
+                        </div>
+                    </details>
+
+                    <details class="faq__item">
+                        <summary class="faq__question">
+                            ¿Qué pasa si no me funciona?
+                            <span class="faq__chevron">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M6 9l6 6 6-6"/>
+                                </svg>
+                            </span>
+                        </summary>
+                        <div class="faq__answer">
+                            <p>
+                                Ofrecemos garantía de satisfacción de 30 días. Si no ves resultados en el primer mes,
+                                te devolvemos el 100% del setup. Sin preguntas, sin vueltas.
+                            </p>
+                        </div>
+                    </details>
+
+                    <details class="faq__item">
+                        <summary class="faq__question">
+                            ¿Cómo es el soporte?
+                            <span class="faq__chevron">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M6 9l6 6 6-6"/>
+                                </svg>
+                            </span>
+                        </summary>
+                        <div class="faq__answer">
+                            <p>
+                                Soporte 100% en español, en horario comercial argentino. Tenés acceso directo por
+                                WhatsApp a nuestro equipo técnico. Tiempo de respuesta promedio: menos de 2 horas.
+                            </p>
+                        </div>
+                    </details>
+
+                    <details class="faq__item">
+                        <summary class="faq__question">
+                            ¿Hay contrato de permanencia?
+                            <span class="faq__chevron">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M6 9l6 6 6-6"/>
+                                </svg>
+                            </span>
+                        </summary>
+                        <div class="faq__answer">
+                            <p>
+                                No. El servicio es mes a mes. Podés cancelar cuando quieras sin penalidades.
+                                Creemos que la mejor forma de retenerte es dándote resultados, no atándote con contratos.
+                            </p>
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================
+             SECTION 8: CTA FINAL / CONTACTO
+        ======================================== -->
+        <section class="cta-final" id="contacto">
+            <div class="container">
+                <div class="cta-final__wrapper" data-aos="fade-up">
+                    <div class="cta-final__content">
+                        <span class="cta-final__badge">🎁 Oferta Early Adopter</span>
+                        <h2 class="cta-final__title">
+                            Comenzá a Automatizar tu Distribuidora Hoy
+                        </h2>
+                        <p class="cta-final__subtitle">
+                            Agenda una demo gratuita y recibí un diagnóstico personalizado de tu operación.
+                        </p>
+
+                        <ul class="cta-final__benefits">
+                            <li>
+                                <svg class="benefit__check" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                                    <path d="M20 6L9 17l-5-5"/>
+                                </svg>
+                                Diagnóstico gratuito de 30 minutos
+                            </li>
+                            <li>
+                                <svg class="benefit__check" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                                    <path d="M20 6L9 17l-5-5"/>
+                                </svg>
+                                20% de descuento en setup para primeros 10 clientes
+                            </li>
+                            <li>
+                                <svg class="benefit__check" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                                    <path d="M20 6L9 17l-5-5"/>
+                                </svg>
+                                Garantía de satisfacción 30 días
+                            </li>
+                            <li>
+                                <svg class="benefit__check" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                                    <path d="M20 6L9 17l-5-5"/>
+                                </svg>
+                                Sin contratos de permanencia
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="cta-final__form">
+                        <form class="contact-form" id="contact-form">
+                            <div class="form__group">
+                                <label for="nombre" class="form__label">Nombre completo *</label>
+                                <input
+                                    type="text"
+                                    id="nombre"
+                                    name="nombre"
+                                    class="form__input"
+                                    placeholder="Tu nombre"
+                                    required
+                                >
+                                <span class="form__error" id="nombre-error"></span>
+                            </div>
+
+                            <div class="form__group">
+                                <label for="email" class="form__label">Email *</label>
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    class="form__input"
+                                    placeholder="tu@email.com"
+                                    required
+                                >
+                                <span class="form__error" id="email-error"></span>
+                            </div>
+
+                            <div class="form__group">
+                                <label for="whatsapp" class="form__label">WhatsApp *</label>
+                                <input
+                                    type="tel"
+                                    id="whatsapp"
+                                    name="whatsapp"
+                                    class="form__input"
+                                    placeholder="+54 11 1234-5678"
+                                    required
+                                >
+                                <span class="form__error" id="whatsapp-error"></span>
+                            </div>
+
+                            <div class="form__group">
+                                <label for="empresa" class="form__label">Nombre de la empresa *</label>
+                                <input
+                                    type="text"
+                                    id="empresa"
+                                    name="empresa"
+                                    class="form__input"
+                                    placeholder="Tu distribuidora"
+                                    required
+                                >
+                                <span class="form__error" id="empresa-error"></span>
+                            </div>
+
+                            <div class="form__group">
+                                <label for="empleados" class="form__label">Cantidad de empleados</label>
+                                <select id="empleados" name="empleados" class="form__select">
+                                    <option value="">Seleccioná una opción</option>
+                                    <option value="1-5">1-5 empleados</option>
+                                    <option value="6-15">6-15 empleados</option>
+                                    <option value="16-50">16-50 empleados</option>
+                                    <option value="50+">Más de 50 empleados</option>
+                                </select>
+                            </div>
+
+                            <div class="form__group">
+                                <label for="dolor" class="form__label">¿Cuál es tu principal dolor?</label>
+                                <select id="dolor" name="dolor" class="form__select">
+                                    <option value="">Seleccioná una opción</option>
+                                    <option value="ventas">Recuperar clientes dormidos</option>
+                                    <option value="inventario">Controlar mejor el inventario</option>
+                                    <option value="compras">Optimizar compras</option>
+                                    <option value="reportes">Tener mejores reportes</option>
+                                    <option value="todo">Todo lo anterior</option>
+                                </select>
+                            </div>
+
+                            <button type="submit" class="btn btn--primary btn--large btn--full">
+                                Agendar Demo Gratuita
+                                <svg class="btn__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                                </svg>
+                            </button>
+
+                            <p class="form__note">
+                                🔒 Tus datos están seguros. No compartimos con terceros.
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ========================================
+         FOOTER
+    ======================================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <!-- Columna 1: Info -->
+                <div class="footer__column">
+                    <a href="#" class="footer__logo">
+                        <span class="logo__icon">🚀</span>
+                        <span class="logo__text">PymePilot</span>
+                    </a>
+                    <p class="footer__description">
+                        Automatización IA especializada para distribuidoras B2B argentinas.
+                    </p>
+                    <div class="footer__contact">
+                        <a href="mailto:hola@pymepilot.com" class="footer__link">hola@pymepilot.com</a>
+                        <a href="https://wa.me/5491112345678" class="footer__link">+54 11 1234-5678</a>
+                    </div>
+                </div>
+
+                <!-- Columna 2: Recursos -->
+                <div class="footer__column">
+                    <h4 class="footer__title">Recursos</h4>
+                    <ul class="footer__list">
+                        <li><a href="#casos" class="footer__link">Casos de Éxito</a></li>
+                        <li><a href="#faq" class="footer__link">Preguntas Frecuentes</a></li>
+                        <li><a href="#" class="footer__link">Blog</a></li>
+                        <li><a href="#" class="footer__link">Guía de Automatización</a></li>
+                    </ul>
+                </div>
+
+                <!-- Columna 3: Módulos -->
+                <div class="footer__column">
+                    <h4 class="footer__title">Módulos</h4>
+                    <ul class="footer__list">
+                        <li><a href="#solucion" class="footer__link">Automatización de Ventas</a></li>
+                        <li><a href="#solucion" class="footer__link">Optimización de Compras</a></li>
+                        <li><a href="#solucion" class="footer__link">Control de Inventario</a></li>
+                        <li><a href="#solucion" class="footer__link">Reportes Ejecutivos</a></li>
+                    </ul>
+                </div>
+
+                <!-- Columna 4: Legal -->
+                <div class="footer__column">
+                    <h4 class="footer__title">Legal</h4>
+                    <ul class="footer__list">
+                        <li><a href="#" class="footer__link">Términos de Servicio</a></li>
+                        <li><a href="#" class="footer__link">Política de Privacidad</a></li>
+                        <li><a href="#" class="footer__link">Política de Cookies</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p class="footer__copyright">
+                    © 2025 PymePilot. Todos los derechos reservados.
+                </p>
+                <p class="footer__location">
+                    🇦🇷 Hecho con ❤️ en Argentina
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- AOS Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Custom Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
