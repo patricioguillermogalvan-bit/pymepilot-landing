@@ -1,21 +1,17 @@
 /* ========================================
-   PYMEPILOT LANDING PAGE SCRIPTS
-   Vanilla JavaScript - No dependencies
+   PYMEPILOT - ServiceNow Style Scripts
    ======================================== */
 
 document.addEventListener('DOMContentLoaded', function() {
-    // Initialize all components
     initMobileMenu();
     initSmoothScroll();
-    initFaqAccordion();
+    initHeaderScroll();
     initFormValidation();
     initAOS();
-    initHeaderScroll();
 });
 
 /* ----------------------------------------
    MOBILE MENU
-   Toggle hamburger menu on mobile
    ---------------------------------------- */
 function initMobileMenu() {
     const navToggle = document.getElementById('nav-toggle');
@@ -24,14 +20,12 @@ function initMobileMenu() {
 
     if (!navToggle || !navMenu) return;
 
-    // Toggle menu on hamburger click
     navToggle.addEventListener('click', function() {
         navToggle.classList.toggle('active');
         navMenu.classList.toggle('active');
         document.body.style.overflow = navMenu.classList.contains('active') ? 'hidden' : '';
     });
 
-    // Close menu when clicking a link
     navLinks.forEach(function(link) {
         link.addEventListener('click', function() {
             navToggle.classList.remove('active');
@@ -40,7 +34,6 @@ function initMobileMenu() {
         });
     });
 
-    // Close menu when clicking outside
     document.addEventListener('click', function(event) {
         const isClickInsideMenu = navMenu.contains(event.target);
         const isClickOnToggle = navToggle.contains(event.target);
@@ -55,7 +48,6 @@ function initMobileMenu() {
 
 /* ----------------------------------------
    SMOOTH SCROLL
-   Smooth scrolling for anchor links
    ---------------------------------------- */
 function initSmoothScroll() {
     const links = document.querySelectorAll('a[href^="#"]');
@@ -63,15 +55,11 @@ function initSmoothScroll() {
     links.forEach(function(link) {
         link.addEventListener('click', function(event) {
             const href = this.getAttribute('href');
-
-            // Skip if it's just "#" or empty
             if (href === '#' || href === '') return;
 
             const target = document.querySelector(href);
-
             if (target) {
                 event.preventDefault();
-
                 const headerHeight = document.querySelector('.header').offsetHeight;
                 const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - headerHeight;
 
@@ -85,42 +73,32 @@ function initSmoothScroll() {
 }
 
 /* ----------------------------------------
-   FAQ ACCORDION
-   Expand/collapse FAQ items
+   HEADER SCROLL BEHAVIOR
    ---------------------------------------- */
-function initFaqAccordion() {
-    const faqItems = document.querySelectorAll('.faq__item');
+function initHeaderScroll() {
+    const header = document.getElementById('header');
+    if (!header) return;
 
-    faqItems.forEach(function(item) {
-        const question = item.querySelector('.faq__question');
-
-        question.addEventListener('click', function() {
-            // Close other open items (optional - uncomment for single open)
-            // faqItems.forEach(function(otherItem) {
-            //     if (otherItem !== item && otherItem.hasAttribute('open')) {
-            //         otherItem.removeAttribute('open');
-            //     }
-            // });
-        });
+    window.addEventListener('scroll', function() {
+        if (window.pageYOffset > 50) {
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled');
+        }
     });
 }
 
 /* ----------------------------------------
    FORM VALIDATION
-   Client-side validation for contact form
    ---------------------------------------- */
 function initFormValidation() {
-    const form = document.getElementById('contact-form');
-
+    const form = document.getElementById('demo-form');
     if (!form) return;
 
     form.addEventListener('submit', function(event) {
         event.preventDefault();
-
-        // Reset errors
         clearErrors();
 
-        // Get form values
         const nombre = document.getElementById('nombre');
         const email = document.getElementById('email');
         const whatsapp = document.getElementById('whatsapp');
@@ -128,147 +106,102 @@ function initFormValidation() {
 
         let isValid = true;
 
-        // Validate nombre
         if (!nombre.value.trim()) {
-            showError(nombre, 'nombre-error', 'Por favor ingresá tu nombre');
-            isValid = false;
-        } else if (nombre.value.trim().length < 2) {
-            showError(nombre, 'nombre-error', 'El nombre debe tener al menos 2 caracteres');
+            showError(nombre, 'nombre-error', 'Ingresá tu nombre');
             isValid = false;
         }
 
-        // Validate email
         if (!email.value.trim()) {
-            showError(email, 'email-error', 'Por favor ingresá tu email');
+            showError(email, 'email-error', 'Ingresá tu email');
             isValid = false;
         } else if (!isValidEmail(email.value)) {
-            showError(email, 'email-error', 'Por favor ingresá un email válido');
+            showError(email, 'email-error', 'Ingresá un email válido');
             isValid = false;
         }
 
-        // Validate WhatsApp
         if (!whatsapp.value.trim()) {
-            showError(whatsapp, 'whatsapp-error', 'Por favor ingresá tu WhatsApp');
+            showError(whatsapp, 'whatsapp-error', 'Ingresá tu WhatsApp');
             isValid = false;
         } else if (!isValidPhone(whatsapp.value)) {
-            showError(whatsapp, 'whatsapp-error', 'Por favor ingresá un número válido');
+            showError(whatsapp, 'whatsapp-error', 'Ingresá un número válido');
             isValid = false;
         }
 
-        // Validate empresa
         if (!empresa.value.trim()) {
-            showError(empresa, 'empresa-error', 'Por favor ingresá el nombre de tu empresa');
+            showError(empresa, 'empresa-error', 'Ingresá el nombre de tu empresa');
             isValid = false;
         }
 
         if (isValid) {
-            // Form is valid - here you would typically send to a backend
             handleFormSubmit(form);
         }
     });
 
-    // Real-time validation on blur
-    const inputs = form.querySelectorAll('.form__input');
+    const inputs = form.querySelectorAll('input');
     inputs.forEach(function(input) {
-        input.addEventListener('blur', function() {
-            validateField(this);
-        });
-
-        // Clear error on focus
         input.addEventListener('focus', function() {
-            this.classList.remove('error');
-            const errorEl = document.getElementById(this.id + '-error');
-            if (errorEl) errorEl.textContent = '';
+            this.parentElement.querySelector('.form-error').textContent = '';
         });
     });
 }
 
-function validateField(field) {
-    const value = field.value.trim();
-    const fieldId = field.id;
-
-    switch(fieldId) {
-        case 'nombre':
-            if (!value) {
-                showError(field, 'nombre-error', 'Por favor ingresá tu nombre');
-            } else if (value.length < 2) {
-                showError(field, 'nombre-error', 'El nombre debe tener al menos 2 caracteres');
-            }
-            break;
-        case 'email':
-            if (!value) {
-                showError(field, 'email-error', 'Por favor ingresá tu email');
-            } else if (!isValidEmail(value)) {
-                showError(field, 'email-error', 'Por favor ingresá un email válido');
-            }
-            break;
-        case 'whatsapp':
-            if (!value) {
-                showError(field, 'whatsapp-error', 'Por favor ingresá tu WhatsApp');
-            } else if (!isValidPhone(value)) {
-                showError(field, 'whatsapp-error', 'Por favor ingresá un número válido');
-            }
-            break;
-        case 'empresa':
-            if (!value) {
-                showError(field, 'empresa-error', 'Por favor ingresá el nombre de tu empresa');
-            }
-            break;
-    }
-}
-
 function showError(field, errorId, message) {
-    field.classList.add('error');
     const errorEl = document.getElementById(errorId);
     if (errorEl) {
         errorEl.textContent = message;
+        field.style.borderColor = '#E17055';
     }
 }
 
 function clearErrors() {
-    const inputs = document.querySelectorAll('.form__input');
-    const errors = document.querySelectorAll('.form__error');
-
-    inputs.forEach(function(input) {
-        input.classList.remove('error');
-    });
+    const errors = document.querySelectorAll('.form-error');
+    const inputs = document.querySelectorAll('.form-group input');
 
     errors.forEach(function(error) {
         error.textContent = '';
     });
+
+    inputs.forEach(function(input) {
+        input.style.borderColor = '';
+    });
 }
 
 function isValidEmail(email) {
-    const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return re.test(email);
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 }
 
 function isValidPhone(phone) {
-    // Accept various phone formats - at least 8 digits
     const cleaned = phone.replace(/\D/g, '');
     return cleaned.length >= 8;
 }
 
 function handleFormSubmit(form) {
-    // Get the submit button
     const submitBtn = form.querySelector('button[type="submit"]');
-    const originalText = submitBtn.innerHTML;
+    const originalHTML = submitBtn.innerHTML;
 
-    // Show loading state
     submitBtn.disabled = true;
-    submitBtn.innerHTML = 'Enviando...';
+    submitBtn.innerHTML = `
+        <svg class="spinner" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10" stroke-dasharray="60" stroke-dashoffset="20">
+                <animateTransform attributeName="transform" type="rotate" from="0 12 12" to="360 12 12" dur="1s" repeatCount="indefinite"/>
+            </circle>
+        </svg>
+        Enviando...
+    `;
 
-    // Simulate form submission (replace with actual backend integration)
     setTimeout(function() {
-        // Show success message
         form.innerHTML = `
-            <div style="text-align: center; padding: 2rem;">
-                <span style="font-size: 3rem; display: block; margin-bottom: 1rem;">✅</span>
-                <h3 style="font-family: 'Poppins', sans-serif; font-size: 1.5rem; margin-bottom: 0.5rem; color: #2D3436;">
+            <div style="text-align: center; padding: 3rem 2rem;">
+                <div style="width: 64px; height: 64px; background: rgba(129, 181, 161, 0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem;">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#81B5A1" stroke-width="2">
+                        <path d="M20 6L9 17l-5-5"/>
+                    </svg>
+                </div>
+                <h3 style="font-size: 1.5rem; font-weight: 700; color: #293E40; margin-bottom: 0.5rem;">
                     ¡Gracias por tu interés!
                 </h3>
-                <p style="color: #636E72;">
-                    Nos pondremos en contacto contigo dentro de las próximas 24 horas hábiles.
+                <p style="color: #6B7C7F; line-height: 1.6;">
+                    Nos pondremos en contacto dentro de las próximas 24 horas hábiles.
                 </p>
             </div>
         `;
@@ -277,80 +210,15 @@ function handleFormSubmit(form) {
 
 /* ----------------------------------------
    AOS INITIALIZATION
-   Animate On Scroll library setup
    ---------------------------------------- */
 function initAOS() {
-    // Check if AOS is loaded
     if (typeof AOS !== 'undefined') {
         AOS.init({
             duration: 800,
             easing: 'ease-out-cubic',
             once: true,
             offset: 50,
-            disable: function() {
-                // Disable on mobile if performance is an issue
-                // return window.innerWidth < 768;
-                return false;
-            }
+            disable: false
         });
     }
-}
-
-/* ----------------------------------------
-   HEADER SCROLL BEHAVIOR
-   Add shadow on scroll
-   ---------------------------------------- */
-function initHeaderScroll() {
-    const header = document.getElementById('header');
-
-    if (!header) return;
-
-    let lastScroll = 0;
-
-    window.addEventListener('scroll', function() {
-        const currentScroll = window.pageYOffset;
-
-        // Add shadow when scrolled
-        if (currentScroll > 10) {
-            header.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.1)';
-        } else {
-            header.style.boxShadow = 'none';
-        }
-
-        lastScroll = currentScroll;
-    });
-}
-
-/* ----------------------------------------
-   UTILITY FUNCTIONS
-   Helper functions for various tasks
-   ---------------------------------------- */
-
-// Debounce function for performance
-function debounce(func, wait) {
-    let timeout;
-    return function executedFunction() {
-        const args = arguments;
-        const context = this;
-        clearTimeout(timeout);
-        timeout = setTimeout(function() {
-            func.apply(context, args);
-        }, wait);
-    };
-}
-
-// Throttle function for scroll events
-function throttle(func, limit) {
-    let inThrottle;
-    return function() {
-        const args = arguments;
-        const context = this;
-        if (!inThrottle) {
-            func.apply(context, args);
-            inThrottle = true;
-            setTimeout(function() {
-                inThrottle = false;
-            }, limit);
-        }
-    };
 }
