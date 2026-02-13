@@ -22,6 +22,10 @@ Thumbs.db
 .vscode/
 .idea/
 
+# Remotion build output
+dist/
+video-demo/out/
+
 # Netlify
 .netlify
 
