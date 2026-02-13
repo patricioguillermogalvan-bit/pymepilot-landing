@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PymePilot - La tecnología de automatización que usa IEY, la marca #1 de MagSafe en Argentina. Optimiza tu PyME con IA.">
+    <title>PymePilot | La Tecnología que Usa IEY, Marca #1 de MagSafe en Argentina</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- AOS Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- ========================================
+         HEADER / NAVIGATION
+    ======================================== -->
+    <header class="header" id="header">
+        <div class="header__container">
+            <nav class="nav">
+                <a href="#" class="nav__logo">
+                    <div class="logo__icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <!-- PymePilot Corporate Icon — 4 tiles 2x2 -->
+                            <rect x="1.75" y="1.75" width="13.5" height="13.5" rx="2.8" fill="#5C8F83"/>
+                            <rect x="16.75" y="1.75" width="13.5" height="13.5" rx="2.8" fill="#81B5A1"/>
+                            <rect x="1.75" y="16.75" width="13.5" height="13.5" rx="2.8" fill="#293E40"/>
+                            <rect x="16.75" y="16.75" width="13.5" height="13.5" rx="2.8" fill="#3D6362"/>
+                        </svg>
+                    </div>
+                    <span class="logo__text">PymePilot</span>
+                </a>
+
+                <button class="nav__toggle" id="nav-toggle" aria-label="Abrir menú">
+                    <span class="hamburger"></span>
+                </button>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#caso-iey" class="nav__link">Caso IEY</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#productos" class="nav__link">Soluciones</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#proceso" class="nav__link">Cómo Funciona</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#faq" class="nav__link">FAQ</a>
+                        </li>
+                    </ul>
+                    <div class="nav__actions">
+                        <a href="#demo" class="btn btn--primary">Quiero los mismos resultados</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- ========================================
+             HERO SECTION - IEY Focused
+        ======================================== -->
+        <section class="hero" id="hero">
+            <div class="hero__background">
+                <div class="hero__gradient"></div>
+                <div class="hero__pattern"></div>
+            </div>
+            <div class="hero__container">
+                <div class="hero__content" data-aos="fade-up">
+                    <span class="hero__eyebrow">✓ Validado por IEY, marca #1 de MagSafe en Argentina</span>
+                    <h1 class="hero__title">
+                        La tecnología que usa IEY para escalar su operación B2B
+                    </h1>
+                    <p class="hero__subtitle">
+                        IEY optimizó su gestión de inventario y ventas B2B con nuestra plataforma.
+                        Ahora, la misma tecnología está disponible para tu PyME.
+                    </p>
+                    <div class="hero__cta">
+                        <a href="#demo" class="btn btn--primary btn--large">
+                            Quiero los mismos resultados
+                            <svg class="btn__arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                        <a href="#caso-iey" class="btn btn--ghost btn--large">
+                            Ver caso IEY
+                        </a>
+                    </div>
+                </div>
+                <div class="hero__media" data-aos="fade-up" data-aos-delay="200">
+                    <div class="hero__video-wrapper">
+                        <video
+                            autoplay
+                            muted
+                            loop
+                            playsinline
+                            preload="auto"
+                            width="1200"
+                            height="676"
+                            style="width:100%;height:auto;border-radius:16px;box-shadow:0 20px 60px rgba(0,0,0,0.3)"
+                        >
+                            <source src="video-demo/out/demo.mp4" type="video/mp4" />
+                        </video>
+                    </div>
+                </div>
+            </div>
+            <div class="hero__scroll">
+                <span>Scroll</span>
+                <div class="scroll-indicator"></div>
+            </div>
+        </section>
+
+        <!-- ========================================
+             TRUSTED BY - IEY Only (Honest)
+        ======================================== -->
+        <section class="trusted">
+            <div class="trusted__container">
+                <div class="trusted__featured">
+                    <span class="trusted__badge">Caso de éxito comprobado</span>
+                    <div class="trusted__company">
+                        <span class="trusted__logo-text">IEY</span>
+                        <span class="trusted__tagline">Marca #1 de accesorios MagSafe en Argentina</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================
+             IEY CASE STUDY - Featured
+        ======================================== -->
+        <section class="case-study-featured" id="caso-iey">
+            <div class="case-study-featured__container">
+                <div class="section-header section-header--center" data-aos="fade-up">
+                    <span class="section-header__eyebrow">Nuestro primer gran éxito</span>
+                    <h2 class="section-header__title">Cómo ayudamos a IEY a optimizar su operación B2B</h2>
+                    <p class="section-header__subtitle">
+                        IEY es la marca líder de accesorios MagSafe en Argentina.
+                        Cuando su operación B2B empezó a crecer, necesitaban una solución que escalara con ellos.
+                    </p>
+                </div>
+
+                <!-- IEY Challenges Before -->
+                <div class="challenges-grid" data-aos="fade-up">
+                    <div class="challenge-intro">
+                        <h3>Los desafíos que enfrentaba IEY</h3>
+                        <p>Antes de implementar PymePilot, el equipo de IEY dedicaba demasiado tiempo a tareas manuales que no agregaban valor.</p>
+                    </div>
+
+                    <article class="challenge-card">
+                        <div class="challenge-card__icon">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                <circle cx="17" cy="17" r="11" stroke="#81B5A1" stroke-width="2"/>
+                                <line x1="25" y1="25" x2="34" y2="34" stroke="#81B5A1" stroke-width="2.5" stroke-linecap="round"/>
+                                <circle cx="17" cy="17" r="5" stroke="#81B5A1" stroke-width="1.5" stroke-dasharray="3 2" opacity="0.6">
+                                    <animateTransform attributeName="transform" type="rotate" from="0 17 17" to="360 17 17" dur="6s" repeatCount="indefinite"/>
+                                </circle>
+                                <circle cx="17" cy="17" r="2" fill="#81B5A1">
+                                    <animate attributeName="r" values="1.5;3;1.5" dur="2.5s" repeatCount="indefinite"/>
+                                    <animate attributeName="opacity" values="0.8;0.3;0.8" dur="2.5s" repeatCount="indefinite"/>
+                                </circle>
+                            </svg>
+                        </div>
+                        <h4 class="challenge-card__title">Seguimiento manual de clientes B2B</h4>
+                        <p class="challenge-card__text">
+                            El equipo comercial perdía tiempo revisando manualmente qué clientes no habían recomprado.
+                        </p>
+                    </article>
+
+                    <article class="challenge-card">
+                        <div class="challenge-card__icon">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                <rect x="4" y="4" width="24" height="28" rx="3" stroke="#81B5A1" stroke-width="2"/>
+                                <line x1="4" y1="12" x2="28" y2="12" stroke="#81B5A1" stroke-width="1.5" opacity="0.4"/>
+                                <line x1="4" y1="20" x2="28" y2="20" stroke="#81B5A1" stroke-width="1.5" opacity="0.4"/>
+                                <line x1="4" y1="28" x2="28" y2="28" stroke="#81B5A1" stroke-width="1.5" opacity="0.4"/>
+                                <line x1="16" y1="12" x2="16" y2="32" stroke="#81B5A1" stroke-width="1.5" opacity="0.4"/>
+                                <circle cx="32" cy="32" r="7" fill="#293E40" stroke="#81B5A1" stroke-width="1.5"/>
+                                <line x1="32" y1="28" x2="32" y2="32" stroke="#81B5A1" stroke-width="2" stroke-linecap="round">
+                                    <animate attributeName="opacity" values="1;0.3;1" dur="1.2s" repeatCount="indefinite"/>
+                                </line>
+                                <circle cx="32" cy="35" r="1.2" fill="#81B5A1">
+                                    <animate attributeName="opacity" values="1;0.3;1" dur="1.2s" repeatCount="indefinite"/>
+                                </circle>
+                            </svg>
+                        </div>
+                        <h4 class="challenge-card__title">Gestión de inventario en Excel</h4>
+                        <p class="challenge-card__text">
+                            Con múltiples SKUs de productos MagSafe, mantener el control de stock era cada vez más complejo.
+                        </p>
+                    </article>
+
+                    <article class="challenge-card">
+                        <div class="challenge-card__icon">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                <circle cx="20" cy="20" r="16" stroke="#81B5A1" stroke-width="2"/>
+                                <line x1="20" y1="5" x2="20" y2="8" stroke="#81B5A1" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
+                                <line x1="20" y1="32" x2="20" y2="35" stroke="#81B5A1" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
+                                <line x1="5" y1="20" x2="8" y2="20" stroke="#81B5A1" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
+                                <line x1="32" y1="20" x2="35" y2="20" stroke="#81B5A1" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
+                                <line x1="20" y1="20" x2="20" y2="12" stroke="#81B5A1" stroke-width="2.5" stroke-linecap="round">
+                                    <animateTransform attributeName="transform" type="rotate" from="0 20 20" to="360 20 20" dur="20s" repeatCount="indefinite"/>
+                                </line>
+                                <line x1="20" y1="20" x2="27" y2="15" stroke="#81B5A1" stroke-width="2" stroke-linecap="round">
+                                    <animateTransform attributeName="transform" type="rotate" from="0 20 20" to="360 20 20" dur="4s" repeatCount="indefinite"/>
+                                </line>
+                                <circle cx="20" cy="20" r="2.5" fill="#81B5A1"/>
+                            </svg>
+                        </div>
+                        <h4 class="challenge-card__title">Reportes que tomaban horas</h4>
+                        <p class="challenge-card__text">
+                            Generar informes de ventas y stock para tomar decisiones consumía tiempo valioso del equipo.
+                        </p>
+                    </article>
+                </div>
+
+                <!-- IEY Results -->
+                <div class="results-section" data-aos="fade-up">
+                    <div class="results-header">
+                        <h3>Los resultados con PymePilot</h3>
+                        <p>Implementamos nuestra solución y el equipo de IEY empezó a ver cambios en las primeras semanas.</p>
+                    </div>
+
+                    <div class="results-grid">
+                        <div class="result-card">
+                            <div class="result-card__icon">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                    <circle cx="20" cy="20" r="14" stroke="#81B5A1" stroke-width="2" stroke-dasharray="6 3">
+                                        <animateTransform attributeName="transform" type="rotate" from="0 20 20" to="360 20 20" dur="10s" repeatCount="indefinite"/>
+                                    </circle>
+                                    <circle cx="20" cy="20" r="9" stroke="#81B5A1" stroke-width="1.5" stroke-dasharray="4 3" opacity="0.5">
+                                        <animateTransform attributeName="transform" type="rotate" from="360 20 20" to="0 20 20" dur="7s" repeatCount="indefinite"/>
+                                    </circle>
+                                    <path d="M22 13l-5 8h5l-5 8" stroke="#81B5A1" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                        <animate attributeName="opacity" values="1;0.4;1" dur="1.5s" repeatCount="indefinite"/>
+                                    </path>
+                                </svg>
+                            </div>
+                            <h4 class="result-card__title">Automatización de seguimiento</h4>
+                            <p class="result-card__text">
+                                El sistema ahora detecta automáticamente qué clientes B2B no han recomprado y genera alertas para el equipo comercial.
+                            </p>
+                        </div>
+
+                        <div class="result-card">
+                            <div class="result-card__icon">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                    <line x1="6" y1="34" x2="34" y2="34" stroke="#81B5A1" stroke-width="1.5" stroke-linecap="round" opacity="0.4"/>
+                                    <line x1="6" y1="6" x2="6" y2="34" stroke="#81B5A1" stroke-width="1.5" stroke-linecap="round" opacity="0.4"/>
+                                    <rect x="10" y="22" width="5" height="12" rx="1.5" fill="#81B5A1" opacity="0.6">
+                                        <animate attributeName="height" values="12;18;12" dur="3s" repeatCount="indefinite"/>
+                                        <animate attributeName="y" values="22;16;22" dur="3s" repeatCount="indefinite"/>
+                                    </rect>
+                                    <rect x="18" y="14" width="5" height="20" rx="1.5" fill="#81B5A1" opacity="0.8">
+                                        <animate attributeName="height" values="20;14;20" dur="3s" begin="0.3s" repeatCount="indefinite"/>
+                                        <animate attributeName="y" values="14;20;14" dur="3s" begin="0.3s" repeatCount="indefinite"/>
+                                    </rect>
+                                    <rect x="26" y="10" width="5" height="24" rx="1.5" fill="#81B5A1">
+                                        <animate attributeName="height" values="24;28;24" dur="3s" begin="0.6s" repeatCount="indefinite"/>
+                                        <animate attributeName="y" values="10;6;10" dur="3s" begin="0.6s" repeatCount="indefinite"/>
+                                    </rect>
+                                    <circle cx="34" cy="8" r="2" fill="#81B5A1">
+                                        <animate attributeName="r" values="2;3;2" dur="1.5s" repeatCount="indefinite"/>
+                                        <animate attributeName="opacity" values="1;0.4;1" dur="1.5s" repeatCount="indefinite"/>
+                                    </circle>
+                                </svg>
+                            </div>
+                            <h4 class="result-card__title">Visibilidad de inventario en tiempo real</h4>
+                            <p class="result-card__text">
+                                IEY ahora tiene un dashboard con el estado de su stock actualizado, eliminando las hojas de Excel.
+                            </p>
+                        </div>
+
+                        <div class="result-card">
+                            <div class="result-card__icon">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                    <rect x="9" y="4" width="22" height="32" rx="4" stroke="#81B5A1" stroke-width="2"/>
+                                    <line x1="9" y1="10" x2="31" y2="10" stroke="#81B5A1" stroke-width="1" opacity="0.3"/>
+                                    <line x1="9" y1="30" x2="31" y2="30" stroke="#81B5A1" stroke-width="1" opacity="0.3"/>
+                                    <rect x="13" y="14" width="10" height="2.5" rx="1.25" fill="#81B5A1" opacity="0.4">
+                                        <animate attributeName="opacity" values="0.4;0.8;0.4" dur="2s" repeatCount="indefinite"/>
+                                    </rect>
+                                    <rect x="13" y="19" width="14" height="2.5" rx="1.25" fill="#81B5A1" opacity="0.3">
+                                        <animate attributeName="opacity" values="0.3;0.7;0.3" dur="2s" begin="0.3s" repeatCount="indefinite"/>
+                                    </rect>
+                                    <rect x="13" y="24" width="8" height="2.5" rx="1.25" fill="#81B5A1" opacity="0.2">
+                                        <animate attributeName="opacity" values="0.2;0.6;0.2" dur="2s" begin="0.6s" repeatCount="indefinite"/>
+                                    </rect>
+                                    <line x1="17" y1="33" x2="23" y2="33" stroke="#81B5A1" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
+                                    <circle cx="33" cy="6" r="4" fill="#81B5A1">
+                                        <animate attributeName="r" values="3.5;4.5;3.5" dur="1.5s" repeatCount="indefinite"/>
+                                    </circle>
+                                </svg>
+                            </div>
+                            <h4 class="result-card__title">Reportes automáticos por WhatsApp</h4>
+                            <p class="result-card__text">
+                                Cada día, el equipo recibe un resumen de ventas y alertas directamente en su celular.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================
+             TESTIMONIALS - Agustín & Patricio
+        ======================================== -->
+        <section class="testimonials" id="testimonios">
+            <div class="testimonials__container">
+                <div class="section-header section-header--center" data-aos="fade-up">
+                    <span class="section-header__eyebrow">Qué dice el equipo de IEY</span>
+                    <h2 class="section-header__title">Testimonios reales de quienes usan PymePilot</h2>
+                </div>
+
+                <div class="testimonials__grid testimonials__grid--featured" data-aos="fade-up">
+                    <!-- Agustín Morales - CEO -->
+                    <article class="testimonial-card testimonial-card--featured">
+                        <div class="testimonial-card__header">
+                            <div class="testimonial-card__badge">CEO de IEY</div>
+                        </div>
+                        <blockquote class="testimonial-card__quote">
+                            "Cuando empezamos a crecer en el canal B2B, nos dimos cuenta que necesitábamos ordenar nuestra operación. PymePilot nos ayudó a profesionalizar procesos que antes hacíamos de forma muy artesanal. Lo que más valoro es que no tuvimos que cambiar nada de lo que ya usábamos."
+                        </blockquote>
+                        <div class="testimonial-card__author">
+                            <div class="author__avatar author__avatar--placeholder">AM</div>
+                            <div class="author__info">
+                                <strong>Agustín Morales</strong>
+                                <span>CEO, IEY - Accesorios MagSafe</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Patricio Galván - B2B -->
+                    <article class="testimonial-card testimonial-card--featured">
+                        <div class="testimonial-card__header">
+                            <div class="testimonial-card__badge">Encargado B2B</div>
+                        </div>
+                        <blockquote class="testimonial-card__quote">
+                            "Antes pasaba horas revisando qué clientes no nos habían comprado en el mes. Ahora el sistema me avisa automáticamente y me sugiere qué productos ofrecerles. Me liberó tiempo para enfocarme en cerrar ventas en lugar de buscar datos."
+                        </blockquote>
+                        <div class="testimonial-card__author">
+                            <div class="author__avatar author__avatar--placeholder">PG</div>
+                            <div class="author__info">
+                                <strong>Patricio Galván</strong>
+                                <span>Encargado B2B, IEY - Accesorios MagSafe</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================
+             PRODUCTS - Contextualized with IEY
+        ======================================== -->
+        <section class="products" id="productos">
+            <div class="products__container">
+                <div class="section-header section-header--center" data-aos="fade-up">
+                    <span class="section-header__eyebrow">Nuestras soluciones</span>
+                    <h2 class="section-header__title">Las mismas herramientas que usa IEY</h2>
+                    <p class="section-header__subtitle">Módulos independientes que se adaptan a lo que ya tenés</p>
+                </div>
+
+                <div class="products__grid">
+                    <!-- Product 1: Sales -->
+                    <article class="product-card product-card--featured" data-aos="fade-up" data-aos-delay="100">
+                        <div class="product-card__badge">Lo que usa IEY</div>
+                        <div class="product-card__icon">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                <circle cx="20" cy="20" r="16" stroke="#81B5A1" stroke-width="1.5" opacity="0.2"/>
+                                <circle cx="20" cy="20" r="11" stroke="#81B5A1" stroke-width="1.5" opacity="0.3"/>
+                                <circle cx="20" cy="20" r="6" stroke="#81B5A1" stroke-width="1.5" opacity="0.5"/>
+                                <line x1="20" y1="20" x2="20" y2="4" stroke="#81B5A1" stroke-width="2" stroke-linecap="round">
+                                    <animateTransform attributeName="transform" type="rotate" from="0 20 20" to="360 20 20" dur="3s" repeatCount="indefinite"/>
+                                </line>
+                                <circle cx="26" cy="14" r="2" fill="#81B5A1">
+                                    <animate attributeName="opacity" values="0;1;0" dur="3s" repeatCount="indefinite"/>
+                                </circle>
+                                <circle cx="13" cy="24" r="1.5" fill="#81B5A1">
+                                    <animate attributeName="opacity" values="0;1;0" dur="3s" begin="1s" repeatCount="indefinite"/>
+                                </circle>
+                                <circle cx="20" cy="20" r="2" fill="#81B5A1"/>
+                            </svg>
+                        </div>
+                        <h3 class="product-card__title">Seguimiento Automático de Clientes</h3>
+                        <p class="product-card__description">
+                            El sistema detecta clientes que no recompraron y genera alertas automáticas.
+                            <strong>Lo mismo que usa el equipo B2B de IEY.</strong>
+                        </p>
+                        <ul class="product-card__features">
+                            <li>Detección automática de clientes dormidos</li>
+                            <li>Alertas por WhatsApp o email</li>
+                            <li>Sugerencias de productos basadas en historial</li>
+                            <li>Dashboard de seguimiento comercial</li>
+                        </ul>
+                        <a href="#demo" class="btn btn--primary btn--full">Quiero esto para mi PyME</a>
+                    </article>
+
+                    <!-- Product 2: Inventory -->
+                    <article class="product-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="product-card__icon">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                <path d="M20 6L34 14V26L20 34L6 26V14Z" stroke="#81B5A1" stroke-width="2" stroke-linejoin="round"/>
+                                <path d="M6 14L20 22L34 14" stroke="#81B5A1" stroke-width="1.5" stroke-linejoin="round" opacity="0.5"/>
+                                <line x1="20" y1="22" x2="20" y2="34" stroke="#81B5A1" stroke-width="1.5" opacity="0.5"/>
+                                <circle cx="20" cy="20" r="5" fill="#81B5A1" opacity="0.1">
+                                    <animate attributeName="r" values="4;7;4" dur="2.5s" repeatCount="indefinite"/>
+                                    <animate attributeName="opacity" values="0.15;0.05;0.15" dur="2.5s" repeatCount="indefinite"/>
+                                </circle>
+                            </svg>
+                        </div>
+                        <h3 class="product-card__title">Control de Inventario</h3>
+                        <p class="product-card__description">
+                            Visibilidad total de tu stock sin depender de Excel.
+                            Alertas cuando un producto está por agotarse.
+                        </p>
+                        <ul class="product-card__features">
+                            <li>Dashboard de stock en tiempo real</li>
+                            <li>Alertas de stock mínimo</li>
+                            <li>Clasificación automática de productos</li>
+                            <li>Historial de movimientos</li>
+                        </ul>
+                        <a href="#demo" class="btn btn--secondary btn--full">Más información</a>
+                    </article>
+
+                    <!-- Product 3: Reports -->
+                    <article class="product-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="product-card__icon">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                <polyline points="4,30 12,24 20,28 28,16 36,8" stroke="#81B5A1" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none" stroke-dasharray="60" stroke-dashoffset="60">
+                                    <animate attributeName="stroke-dashoffset" from="60" to="0" dur="2s" repeatCount="indefinite"/>
+                                </polyline>
+                                <path d="M32 6L36 8L34 12" stroke="#81B5A1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0">
+                                    <animate attributeName="opacity" values="0;0;1;1;0" dur="2.5s" repeatCount="indefinite"/>
+                                </path>
+                                <circle cx="12" cy="24" r="2" fill="#81B5A1" opacity="0">
+                                    <animate attributeName="opacity" values="0;0.8;0" dur="2.5s" repeatCount="indefinite"/>
+                                </circle>
+                                <circle cx="28" cy="16" r="2" fill="#81B5A1" opacity="0">
+                                    <animate attributeName="opacity" values="0;0;0.8;0" dur="2.5s" repeatCount="indefinite"/>
+                                </circle>
+                            </svg>
+                        </div>
+                        <h3 class="product-card__title">Reportes Automáticos</h3>
+                        <p class="product-card__description">
+                            Recibí un resumen diario de tu operación directo en WhatsApp.
+                            Sin abrir planillas ni sistemas.
+                        </p>
+                        <ul class="product-card__features">
+                            <li>Resumen diario de ventas</li>
+                            <li>Alertas de desvíos importantes</li>
+                            <li>Comparativa con períodos anteriores</li>
+                            <li>Envío por WhatsApp o email</li>
+                        </ul>
+                        <a href="#demo" class="btn btn--secondary btn--full">Más información</a>
+                    </article>
+                </div>
+
+                <div class="products__note" data-aos="fade-up">
+                    <p>
+                        <strong>Nota honesta:</strong> IEY es nuestro primer cliente grande y estamos muy orgullosos de los resultados.
+                        Queremos replicar este éxito con otras PyMEs que enfrenten desafíos similares.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================
+             WHY US - Differentiators
+        ======================================== -->
+        <section class="features" id="porque-nosotros">
+            <div class="features__container">
+                <div class="section-header section-header--center" data-aos="fade-up">
+                    <span class="section-header__eyebrow">Por qué PymePilot</span>
+                    <h2 class="section-header__title">Lo que aprendimos trabajando con IEY</h2>
+                </div>
+
+                <div class="features__grid">
+                    <article class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="feature-card__icon">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                <circle cx="20" cy="20" r="5" stroke="#81B5A1" stroke-width="2" fill="rgba(129,181,161,0.15)"/>
+                                <circle cx="8" cy="12" r="3" stroke="#81B5A1" stroke-width="1.5" fill="rgba(129,181,161,0.1)">
+                                    <animate attributeName="r" values="3;3.5;3" dur="3s" repeatCount="indefinite"/>
+                                </circle>
+                                <circle cx="32" cy="12" r="3" stroke="#81B5A1" stroke-width="1.5" fill="rgba(129,181,161,0.1)">
+                                    <animate attributeName="r" values="3;3.5;3" dur="3s" begin="0.5s" repeatCount="indefinite"/>
+                                </circle>
+                                <circle cx="8" cy="30" r="3" stroke="#81B5A1" stroke-width="1.5" fill="rgba(129,181,161,0.1)">
+                                    <animate attributeName="r" values="3;3.5;3" dur="3s" begin="1s" repeatCount="indefinite"/>
+                                </circle>
+                                <circle cx="32" cy="30" r="3" stroke="#81B5A1" stroke-width="1.5" fill="rgba(129,181,161,0.1)">
+                                    <animate attributeName="r" values="3;3.5;3" dur="3s" begin="1.5s" repeatCount="indefinite"/>
+                                </circle>
+                                <line x1="15" y1="17" x2="11" y2="14" stroke="#81B5A1" stroke-width="1.5" opacity="0.5"/>
+                                <line x1="25" y1="17" x2="29" y2="14" stroke="#81B5A1" stroke-width="1.5" opacity="0.5"/>
+                                <line x1="15" y1="23" x2="11" y2="27" stroke="#81B5A1" stroke-width="1.5" opacity="0.5"/>
+                                <line x1="25" y1="23" x2="29" y2="27" stroke="#81B5A1" stroke-width="1.5" opacity="0.5"/>
+                                <circle cx="20" cy="20" r="5" stroke="#81B5A1" stroke-width="1" fill="none" opacity="0.5">
+                                    <animate attributeName="r" values="5;12;5" dur="3s" repeatCount="indefinite"/>
+                                    <animate attributeName="opacity" values="0.5;0;0.5" dur="3s" repeatCount="indefinite"/>
+                                </circle>
+                            </svg>
+                        </div>
+                        <h3 class="feature-card__title">Nos adaptamos a vos</h3>
+                        <p class="feature-card__text">
+                            IEY ya tenía sus sistemas y procesos. No les pedimos que cambien nada.
+                            Nos integramos a lo que ya funcionaba.
+                        </p>
+                    </article>
+
+                    <article class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="feature-card__icon">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                <path d="M20 4C20 4 28 12 28 22C28 26 24 30 20 32C16 30 12 26 12 22C12 12 20 4 20 4Z" stroke="#81B5A1" stroke-width="2" fill="rgba(129,181,161,0.08)"/>
+                                <circle cx="20" cy="16" r="3" stroke="#81B5A1" stroke-width="1.5" fill="rgba(129,181,161,0.15)"/>
+                                <path d="M12 24L7 28L12 26" stroke="#81B5A1" stroke-width="1.5" stroke-linejoin="round" opacity="0.6"/>
+                                <path d="M28 24L33 28L28 26" stroke="#81B5A1" stroke-width="1.5" stroke-linejoin="round" opacity="0.6"/>
+                                <path d="M17 32L20 38L23 32" stroke="#81B5A1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <animate attributeName="opacity" values="0.8;0.3;0.8" dur="0.4s" repeatCount="indefinite"/>
+                                </path>
+                                <path d="M19 33L20 36L21 33" stroke="#81B5A1" stroke-width="1.5" stroke-linecap="round">
+                                    <animate attributeName="opacity" values="0.5;1;0.5" dur="0.3s" repeatCount="indefinite"/>
+                                </path>
+                            </svg>
+                        </div>
+                        <h3 class="feature-card__title">Implementación rápida</h3>
+                        <p class="feature-card__text">
+                            Con IEY estuvimos operativos en semanas, no meses.
+                            No somos un proyecto de consultoría eterna.
+                        </p>
+                    </article>
+
+                    <article class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="feature-card__icon">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                <path d="M8 22C8 14 13 8 20 8S32 14 32 22" stroke="#81B5A1" stroke-width="2" stroke-linecap="round"/>
+                                <rect x="4" y="20" width="6" height="10" rx="3" stroke="#81B5A1" stroke-width="2" fill="rgba(129,181,161,0.1)"/>
+                                <rect x="30" y="20" width="6" height="10" rx="3" stroke="#81B5A1" stroke-width="2" fill="rgba(129,181,161,0.1)"/>
+                                <path d="M30 28C30 32 26 34 22 34H20" stroke="#81B5A1" stroke-width="2" stroke-linecap="round"/>
+                                <circle cx="20" cy="34" r="2" fill="#81B5A1">
+                                    <animate attributeName="r" values="2;2.8;2" dur="1.5s" repeatCount="indefinite"/>
+                                    <animate attributeName="opacity" values="1;0.5;1" dur="1.5s" repeatCount="indefinite"/>
+                                </circle>
+                                <path d="M14 22C14 22 16 24 16 25S14 28 14 28" stroke="#81B5A1" stroke-width="1" stroke-linecap="round" opacity="0.3">
+                                    <animate attributeName="opacity" values="0.3;0.7;0.3" dur="2s" repeatCount="indefinite"/>
+                                </path>
+                            </svg>
+                        </div>
+                        <h3 class="feature-card__title">Soporte real</h3>
+                        <p class="feature-card__text">
+                            No somos una plataforma donde quedás solo.
+                            Trabajamos codo a codo hasta que funcione.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================
+             PROCESS - How it works
+        ======================================== -->
+        <section class="process" id="proceso">
+            <div class="process__container">
+                <div class="section-header section-header--center" data-aos="fade-up">
+                    <span class="section-header__eyebrow">Cómo funciona</span>
+                    <h2 class="section-header__title">El mismo proceso que hicimos con IEY</h2>
+                </div>
+
+                <div class="process__timeline">
+                    <div class="process__line"></div>
+
+                    <article class="step" data-aos="fade-up" data-aos-delay="100">
+                        <div class="step__number">1</div>
+                        <div class="step__content">
+                            <h3 class="step__title">Conversación inicial</h3>
+                            <p class="step__text">
+                                Nos contás cómo funciona tu operación hoy.
+                                Qué sistemas usás, qué dolores tenés, qué querés mejorar.
+                            </p>
+                            <span class="step__time">30 minutos, sin compromiso</span>
+                        </div>
+                    </article>
+
+                    <article class="step" data-aos="fade-up" data-aos-delay="200">
+                        <div class="step__number">2</div>
+                        <div class="step__content">
+                            <h3 class="step__title">Configuración e integración</h3>
+                            <p class="step__text">
+                                Nos conectamos a tu sistema actual (sea cual sea) y configuramos las automatizaciones.
+                            </p>
+                            <span class="step__time">2-4 semanas</span>
+                        </div>
+                    </article>
+
+                    <article class="step" data-aos="fade-up" data-aos-delay="300">
+                        <div class="step__number">3</div>
+                        <div class="step__content">
+                            <h3 class="step__title">Acompañamiento continuo</h3>
+                            <p class="step__text">
+                                No te dejamos solo. Ajustamos, optimizamos y te acompañamos hasta que veas resultados.
+                            </p>
+                            <span class="step__time">Soporte incluido</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================
+             FAQ SECTION
+        ======================================== -->
+        <section class="faq" id="faq">
+            <div class="faq__container">
+                <div class="faq__content">
+                    <div class="section-header" data-aos="fade-up">
+                        <span class="section-header__eyebrow">Preguntas frecuentes</span>
+                        <h2 class="section-header__title">Lo que nos preguntan</h2>
+                    </div>
+
+                    <div class="faq__accordion" data-aos="fade-up">
+                        <details class="faq__item" open>
+                            <summary class="faq__question">
+                                ¿Solo trabajan con empresas de tecnología como IEY?
+                                <span class="faq__icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M6 9l6 6 6-6"/>
+                                    </svg>
+                                </span>
+                            </summary>
+                            <div class="faq__answer">
+                                <p>No. IEY vende accesorios MagSafe, pero nuestra solución funciona para cualquier PyME con operación B2B: distribuidoras, mayoristas, fabricantes con canal comercial. Lo importante es que tengas clientes recurrentes y quieras optimizar tu gestión.</p>
+                            </div>
+                        </details>
+
+                        <details class="faq__item">
+                            <summary class="faq__question">
+                                ¿Qué sistema necesito tener?
+                                <span class="faq__icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M6 9l6 6 6-6"/>
+                                    </svg>
+                                </span>
+                            </summary>
+                            <div class="faq__answer">
+                                <p>Cualquiera. IEY tenía un mix de sistemas cuando empezamos. Nos adaptamos a lo que uses: ERP, sistema de facturación, Excel, o lo que sea. No te pedimos que cambies nada.</p>
+                            </div>
+                        </details>
+
+                        <details class="faq__item">
+                            <summary class="faq__question">
+                                ¿Cuánto cuesta?
+                                <span class="faq__icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M6 9l6 6 6-6"/>
+                                    </svg>
+                                </span>
+                            </summary>
+                            <div class="faq__answer">
+                                <p>Depende de qué módulos necesites y el tamaño de tu operación. Preferimos conversarlo después de entender tu caso. No hay sorpresas: te damos un precio claro antes de empezar.</p>
+                            </div>
+                        </details>
+
+                        <details class="faq__item">
+                            <summary class="faq__question">
+                                ¿Son nuevos en esto?
+                                <span class="faq__icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M6 9l6 6 6-6"/>
+                                    </svg>
+                                </span>
+                            </summary>
+                            <div class="faq__answer">
+                                <p>Somos honestos: IEY es nuestro primer cliente grande. Pero precisamente por eso estamos 100% comprometidos con cada cliente que sumamos. Nos jugamos nuestra reputación en cada proyecto.</p>
+                            </div>
+                        </details>
+
+                        <details class="faq__item">
+                            <summary class="faq__question">
+                                ¿Qué pasa si no funciona?
+                                <span class="faq__icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M6 9l6 6 6-6"/>
+                                    </svg>
+                                </span>
+                            </summary>
+                            <div class="faq__answer">
+                                <p>Trabajamos hasta que funcione. No te dejamos a medio camino. Si después de implementar no ves valor, buscamos la forma de solucionarlo o no te cobramos más.</p>
+                            </div>
+                        </details>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================
+             CTA / DEMO FORM - IEY Focused
+        ======================================== -->
+        <section class="cta-section" id="demo">
+            <div class="cta-section__container">
+                <div class="cta-section__wrapper" data-aos="fade-up">
+                    <div class="cta-section__content">
+                        <span class="cta-section__badge">Caso de éxito: IEY</span>
+                        <h2 class="cta-section__title">
+                            ¿Querés los mismos resultados que IEY?
+                        </h2>
+                        <p class="cta-section__subtitle">
+                            Contanos sobre tu operación y te mostramos cómo podemos ayudarte
+                            con la misma tecnología que usa la marca #1 de MagSafe en Argentina.
+                        </p>
+                        <ul class="cta-section__benefits">
+                            <li>
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#81B5A1" stroke-width="2">
+                                    <path d="M20 6L9 17l-5-5"/>
+                                </svg>
+                                Conversación sin compromiso de 30 minutos
+                            </li>
+                            <li>
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#81B5A1" stroke-width="2">
+                                    <path d="M20 6L9 17l-5-5"/>
+                                </svg>
+                                Te mostramos el caso real de IEY
+                            </li>
+                            <li>
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#81B5A1" stroke-width="2">
+                                    <path d="M20 6L9 17l-5-5"/>
+                                </svg>
+                                Propuesta personalizada para tu PyME
+                            </li>
+                            <li>
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#81B5A1" stroke-width="2">
+                                    <path d="M20 6L9 17l-5-5"/>
+                                </svg>
+                                Sin contratos de permanencia
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="cta-section__form">
+                        <form class="demo-form" id="demo-form">
+                            <h3 class="demo-form__title">Conversemos sobre tu PyME</h3>
+
+                            <div class="form-group">
+                                <label for="nombre">Tu nombre *</label>
+                                <input type="text" id="nombre" name="nombre" placeholder="¿Cómo te llamás?" required>
+                                <span class="form-error" id="nombre-error"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" placeholder="tu@empresa.com" required>
+                                <span class="form-error" id="email-error"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="whatsapp">WhatsApp *</label>
+                                <input type="tel" id="whatsapp" name="whatsapp" placeholder="+54 11 1234-5678" required>
+                                <span class="form-error" id="whatsapp-error"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="empresa">Tu empresa *</label>
+                                <input type="text" id="empresa" name="empresa" placeholder="Nombre de tu PyME" required>
+                                <span class="form-error" id="empresa-error"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="contexto">¿Qué te gustaría mejorar?</label>
+                                <select id="contexto" name="contexto">
+                                    <option value="">Elegí una opción</option>
+                                    <option value="seguimiento">Seguimiento de clientes B2B</option>
+                                    <option value="inventario">Control de inventario</option>
+                                    <option value="reportes">Reportes y visibilidad</option>
+                                    <option value="todo">Un poco de todo</option>
+                                    <option value="otro">Otra cosa</option>
+                                </select>
+                            </div>
+
+                            <button type="submit" class="btn btn--primary btn--large btn--full">
+                                Quiero conversar
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                                </svg>
+                            </button>
+
+                            <p class="demo-form__note">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+                                    <path d="M7 11V7a5 5 0 0110 0v4"/>
+                                </svg>
+                                Tus datos quedan entre nosotros. Nada de spam.
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ========================================
+         FOOTER
+    ======================================== -->
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__main">
+                <div class="footer__brand">
+                    <a href="#" class="footer__logo">
+                        <div class="logo__icon">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <!-- PymePilot Corporate Icon — footer (lighter for dark bg) -->
+                                <rect x="1.75" y="1.75" width="13.5" height="13.5" rx="2.8" fill="#81B5A1"/>
+                                <rect x="16.75" y="1.75" width="13.5" height="13.5" rx="2.8" fill="#a3cebb"/>
+                                <rect x="1.75" y="16.75" width="13.5" height="13.5" rx="2.8" fill="#5C8F83"/>
+                                <rect x="16.75" y="16.75" width="13.5" height="13.5" rx="2.8" fill="#6fa396"/>
+                            </svg>
+                        </div>
+                        <span class="logo__text">PymePilot</span>
+                    </a>
+                    <p class="footer__tagline">
+                        La tecnología que usa IEY, ahora disponible para tu PyME.
+                    </p>
+                    <div class="footer__contact-info">
+                        <a href="mailto:hola@pymepilot.com">hola@pymepilot.com</a>
+                    </div>
+                </div>
+
+                <div class="footer__links">
+                    <div class="footer__column">
+                        <h4>Soluciones</h4>
+                        <ul>
+                            <li><a href="#productos">Seguimiento de Clientes</a></li>
+                            <li><a href="#productos">Control de Inventario</a></li>
+                            <li><a href="#productos">Reportes Automáticos</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__column">
+                        <h4>Caso de Éxito</h4>
+                        <ul>
+                            <li><a href="#caso-iey">Historia de IEY</a></li>
+                            <li><a href="#testimonios">Testimonios</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__column">
+                        <h4>Recursos</h4>
+                        <ul>
+                            <li><a href="#proceso">Cómo Funciona</a></li>
+                            <li><a href="#faq">Preguntas Frecuentes</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p class="footer__copyright">
+                    © 2025 PymePilot. Todos los derechos reservados.
+                </p>
+                <p class="footer__location">
+                    Hecho en Argentina 🇦🇷
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- AOS Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Custom Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>

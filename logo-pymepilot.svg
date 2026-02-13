@@ -1,0 +1,12 @@
+<svg width="280" height="48" viewBox="0 0 280 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- PymePilot Corporate Logo — Icon + Wordmark -->
+
+  <!-- 4-tile icon (scaled to 48x48) -->
+  <rect x="2.6" y="2.6" width="20.25" height="20.25" rx="4.2" fill="#5C8F83"/>
+  <rect x="25.1" y="2.6" width="20.25" height="20.25" rx="4.2" fill="#81B5A1"/>
+  <rect x="2.6" y="25.1" width="20.25" height="20.25" rx="4.2" fill="#293E40"/>
+  <rect x="25.1" y="25.1" width="20.25" height="20.25" rx="4.2" fill="#3D6362"/>
+
+  <!-- Wordmark -->
+  <text x="54" y="32" font-family="'Segoe UI', Inter, system-ui, -apple-system, sans-serif" font-weight="600" font-size="24" fill="#293E40">Pyme<tspan fill="#81B5A1">Pilot</tspan></text>
+</svg>

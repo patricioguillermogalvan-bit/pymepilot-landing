@@ -1,0 +1,21 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- PymePilot "Nexus" Logo — Version B: Pulse -->
+  <defs>
+    <linearGradient id="ng" x1="7" y1="25" x2="25" y2="7" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#293E40"/>
+      <stop offset="100%" stop-color="#81B5A1"/>
+    </linearGradient>
+  </defs>
+  <!-- Glow behind top node -->
+  <circle cx="25" cy="7" r="6" fill="#81B5A1" opacity="0.08"/>
+  <circle cx="25" cy="7" r="4.8" fill="#81B5A1" opacity="0.12"/>
+  <!-- Connections -->
+  <line x1="7" y1="25" x2="13" y2="19" stroke="url(#ng)" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="13" y1="19" x2="19" y2="13" stroke="url(#ng)" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="19" y1="13" x2="25" y2="7" stroke="url(#ng)" stroke-width="1.5" stroke-linecap="round"/>
+  <!-- Nodes (progressively larger) -->
+  <circle cx="7" cy="25" r="2.2" fill="url(#ng)"/>
+  <circle cx="13" cy="19" r="2.6" fill="url(#ng)"/>
+  <circle cx="19" cy="13" r="3.0" fill="url(#ng)"/>
+  <circle cx="25" cy="7" r="3.5" fill="url(#ng)"/>
+</svg>

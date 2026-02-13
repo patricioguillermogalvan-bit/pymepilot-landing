@@ -1,0 +1,36 @@
+{
+  "name": "pymepilot-landing",
+  "version": "1.0.0",
+  "description": "Landing page profesional para PymePilot - Agencia de automatización IA especializada en distribuidoras B2B argentinas.",
+  "main": "script.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/patricioguillermogalvan-bit/pymepilot-landing.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/patricioguillermogalvan-bit/pymepilot-landing/issues"
+  },
+  "homepage": "https://github.com/patricioguillermogalvan-bit/pymepilot-landing#readme",
+  "dependencies": {
+    "@hookform/resolvers": "^5.2.2",
+    "@types/node": "^25.2.3",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "next": "^16.1.6",
+    "react": "^19.2.4",
+    "react-cookie-consent": "^10.0.1",
+    "react-dom": "^19.2.4",
+    "react-hook-form": "^7.71.1",
+    "typescript": "^5.9.3",
+    "zod": "^4.3.6"
+  }
+}
