@@ -1,0 +1,7 @@
+[build]
+  publish = "."
+  command = "echo 'Static deploy'"
+  ignore = "exit 0"
+
+[build.environment]
+  NETLIFY_NEXT_PLUGIN_SKIP = "true"
