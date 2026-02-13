@@ -24,9 +24,6 @@ function getBodyContent(): string {
   body = body.replace(/<!--\s*AOS Library\s*-->/gi, '')
   body = body.replace(/<!--\s*Custom Scripts\s*-->/gi, '')
 
-  // Remove the static cookie banner (React CookieConsent component handles it)
-  body = body.replace(/<!--[\s\S]*?COOKIE CONSENT BANNER[\s\S]*?-->\s*<div id="cookie-consent"[\s\S]*?<\/div>\s*<\/div>\s*<\/div>/gi, '')
-
   return body
 }
 
