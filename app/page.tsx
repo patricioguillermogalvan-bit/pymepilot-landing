@@ -24,6 +24,12 @@ function getBodyContent(): string {
   body = body.replace(/<!--\s*AOS Library\s*-->/gi, '')
   body = body.replace(/<!--\s*Custom Scripts\s*-->/gi, '')
 
+  // Strip AOS attributes — AOS CSS hides elements with opacity:0
+  // and the JS init timing in Next.js is unreliable, leaving content invisible
+  body = body.replace(/\s*data-aos="[^"]*"/gi, '')
+  body = body.replace(/\s*data-aos-delay="[^"]*"/gi, '')
+  body = body.replace(/\s*data-aos-duration="[^"]*"/gi, '')
+
   return body
 }
 
@@ -32,12 +38,10 @@ export default function HomePage() {
 
   return (
     <>
-      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
       <link rel="stylesheet" href="/styles.css" />
 
       <div dangerouslySetInnerHTML={{ __html: bodyContent }} />
 
-      <Script src="https://unpkg.com/aos@2.3.1/dist/aos.js" strategy="beforeInteractive" />
       <Script src="/script.js" strategy="afterInteractive" />
     </>
   )
