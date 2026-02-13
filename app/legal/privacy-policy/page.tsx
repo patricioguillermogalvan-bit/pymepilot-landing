@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import LegalPageLayout from '@/components/LegalPageLayout'
 
 export const metadata: Metadata = {
   title: 'Política de Privacidad | PymePilot',
@@ -8,12 +9,7 @@ export const metadata: Metadata = {
 
 export default function PrivacyPolicyPage() {
   return (
-    <div className="container max-w-4xl mx-auto px-4 py-16">
-      <article className="prose prose-slate lg:prose-lg dark:prose-invert max-w-none">
-
-        <h1>Política de Privacidad</h1>
-
-        <p><strong>Última actualización:</strong> 12 de febrero de 2026</p>
+    <LegalPageLayout title="Política de Privacidad" lastUpdated="12 de febrero de 2026">
 
         <h2>1. Introducción</h2>
 
@@ -311,16 +307,6 @@ export default function PrivacyPolicyPage() {
 
         <p><em>Al utilizar nuestro Sitio, usted reconoce que ha leído y comprendido esta Política de Privacidad y acepta el procesamiento de su información personal según lo descrito aquí.</em></p>
 
-      </article>
-
-      <div className="mt-12 text-center">
-        <a
-          href="/"
-          className="inline-block px-6 py-3 bg-primary text-primary-foreground rounded-md hover:bg-primary/90 transition-colors"
-        >
-          ← Volver al inicio
-        </a>
-      </div>
-    </div>
+    </LegalPageLayout>
   )
 }

@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import LegalPageLayout from '@/components/LegalPageLayout'
 
 export const metadata: Metadata = {
   title: 'Términos y Condiciones | PymePilot',
@@ -8,12 +9,7 @@ export const metadata: Metadata = {
 
 export default function TermsOfServicePage() {
   return (
-    <div className="container max-w-4xl mx-auto px-4 py-16">
-      <article className="prose prose-slate lg:prose-lg dark:prose-invert max-w-none">
-
-        <h1>Términos y Condiciones</h1>
-
-        <p><strong>Última actualización:</strong> 12 de febrero de 2026</p>
+    <LegalPageLayout title="Términos y Condiciones" lastUpdated="12 de febrero de 2026">
 
         <h2>1. Aceptación de los Términos</h2>
 
@@ -311,16 +307,6 @@ export default function TermsOfServicePage() {
 
         <p><em>Gracias por utilizar PymePilot. Si no está de acuerdo con alguna parte de estos Términos, por favor no utilice nuestro Sitio.</em></p>
 
-      </article>
-
-      <div className="mt-12 text-center">
-        <a
-          href="/"
-          className="inline-block px-6 py-3 bg-primary text-primary-foreground rounded-md hover:bg-primary/90 transition-colors"
-        >
-          ← Volver al inicio
-        </a>
-      </div>
-    </div>
+    </LegalPageLayout>
   )
 }

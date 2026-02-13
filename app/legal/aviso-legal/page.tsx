@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import LegalPageLayout from '@/components/LegalPageLayout'
 
 export const metadata: Metadata = {
   title: 'Aviso Legal | PymePilot',
@@ -8,15 +9,10 @@ export const metadata: Metadata = {
 
 export default function AvisoLegalPage() {
   return (
-    <div className="container max-w-4xl mx-auto px-4 py-16">
-      <article className="prose prose-slate lg:prose-lg dark:prose-invert max-w-none">
-        <div 
-          dangerouslySetInnerHTML={{ 
-            __html: `
-<h1>Aviso Legal</h1>
-
-<p><strong>Última actualización:</strong> 12 de febrero de 2026</p>
-
+    <LegalPageLayout title="Aviso Legal" lastUpdated="12 de febrero de 2026">
+      <div
+        dangerouslySetInnerHTML={{
+          __html: `
 <h2>1. Identificación del Titular</h2>
 
 <p>En cumplimiento con el deber de información dispuesto en la legislación argentina, se informa a los usuarios de este sitio web de los siguientes datos:</p>
@@ -279,19 +275,9 @@ export default function AvisoLegalPage() {
 <p><strong>Vigencia:</strong> Desde 01 de mayo de 2025 (fecha inicio actividad AFIP)</p>
 
 <p><em>Al utilizar este sitio web, usted reconoce haber leído, comprendido y aceptado los términos y condiciones establecidos en este Aviso Legal.</em></p>
-            ` 
-          }} 
-        />
-      </article>
-      
-      <div className="mt-12 text-center">
-        <a 
-          href="/" 
-          className="inline-block px-6 py-3 bg-primary text-primary-foreground rounded-md hover:bg-primary/90 transition-colors"
-        >
-          ← Volver al inicio
-        </a>
-      </div>
-    </div>
+          `
+        }}
+      />
+    </LegalPageLayout>
   )
 }
