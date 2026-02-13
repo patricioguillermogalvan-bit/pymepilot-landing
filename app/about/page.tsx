@@ -58,7 +58,7 @@ export default function AboutPage() {
         .diff-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
         .diff-card { padding: 32px; border-radius: 16px; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); backdrop-filter: blur(8px); transition: all 0.3s; }
         .diff-card:hover { border-color: rgba(129,181,161,0.4); box-shadow: 0 8px 32px rgba(129,181,161,0.1); }
-        .diff-icon { font-size: 3rem; margin-bottom: 16px; }
+        .diff-icon { margin-bottom: 16px; width: 48px; height: 48px; display: flex; align-items: center; justify-content: center; background: rgba(129,181,161,0.08); border-radius: 12px; }
         .diff-card h3 { font-size: 1.25rem; font-weight: 600; color: #fff; margin-bottom: 8px; }
         .diff-card p { font-size: 0.95rem; color: #9AABAE; line-height: 1.7; }
 
@@ -66,8 +66,8 @@ export default function AboutPage() {
         .iey-box { padding: 48px; border-radius: 24px; background: linear-gradient(135deg, rgba(92,143,131,0.1) 0%, rgba(129,181,161,0.03) 100%); border: 1px solid rgba(129,181,161,0.2); box-shadow: 0 16px 48px rgba(0,0,0,0.2); }
         .iey-header { text-align: center; margin-bottom: 40px; }
         .iey-header h2 { font-size: 1.75rem; font-weight: 700; color: #fff; margin-bottom: 16px; }
-        .iey-logo { display: inline-block; padding: 12px 32px; background: #fff; border-radius: 12px; }
-        .iey-logo span { font-size: 2rem; font-weight: 800; color: #293E40; }
+        .iey-logo { display: inline-block; padding: 8px 0; }
+        .iey-logo img { height: 48px; width: auto; filter: brightness(1.1); }
         .iey-subtitle { color: #6B7C7F; margin-top: 12px; font-size: 1rem; }
         .metrics-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
         .metric-card { text-align: center; padding: 24px; border-radius: 16px; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); }
@@ -141,14 +141,14 @@ export default function AboutPage() {
           <div className="section-inner">
             <div className="timeline-grid">
               <div className="timeline-card">
-                <span className="timeline-year red">2023</span>
+                <span className="timeline-year red">AGOSTO 2025</span>
                 <h3>El Problema</h3>
                 <p>IEY® perdía clientes recurrentes en silencio. El seguimiento manual no escalaba con el crecimiento del canal mayorista.</p>
                 <div className="timeline-stat red">34%</div>
                 <span className="timeline-sublabel">Facturación recurrente</span>
               </div>
               <div className="timeline-card">
-                <span className="timeline-year yellow">2024</span>
+                <span className="timeline-year yellow">SEP — DIC 2025</span>
                 <h3>La Solución</h3>
                 <p>Desarrollamos el sistema de seguimiento inteligente. Motor de IA que analiza la base y genera informes diarios para el equipo comercial.</p>
                 <div className="timeline-stat yellow">6 meses</div>
@@ -195,18 +195,63 @@ export default function AboutPage() {
           <div className="section-inner">
             <h2 className="section-title">Por qué somos diferentes</h2>
             <div className="diff-grid">
-              {[
-                { icon: '🏗️', title: 'Construido EN una distribuidora', desc: 'No desde una consultora o agencia. Vivimos el problema en primera persona dentro de IEY®.' },
-                { icon: '📊', title: 'Resultados reales, no promesas', desc: '6 meses de data validada con métricas públicas. No vendemos humo, mostramos números concretos.' },
-                { icon: '🎯', title: 'Especialización total', desc: '100% enfocado en distribuidores B2B mayoristas. No intentamos resolver todo para todos.' },
-                { icon: '🔄', title: 'Transparencia absoluta', desc: 'Documentamos el desarrollo y los resultados en público. Sin secretos, sin promesas vacías.' },
-              ].map((item, i) => (
-                <div key={i} className="diff-card">
-                  <div className="diff-icon">{item.icon}</div>
-                  <h3>{item.title}</h3>
-                  <p>{item.desc}</p>
+              <div className="diff-card">
+                <div className="diff-icon">
+                  <svg width="28" height="28" viewBox="0 0 40 40" fill="none">
+                    <rect x="8" y="16" width="24" height="18" rx="2" stroke="#81B5A1" strokeWidth="2" fill="none"/>
+                    <path d="M4 16l16-10 16 10" stroke="#81B5A1" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" fill="none"/>
+                    <rect x="16" y="24" width="8" height="10" rx="1" stroke="#81B5A1" strokeWidth="1.5" fill="rgba(129,181,161,0.15)"/>
+                    <rect x="12" y="20" width="4" height="4" rx="0.5" stroke="#81B5A1" strokeWidth="1.5" opacity="0.6" fill="none"/>
+                    <rect x="24" y="20" width="4" height="4" rx="0.5" stroke="#81B5A1" strokeWidth="1.5" opacity="0.6" fill="none"/>
+                  </svg>
                 </div>
-              ))}
+                <h3>Construido EN una distribuidora</h3>
+                <p>No desde una consultora o agencia. Vivimos el problema en primera persona dentro de IEY®.</p>
+              </div>
+              <div className="diff-card">
+                <div className="diff-icon">
+                  <svg width="28" height="28" viewBox="0 0 40 40" fill="none">
+                    <line x1="6" y1="34" x2="34" y2="34" stroke="#81B5A1" strokeWidth="1.5" strokeLinecap="round" opacity="0.4"/>
+                    <line x1="6" y1="6" x2="6" y2="34" stroke="#81B5A1" strokeWidth="1.5" strokeLinecap="round" opacity="0.4"/>
+                    <rect x="10" y="22" width="5" height="12" rx="1.5" fill="#81B5A1" opacity="0.4"/>
+                    <rect x="18" y="14" width="5" height="20" rx="1.5" fill="#81B5A1" opacity="0.6"/>
+                    <rect x="26" y="8" width="5" height="26" rx="1.5" fill="#81B5A1"/>
+                    <circle cx="32" cy="8" r="5" fill="#293E40" stroke="#81B5A1" strokeWidth="1.5"/>
+                    <path d="M29.5 8l2 2 3.5-3.5" stroke="#81B5A1" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" fill="none"/>
+                  </svg>
+                </div>
+                <h3>Resultados reales, no promesas</h3>
+                <p>6 meses de data validada con métricas públicas. No vendemos humo, mostramos números concretos.</p>
+              </div>
+              <div className="diff-card">
+                <div className="diff-icon">
+                  <svg width="28" height="28" viewBox="0 0 40 40" fill="none">
+                    <circle cx="20" cy="20" r="16" stroke="#81B5A1" strokeWidth="1.5" opacity="0.3"/>
+                    <circle cx="20" cy="20" r="11" stroke="#81B5A1" strokeWidth="1.5" opacity="0.5"/>
+                    <circle cx="20" cy="20" r="6" stroke="#81B5A1" strokeWidth="2"/>
+                    <circle cx="20" cy="20" r="2" fill="#81B5A1"/>
+                    <line x1="20" y1="2" x2="20" y2="8" stroke="#81B5A1" strokeWidth="1.5" strokeLinecap="round" opacity="0.5"/>
+                    <line x1="20" y1="32" x2="20" y2="38" stroke="#81B5A1" strokeWidth="1.5" strokeLinecap="round" opacity="0.5"/>
+                    <line x1="2" y1="20" x2="8" y2="20" stroke="#81B5A1" strokeWidth="1.5" strokeLinecap="round" opacity="0.5"/>
+                    <line x1="32" y1="20" x2="38" y2="20" stroke="#81B5A1" strokeWidth="1.5" strokeLinecap="round" opacity="0.5"/>
+                  </svg>
+                </div>
+                <h3>Especialización total</h3>
+                <p>100% enfocado en distribuidores B2B mayoristas. No intentamos resolver todo para todos.</p>
+              </div>
+              <div className="diff-card">
+                <div className="diff-icon">
+                  <svg width="28" height="28" viewBox="0 0 40 40" fill="none">
+                    <ellipse cx="20" cy="20" rx="16" ry="10" stroke="#81B5A1" strokeWidth="2" fill="none"/>
+                    <circle cx="20" cy="20" r="6" stroke="#81B5A1" strokeWidth="2" fill="rgba(129,181,161,0.15)"/>
+                    <circle cx="20" cy="20" r="2.5" fill="#81B5A1"/>
+                    <line x1="20" y1="4" x2="20" y2="8" stroke="#81B5A1" strokeWidth="1.5" strokeLinecap="round" opacity="0.4"/>
+                    <line x1="20" y1="32" x2="20" y2="36" stroke="#81B5A1" strokeWidth="1.5" strokeLinecap="round" opacity="0.4"/>
+                  </svg>
+                </div>
+                <h3>Transparencia absoluta</h3>
+                <p>Documentamos el desarrollo y los resultados en público. Sin secretos, sin promesas vacías.</p>
+              </div>
             </div>
           </div>
         </section>
@@ -217,7 +262,7 @@ export default function AboutPage() {
             <div className="iey-box">
               <div className="iey-header">
                 <h2>Validado en</h2>
-                <div className="iey-logo"><span>IEY®</span></div>
+                <div className="iey-logo"><img src="/assets/icons/IEY - PNG BLANCO CON ESPACIO-13 (1).png" alt="IEY®" /></div>
                 <p className="iey-subtitle">Distribuidor #1 de Accesorios MagSafe en Argentina</p>
               </div>
               <div className="metrics-grid">
@@ -227,7 +272,7 @@ export default function AboutPage() {
                   <div className="metric-change">+114% de mejora</div>
                 </div>
                 <div className="metric-card">
-                  <div className="metric-label">Churn Mensual</div>
+                  <div className="metric-label">Pérdida de Clientes / Mes</div>
                   <div className="metric-value">18% → 8%</div>
                   <div className="metric-change">-56% reducción</div>
                 </div>
@@ -237,7 +282,7 @@ export default function AboutPage() {
                   <div className="metric-change">+375% crecimiento</div>
                 </div>
               </div>
-              <p className="iey-footnote">Métricas reales de julio a diciembre 2024 · Datos verificables</p>
+              <p className="iey-footnote">Métricas reales de agosto 2025 a febrero 2026 · Datos verificables</p>
             </div>
           </div>
         </section>
