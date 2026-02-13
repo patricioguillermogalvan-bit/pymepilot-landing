@@ -32,7 +32,7 @@ export default function ContactPage() {
         .benefits-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
         .benefit-card { padding: 32px; border-radius: 16px; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); backdrop-filter: blur(8px); transition: all 0.3s; }
         .benefit-card:hover { border-color: rgba(129,181,161,0.4); box-shadow: 0 8px 32px rgba(129,181,161,0.1); }
-        .benefit-icon { font-size: 2.5rem; margin-bottom: 12px; }
+        .benefit-icon { margin-bottom: 12px; width: 48px; height: 48px; display: flex; align-items: center; justify-content: center; background: rgba(129,181,161,0.08); border-radius: 12px; }
         .benefit-card h3 { font-size: 1.125rem; font-weight: 600; color: #fff; margin-bottom: 8px; }
         .benefit-card p { font-size: 0.95rem; color: #9AABAE; line-height: 1.7; }
         .benefits-note { text-align: center; color: #6B7C7F; font-size: 1rem; margin-top: 40px; }
@@ -116,18 +116,62 @@ export default function ContactPage() {
           <div className="section-inner">
             <h2 className="section-title">En 15 minutos vas a obtener</h2>
             <div className="benefits-grid">
-              {[
-                { icon: '📊', title: 'Análisis de tu situación actual', desc: '% de facturación recurrente, churn mensual estimado, diagnóstico de pérdida de clientes' },
-                { icon: '🎯', title: 'Diagnóstico de oportunidades', desc: 'Dónde estás perdiendo plata sin darte cuenta y qué clientes podés recuperar' },
-                { icon: '📈', title: 'Proyección de resultados', desc: 'Qué números podés alcanzar en 6 meses basado en el caso IEY® (+114% facturación recurrente)' },
-                { icon: '🚀', title: 'Plan de implementación', desc: 'Si PymePilot aplica para tu caso, te explicamos cómo funciona y los próximos pasos' },
-              ].map((item, i) => (
-                <div key={i} className="benefit-card">
-                  <div className="benefit-icon">{item.icon}</div>
-                  <h3>{item.title}</h3>
-                  <p>{item.desc}</p>
+              <div className="benefit-card">
+                <div className="benefit-icon">
+                  <svg width="28" height="28" viewBox="0 0 40 40" fill="none">
+                    <line x1="6" y1="34" x2="34" y2="34" stroke="#81B5A1" strokeWidth="1.5" strokeLinecap="round" opacity="0.4"/>
+                    <line x1="6" y1="6" x2="6" y2="34" stroke="#81B5A1" strokeWidth="1.5" strokeLinecap="round" opacity="0.4"/>
+                    <rect x="10" y="22" width="5" height="12" rx="1.5" fill="#81B5A1" opacity="0.4"/>
+                    <rect x="18" y="14" width="5" height="20" rx="1.5" fill="#81B5A1" opacity="0.6"/>
+                    <rect x="26" y="8" width="5" height="26" rx="1.5" fill="#81B5A1"/>
+                  </svg>
                 </div>
-              ))}
+                <h3>Análisis de tu situación actual</h3>
+                <p>% de facturación recurrente, tasa de pérdida de clientes mensual, diagnóstico comercial</p>
+              </div>
+              <div className="benefit-card">
+                <div className="benefit-icon">
+                  <svg width="28" height="28" viewBox="0 0 40 40" fill="none">
+                    <circle cx="20" cy="20" r="16" stroke="#81B5A1" strokeWidth="1.5" opacity="0.3"/>
+                    <circle cx="20" cy="20" r="11" stroke="#81B5A1" strokeWidth="1.5" opacity="0.5"/>
+                    <circle cx="20" cy="20" r="6" stroke="#81B5A1" strokeWidth="2"/>
+                    <circle cx="20" cy="20" r="2" fill="#81B5A1"/>
+                    <line x1="20" y1="2" x2="20" y2="8" stroke="#81B5A1" strokeWidth="1.5" strokeLinecap="round" opacity="0.5"/>
+                    <line x1="20" y1="32" x2="20" y2="38" stroke="#81B5A1" strokeWidth="1.5" strokeLinecap="round" opacity="0.5"/>
+                    <line x1="2" y1="20" x2="8" y2="20" stroke="#81B5A1" strokeWidth="1.5" strokeLinecap="round" opacity="0.5"/>
+                    <line x1="32" y1="20" x2="38" y2="20" stroke="#81B5A1" strokeWidth="1.5" strokeLinecap="round" opacity="0.5"/>
+                  </svg>
+                </div>
+                <h3>Diagnóstico de oportunidades</h3>
+                <p>Dónde estás perdiendo plata sin darte cuenta y qué clientes podés recuperar</p>
+              </div>
+              <div className="benefit-card">
+                <div className="benefit-icon">
+                  <svg width="28" height="28" viewBox="0 0 40 40" fill="none">
+                    <polyline points="4,30 12,24 20,28 28,16 36,8" stroke="#81B5A1" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" fill="none"/>
+                    <path d="M32 6L36 8L34 12" stroke="#81B5A1" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" fill="none"/>
+                    <circle cx="12" cy="24" r="2" fill="#81B5A1" opacity="0.5"/>
+                    <circle cx="28" cy="16" r="2" fill="#81B5A1" opacity="0.5"/>
+                  </svg>
+                </div>
+                <h3>Proyección de resultados</h3>
+                <p>Qué números podés alcanzar en 6 meses basado en el caso IEY® (+114% facturación recurrente)</p>
+              </div>
+              <div className="benefit-card">
+                <div className="benefit-icon">
+                  <svg width="28" height="28" viewBox="0 0 40 40" fill="none">
+                    <rect x="8" y="6" width="24" height="28" rx="3" stroke="#81B5A1" strokeWidth="2" fill="none"/>
+                    <line x1="14" y1="14" x2="26" y2="14" stroke="#81B5A1" strokeWidth="1.5" strokeLinecap="round" opacity="0.5"/>
+                    <line x1="14" y1="20" x2="26" y2="20" stroke="#81B5A1" strokeWidth="1.5" strokeLinecap="round" opacity="0.5"/>
+                    <line x1="14" y1="26" x2="22" y2="26" stroke="#81B5A1" strokeWidth="1.5" strokeLinecap="round" opacity="0.3"/>
+                    <path d="M15 6V2M25 6V2" stroke="#81B5A1" strokeWidth="2" strokeLinecap="round"/>
+                    <circle cx="32" cy="30" r="6" fill="#293E40" stroke="#81B5A1" strokeWidth="1.5"/>
+                    <path d="M29.5 30l2 2 3.5-3.5" stroke="#81B5A1" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" fill="none"/>
+                  </svg>
+                </div>
+                <h3>Plan de implementación</h3>
+                <p>Si PymePilot aplica para tu caso, te explicamos cómo funciona y los próximos pasos</p>
+              </div>
             </div>
             <p className="benefits-note">Sin compromiso. Sin pitch de venta. Solo números y claridad.</p>
           </div>
