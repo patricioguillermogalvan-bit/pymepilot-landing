@@ -4032,6 +4032,53 @@ button {
     }
 }
 
+/* Mobile fix - Issue #4: Plan card paddings excesivos (32px → 16px) */
+@media (max-width: 767px) {
+    .plan-card__header {
+        padding: var(--space-6) var(--space-5) var(--space-4);
+    }
+
+    .plan-card__problem,
+    .plan-card__solution,
+    .plan-card__results,
+    .plan-card__ideal {
+        margin: 0 var(--space-4);
+    }
+
+    .plan-card__footer {
+        padding: var(--space-4) var(--space-5) var(--space-6);
+    }
+
+    .plan-card__actions {
+        padding: 0 var(--space-5) var(--space-6);
+    }
+}
+
+/* Mobile fix - Issue #6: Piloto Beta banner padding excesivo (48px → 24px) */
+@media (max-width: 767px) {
+    .piloto-beta__banner {
+        padding: var(--space-6);
+    }
+}
+
+/* Mobile fix - Issue #8: Results section padding excesivo (48px → 24px) */
+@media (max-width: 767px) {
+    .results-section {
+        padding: var(--space-6);
+    }
+}
+
+/* Mobile fix - Issue #9: Product card min-height innecesario en mobile */
+@media (max-width: 767px) {
+    .product-card__description {
+        min-height: auto;
+    }
+
+    .product-card__title {
+        min-height: auto;
+    }
+}
+
 /* ========================================
    COOKIE CONSENT BANNER
    ======================================== */
