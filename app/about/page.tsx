@@ -263,7 +263,7 @@ export default function AboutPage() {
             <div className="iey-box">
               <div className="iey-header">
                 <h2>Validado en</h2>
-                <div className="iey-logo"><img src="/assets/icons/IEY - PNG BLANCO CON ESPACIO-13 (1).png" alt="IEY®" /></div>
+                <div className="iey-logo"><img src="/assets/icons/IEY - PNG BLANCO CON ESPACIO-13 (1).png" alt="IEY®" loading="lazy" /></div>
                 <p className="iey-subtitle">Distribuidor #1 de Accesorios MagSafe en Argentina</p>
               </div>
               <div className="metrics-grid">
