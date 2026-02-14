@@ -2,9 +2,10 @@ import type { Metadata } from 'next'
 import LegalPageLayout from '@/components/LegalPageLayout'
 
 export const metadata: Metadata = {
-  title: 'Aviso Legal | PymePilot',
+  title: 'Aviso Legal',
   description: 'Información legal sobre PymePilot y Patricio Guillermo Galvan.',
   robots: 'index, follow',
+  alternates: { canonical: '/legal/aviso-legal' },
 }
 
 export default function AvisoLegalPage() {

@@ -2,9 +2,10 @@ import type { Metadata } from 'next'
 import LegalPageLayout from '@/components/LegalPageLayout'
 
 export const metadata: Metadata = {
-  title: 'Política de Privacidad | PymePilot',
+  title: 'Política de Privacidad',
   description: 'Información sobre cómo PymePilot recopila, usa y protege tus datos personales.',
   robots: 'index, follow',
+  alternates: { canonical: '/legal/privacy-policy' },
 }
 
 export default function PrivacyPolicyPage() {

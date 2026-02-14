@@ -2,9 +2,10 @@ import type { Metadata } from 'next'
 import LegalPageLayout from '@/components/LegalPageLayout'
 
 export const metadata: Metadata = {
-  title: 'Términos y Condiciones | PymePilot',
+  title: 'Términos y Condiciones',
   description: 'Términos legales de uso de los servicios de PymePilot.',
   robots: 'index, follow',
+  alternates: { canonical: '/legal/terms-of-service' },
 }
 
 export default function TermsOfServicePage() {

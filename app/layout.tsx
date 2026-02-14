@@ -12,6 +12,9 @@ export const metadata: Metadata = {
   creator: 'PymePilot',
   publisher: 'PymePilot',
   metadataBase: new URL('https://pymepilot.cloud'),
+  alternates: {
+    canonical: '/',
+  },
   openGraph: {
     type: 'website',
     locale: 'es_AR',
@@ -63,6 +66,31 @@ export default function RootLayout({
         `}</style>
       </head>
       <body style={{ fontFamily: "'Inter', -apple-system, BlinkMacSystemFont, sans-serif" }}>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@type': 'Organization',
+              name: 'PymePilot',
+              url: 'https://pymepilot.cloud',
+              logo: 'https://pymepilot.cloud/og-image.jpg',
+              description: 'Sistema de seguimiento inteligente por WhatsApp para Distribuidoras Mayoristas.',
+              email: 'contacto@pymepilot.cloud',
+              address: {
+                '@type': 'PostalAddress',
+                streetAddress: 'Aristóbulo del Valle 2737',
+                addressLocality: 'Quilmes',
+                addressRegion: 'Buenos Aires',
+                addressCountry: 'AR',
+              },
+              founder: {
+                '@type': 'Person',
+                name: 'Patricio Guillermo Galván',
+              },
+            }),
+          }}
+        />
         {children}
         <CookieConsent />
       </body>

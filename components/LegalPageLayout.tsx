@@ -168,7 +168,7 @@ export default function LegalPageLayout({ title, lastUpdated, children }: LegalP
                 <li className="nav__item"><a href="/#faq" className="nav__link">FAQ</a></li>
               </ul>
               <div className="nav__actions" style={{ flexDirection: 'row' }}>
-                <a href="https://wa.me/54XXXXXXXXXX?text=Hola%2C%20quiero%20agendar%20una%20reuni%C3%B3n%20para%20conocer%20PYMEPILOT." className="btn btn--primary" target="_blank" rel="noopener">Agendá una reunión</a>
+                <a href="https://wa.me/5491123994719?text=Hola%2C%20quiero%20agendar%20una%20reuni%C3%B3n%20para%20conocer%20PYMEPILOT." className="btn btn--primary" target="_blank" rel="noopener">Agendá una reunión</a>
               </div>
             </div>
           </nav>

@@ -2,9 +2,10 @@ import type { Metadata } from 'next'
 import LegalPageLayout from '@/components/LegalPageLayout'
 
 export const metadata: Metadata = {
-  title: 'Política de Cookies | PymePilot',
+  title: 'Política de Cookies',
   description: 'Información sobre el uso de cookies en PymePilot.',
   robots: 'index, follow',
+  alternates: { canonical: '/legal/cookie-policy' },
 }
 
 export default function CookiePolicyPage() {

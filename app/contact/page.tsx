@@ -4,6 +4,7 @@ export const metadata: Metadata = {
   title: 'Contacto - PymePilot CRM WhatsApp',
   description: 'Contactá a PymePilot para consultas sobre nuestro CRM especializado en WhatsApp para distribuidores B2B.',
   robots: 'index, follow',
+  alternates: { canonical: '/contact' },
 }
 
 export default function ContactPage() {

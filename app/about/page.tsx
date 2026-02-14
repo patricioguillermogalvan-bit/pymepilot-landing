@@ -4,6 +4,7 @@ export const metadata: Metadata = {
   title: 'Acerca de PymePilot - CRM WhatsApp para Distribuidores B2B',
   description: 'Conoce PymePilot, la plataforma CRM especializada en WhatsApp para distribuidores PyME en Argentina. Caso real IEY: +114% facturación recurrente.',
   robots: 'index, follow',
+  alternates: { canonical: '/about' },
 }
 
 export default function AboutPage() {

@@ -5,6 +5,8 @@
   "main": "script.js",
   "scripts": {
     "dev": "next dev",
+    "minify": "lightningcss --minify --bundle public/styles.css -o public/styles.css && terser public/script.js -o public/script.js -c -m",
+    "prebuild": "npm run minify",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
@@ -33,5 +35,9 @@
     "remotion": "^4.0.421",
     "typescript": "^5.9.3",
     "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "lightningcss-cli": "^1.31.1",
+    "terser": "^5.46.0"
   }
 }
