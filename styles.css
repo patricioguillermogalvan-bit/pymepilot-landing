@@ -4003,6 +4003,35 @@ button {
     }
 }
 
+/* ----------------------------------------
+   MOBILE FIXES - Auditoria 2026-02-14
+   Branch: mobile-fixes-audit
+   ---------------------------------------- */
+
+/* Mobile fix - Issue #5: Piloto Beta CTA padding excesivo */
+@media (max-width: 767px) {
+    .piloto-beta__cta {
+        padding: var(--space-4) var(--space-6) !important;
+        font-size: var(--text-base) !important;
+        width: 100%;
+    }
+}
+
+/* Mobile fix - Issue #3: Form row grid 2col forzado */
+@media (max-width: 767px) {
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Mobile fix - Issue #2: Case study metrics grid 3col forzado */
+@media (max-width: 767px) {
+    .case-study__metrics {
+        grid-template-columns: 1fr;
+        gap: var(--space-3);
+    }
+}
+
 /* ========================================
    COOKIE CONSENT BANNER
    ======================================== */
