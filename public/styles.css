@@ -4003,6 +4003,136 @@ button {
     }
 }
 
+/* ----------------------------------------
+   MOBILE FIXES - Auditoria 2026-02-14
+   Branch: mobile-fixes-audit
+   ---------------------------------------- */
+
+/* Mobile fix - Issue #5: Piloto Beta CTA padding excesivo */
+@media (max-width: 767px) {
+    .piloto-beta__cta {
+        padding: var(--space-4) var(--space-6) !important;
+        font-size: var(--text-base) !important;
+        width: 100%;
+    }
+}
+
+/* Mobile fix - Issue #3: Form row grid 2col forzado */
+@media (max-width: 767px) {
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Mobile fix - Issue #2: Case study metrics grid 3col forzado */
+@media (max-width: 767px) {
+    .case-study__metrics {
+        grid-template-columns: 1fr;
+        gap: var(--space-3);
+    }
+}
+
+/* Mobile fix - Issue #4: Plan card paddings excesivos (32px → 16px) */
+@media (max-width: 767px) {
+    .plan-card__header {
+        padding: var(--space-6) var(--space-5) var(--space-4);
+    }
+
+    .plan-card__problem,
+    .plan-card__solution,
+    .plan-card__results,
+    .plan-card__ideal {
+        margin: 0 var(--space-4);
+    }
+
+    .plan-card__footer {
+        padding: var(--space-4) var(--space-5) var(--space-6);
+    }
+
+    .plan-card__actions {
+        padding: 0 var(--space-5) var(--space-6);
+    }
+}
+
+/* Mobile fix - Issue #6: Piloto Beta banner padding excesivo (48px → 24px) */
+@media (max-width: 767px) {
+    .piloto-beta__banner {
+        padding: var(--space-6);
+    }
+}
+
+/* Mobile fix - Issue #8: Results section padding excesivo (48px → 24px) */
+@media (max-width: 767px) {
+    .results-section {
+        padding: var(--space-6);
+    }
+}
+
+/* Mobile fix - Issue #9: Product card min-height innecesario en mobile */
+@media (max-width: 767px) {
+    .product-card__description {
+        min-height: auto;
+    }
+
+    .product-card__title {
+        min-height: auto;
+    }
+}
+
+/* Mobile fix - Issue #10: CTA section max-width inline override */
+@media (max-width: 767px) {
+    .cta-section__content {
+        max-width: 100% !important;
+        padding-left: var(--space-4);
+        padding-right: var(--space-4);
+    }
+}
+
+/* Mobile fix - Issue #11: Process timeline grid */
+@media (max-width: 767px) {
+    .process__timeline {
+        grid-template-columns: 1fr !important;
+        gap: var(--space-4);
+    }
+}
+
+/* Mobile fix - Issue #12: Testimonials grid */
+@media (max-width: 767px) {
+    .testimonials__grid,
+    .testimonials__grid--featured {
+        grid-template-columns: 1fr !important;
+        gap: var(--space-4);
+    }
+}
+
+/* Mobile fix - Issue #13: Pricing hero metrics */
+@media (max-width: 767px) {
+    .pricing-hero__metrics {
+        grid-template-columns: 1fr !important;
+        gap: var(--space-3);
+    }
+}
+
+/* Mobile fix - Issue #1: Prevent horizontal overflow (definitive solution) */
+@media (max-width: 767px) {
+    html {
+        overflow-x: hidden;
+        max-width: 100vw;
+    }
+
+    body {
+        overflow-x: hidden;
+        max-width: 100vw;
+        position: relative;
+    }
+
+    /* Ensure all direct children respect viewport width */
+    body > * {
+        max-width: 100vw;
+        overflow-x: hidden;
+    }
+}
+
 /* ========================================
    COOKIE CONSENT BANNER
    ======================================== */
