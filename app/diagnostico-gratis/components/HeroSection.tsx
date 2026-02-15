@@ -1,0 +1,194 @@
+'use client'
+
+import { ArrowRight, CheckCircle } from 'lucide-react'
+import WhatsAppIcon from './WhatsAppIcon'
+
+const WA_LINK =
+  'https://wa.me/5491123994719?text=Hola%2C%20vengo%20del%20anuncio.%20Quiero%20agendar%20diagn%C3%B3stico%20gratis%20de%2015%20min.'
+
+export default function HeroSection() {
+  return (
+    <section
+      style={{
+        position: 'relative',
+        overflow: 'hidden',
+        background: 'linear-gradient(135deg, #0D3320 0%, #14532D 40%, #1A1A1A 100%)',
+        padding: '72px 20px 88px',
+      }}
+    >
+      {/* Decorative green blobs */}
+      <div
+        style={{
+          position: 'absolute',
+          top: -100,
+          right: -60,
+          width: 600,
+          height: 600,
+          background: 'radial-gradient(circle, rgba(0,200,83,0.15) 0%, transparent 65%)',
+          borderRadius: '50%',
+          pointerEvents: 'none',
+        }}
+      />
+      <div
+        style={{
+          position: 'absolute',
+          bottom: -80,
+          left: -40,
+          width: 500,
+          height: 500,
+          background: 'radial-gradient(circle, rgba(0,200,83,0.1) 0%, transparent 65%)',
+          borderRadius: '50%',
+          pointerEvents: 'none',
+        }}
+      />
+
+      <div style={{ maxWidth: 840, margin: '0 auto', position: 'relative', zIndex: 1, textAlign: 'center' }}>
+        {/* Trust badge */}
+        <div className="anim-fade-in-up" style={{ marginBottom: 36 }}>
+          <span
+            className="glass-green"
+            style={{
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: 10,
+              borderRadius: 100,
+              padding: '10px 24px',
+              fontSize: 15,
+              fontWeight: 700,
+              color: '#FFFFFF',
+              border: '2px solid #00C853',
+              boxShadow: '0 4px 20px rgba(0,200,83,0.25)',
+            }}
+          >
+            <CheckCircle size={18} strokeWidth={2.5} style={{ color: '#00E676' }} />
+            Caso IEY&reg;: De 34% a 74% facturaci&oacute;n recurrente en 6 meses
+          </span>
+        </div>
+
+        {/* Headline */}
+        <h1
+          className="anim-fade-in-up anim-delay-1"
+          style={{
+            fontSize: 'clamp(36px, 7vw, 68px)',
+            fontWeight: 900,
+            lineHeight: 1.06,
+            letterSpacing: '-0.03em',
+            marginBottom: 28,
+            color: '#FFFFFF',
+          }}
+        >
+          Tu distribuidora pierde clientes cada semana
+          <br />
+          <span
+            style={{
+              color: '#00E676',
+              textShadow: '0 0 40px rgba(0,200,83,0.5)',
+            }}
+          >
+            y nadie te avisa
+          </span>
+        </h1>
+
+        {/* Sub-headline */}
+        <p
+          className="anim-fade-in-up anim-delay-2"
+          style={{
+            fontSize: 'clamp(17px, 2.5vw, 21px)',
+            lineHeight: 1.7,
+            color: 'rgba(255,255,255,0.85)',
+            maxWidth: 700,
+            margin: '0 auto 14px',
+          }}
+        >
+
+          <strong style={{ color: '#FFFFFF' }}>PymePilot</strong> es el motor inteligente que detecta qu&eacute; clientes se est&aacute;n yendo,
+          cu&aacute;ndo necesitan reponer, y qu&eacute; ofrecerles para que vuelvan a comprar.
+        </p>
+        <p
+          className="anim-fade-in-up anim-delay-3"
+          style={{
+            fontSize: 'clamp(16px, 2.2vw, 18px)',
+            lineHeight: 1.7,
+            color: 'rgba(255,255,255,0.6)',
+            maxWidth: 640,
+            margin: '0 auto 48px',
+          }}
+        >
+          Nuestro sistema analiza tu base cada d&iacute;a y tu equipo recibe el informe
+          por WhatsApp con TODO listo: qui&eacute;n contactar HOY, qu&eacute; ofrecerle, y el mensaje sugerido.
+        </p>
+
+        {/* CTA primary - WHITE TEXT + WhatsApp logo */}
+        <div className="anim-fade-in-up anim-delay-4" style={{ marginBottom: 56 }}>
+          <a
+            href={WA_LINK}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="cta-dark anim-pulse-slow cta-full-mobile"
+            onClick={() => {
+              if (typeof window !== 'undefined' && typeof (window as any).fbq === 'function') {
+                ;(window as any).fbq('track', 'Lead', { content_name: 'CTA Hero' })
+              }
+            }}
+            style={{
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: 14,
+              background: 'linear-gradient(135deg, #00C853 0%, #00E676 100%)',
+              color: '#FFFFFF',
+              fontSize: 'clamp(17px, 2.8vw, 22px)',
+              fontWeight: 900,
+              padding: '22px 48px',
+              borderRadius: 16,
+              textDecoration: 'none',
+              border: '3px solid #66BB6A',
+              boxShadow: '0 8px 40px rgba(0,200,83,0.5)',
+              letterSpacing: '0.025em',
+              textTransform: 'uppercase' as const,
+              textShadow: '0 2px 8px rgba(0,0,0,0.3)',
+            }}
+          >
+            <span className="anim-bounce-sub" style={{ display: 'flex' }}>
+              <WhatsAppIcon size={26} />
+            </span>
+            AGENDAR DIAGN&Oacute;STICO GRATIS &mdash; 15 MIN
+            <ArrowRight size={22} strokeWidth={3} />
+          </a>
+        </div>
+
+        {/* Hero Image placeholder */}
+        <div className="anim-fade-in-up anim-delay-5">
+          <div style={{ position: 'relative', maxWidth: 720, margin: '0 auto' }}>
+            <div
+              style={{
+                position: 'absolute',
+                inset: -4,
+                borderRadius: 24,
+                border: '3px solid #00C853',
+                boxShadow: '0 0 40px rgba(0,200,83,0.3), inset 0 0 40px rgba(0,200,83,0.05)',
+                pointerEvents: 'none',
+              }}
+            />
+            <div
+              style={{
+                position: 'relative',
+                background: 'linear-gradient(135deg, #1B5E20 0%, #14532D 50%, #0D3320 100%)',
+                borderRadius: 20,
+                padding: '64px 24px',
+                color: 'rgba(255,255,255,0.5)',
+                fontSize: 14,
+                textAlign: 'center',
+              }}
+            >
+              <div style={{ fontSize: 48, marginBottom: 12 }}>&#128202;</div>
+              <p style={{ fontWeight: 700, color: '#A5D6A7' }}>Dashboard PymePilot</p>
+              <p style={{ fontSize: 13, marginTop: 4, color: 'rgba(255,255,255,0.4)' }}>
+                Imagen pr&oacute;ximamente
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  )
+}

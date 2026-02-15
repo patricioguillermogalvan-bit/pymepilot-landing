@@ -1,0 +1,210 @@
+/* ========== RESET (diagnostico-gratis) ========== */
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+  background: #0A0A0A;
+}
+
+/* ========== ANIMATIONS ========== */
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulseGlow {
+  0%, 100% { box-shadow: 0 0 24px rgba(0, 200, 83, 0.4); }
+  50% { box-shadow: 0 0 48px rgba(0, 200, 83, 0.7); }
+}
+
+@keyframes pulseSlow {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.02); }
+}
+
+@keyframes bounceSub {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-3px); }
+}
+
+.anim-pulse-slow {
+  animation: pulseSlow 3s ease-in-out infinite;
+}
+
+.anim-bounce-sub {
+  animation: bounceSub 2s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+.anim-fade-in-up {
+  opacity: 0;
+  animation: fadeInUp 0.7s ease-out forwards;
+}
+
+.anim-delay-1 { animation-delay: 0.1s; }
+.anim-delay-2 { animation-delay: 0.2s; }
+.anim-delay-3 { animation-delay: 0.3s; }
+.anim-delay-4 { animation-delay: 0.4s; }
+.anim-delay-5 { animation-delay: 0.5s; }
+.anim-delay-6 { animation-delay: 0.6s; }
+
+.anim-pulse-glow {
+  animation: pulseGlow 2.5s ease-in-out infinite;
+}
+
+.anim-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+/* ========== HOVER UTILITIES ========== */
+
+.hover-lift {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.hover-lift:hover {
+  transform: translateY(-6px);
+}
+
+.hover-scale {
+  transition: transform 0.3s ease;
+}
+.hover-scale:hover {
+  transform: scale(1.05);
+}
+
+.hover-scale-lg {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.hover-scale-lg:hover {
+  transform: scale(1.05);
+}
+
+.hover-icon-rotate {
+  transition: transform 0.3s ease;
+}
+.hover-lift:hover .hover-icon-rotate,
+.hover-scale-lg:hover .hover-icon-rotate {
+  transform: rotate(6deg) scale(1.1);
+}
+
+/* ========== CTA GLOW ========== */
+
+.cta-glow {
+  position: relative;
+  overflow: visible;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+.cta-glow::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: rgba(0, 230, 118, 0.5);
+  filter: blur(24px);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: -1;
+}
+.cta-glow:hover {
+  transform: translateY(-4px) scale(1.04);
+  box-shadow: 0 16px 56px rgba(0, 200, 83, 0.5);
+}
+.cta-glow:hover::before {
+  opacity: 0.5;
+}
+
+/* ========== CTA DARK (green on dark bg) ========== */
+
+.cta-dark {
+  position: relative;
+  overflow: visible;
+  transition: transform 0.4s ease, box-shadow 0.4s ease, background 0.3s ease;
+}
+.cta-dark::before {
+  content: '';
+  position: absolute;
+  inset: -4px;
+  border-radius: inherit;
+  background: rgba(0, 230, 118, 0.4);
+  filter: blur(28px);
+  opacity: 0.4;
+  transition: opacity 0.4s ease;
+  z-index: -1;
+}
+.cta-dark:hover {
+  transform: translateY(-4px) scale(1.06);
+  box-shadow: 0 20px 60px rgba(0, 200, 83, 0.6);
+}
+.cta-dark:hover::before {
+  opacity: 0.7;
+}
+
+/* ========== GLASSMORPHISM ========== */
+
+.glass-dark {
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.glass-green {
+  background: rgba(0, 200, 83, 0.08);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(0, 200, 83, 0.2);
+}
+
+/* ========== MOBILE RESPONSIVE ========== */
+
+@media (max-width: 768px) {
+  .grid-responsive {
+    grid-template-columns: 1fr !important;
+  }
+  .cta-full-mobile {
+    width: 100% !important;
+    box-sizing: border-box;
+    justify-content: center;
+  }
+  .founder-card-responsive {
+    flex-direction: column !important;
+    text-align: center !important;
+  }
+  .incentives-responsive {
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 12px !important;
+  }
+  .metric-responsive {
+    gap: 12px !important;
+  }
+  .hide-mobile {
+    display: none !important;
+  }
+  .iey-checks-responsive {
+    grid-template-columns: 1fr !important;
+  }
+  .iey-logo-responsive {
+    flex-direction: column !important;
+    text-align: center !important;
+  }
+}
