@@ -37,10 +37,11 @@ export default function StickyHeader() {
           style={{
             maxWidth: 1120,
             margin: '0 auto',
-            padding: '12px 24px',
+            padding: '12px 16px',
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'space-between',
+            gap: 16,
           }}
         >
           {/* Logo */}
@@ -48,13 +49,14 @@ export default function StickyHeader() {
             className="hover-scale"
             style={{ display: 'flex', alignItems: 'center', gap: 10, cursor: 'default' }}
           >
-            <svg width="36" height="36" viewBox="0 0 48 48" fill="none">
+            <svg className="header-logo-icon" width="36" height="36" viewBox="0 0 48 48" fill="none">
               <rect x="2.6" y="2.6" width="20.25" height="20.25" rx="4.2" fill="#66BB6A" />
               <rect x="25.1" y="2.6" width="20.25" height="20.25" rx="4.2" fill="#A5D6A7" />
               <rect x="2.6" y="25.1" width="20.25" height="20.25" rx="4.2" fill="#E8F5E9" />
               <rect x="25.1" y="25.1" width="20.25" height="20.25" rx="4.2" fill="#81C784" />
             </svg>
             <span
+              className="header-logo-text"
               style={{
                 fontWeight: 800,
                 fontSize: 20,
