@@ -4079,6 +4079,40 @@ button {
     }
 }
 
+/* Mobile fix - Issue #10: CTA section max-width inline override */
+@media (max-width: 767px) {
+    .cta-section__content {
+        max-width: 100% !important;
+        padding-left: var(--space-4);
+        padding-right: var(--space-4);
+    }
+}
+
+/* Mobile fix - Issue #11: Process timeline grid */
+@media (max-width: 767px) {
+    .process__timeline {
+        grid-template-columns: 1fr !important;
+        gap: var(--space-4);
+    }
+}
+
+/* Mobile fix - Issue #12: Testimonials grid */
+@media (max-width: 767px) {
+    .testimonials__grid,
+    .testimonials__grid--featured {
+        grid-template-columns: 1fr !important;
+        gap: var(--space-4);
+    }
+}
+
+/* Mobile fix - Issue #13: Pricing hero metrics */
+@media (max-width: 767px) {
+    .pricing-hero__metrics {
+        grid-template-columns: 1fr !important;
+        gap: var(--space-3);
+    }
+}
+
 /* ========================================
    COOKIE CONSENT BANNER
    ======================================== */
