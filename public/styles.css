@@ -4180,14 +4180,26 @@ button {
     }
 }
 
-/* Mobile fix - Issue #16: Process step content truncation */
+/* Mobile fix - Issue #16: Process steps vertical layout */
 @media (max-width: 767px) {
     .step {
+        flex-direction: column;
+        align-items: flex-start;
         gap: var(--space-3);
+    }
+
+    .step__number {
+        width: 44px;
+        height: 44px;
+        font-size: var(--text-base);
     }
 
     .step__title {
         font-size: var(--text-lg);
+    }
+
+    .step__content {
+        width: 100%;
     }
 
     .step__time {
