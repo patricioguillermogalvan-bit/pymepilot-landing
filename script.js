@@ -2,7 +2,7 @@
    PYMEPILOT - ServiceNow Style Scripts
    ======================================== */
 
-document.addEventListener('DOMContentLoaded', function() {
+function init() {
     initMobileMenu();
     initSmoothScroll();
     initHeaderScroll();
@@ -11,7 +11,13 @@ document.addEventListener('DOMContentLoaded', function() {
     initPlanHighlight();
     initAOS();
     initCookieConsent();
-});
+}
+
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+} else {
+    init();
+}
 
 /* ----------------------------------------
    MOBILE MENU

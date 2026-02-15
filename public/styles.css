@@ -327,6 +327,7 @@ button {
 }
 
 .hamburger {
+    display: block;
     position: relative;
     width: 24px;
     height: 2px;
@@ -338,6 +339,7 @@ button {
 .hamburger::after {
     content: '';
     position: absolute;
+    left: 0;
     width: 24px;
     height: 2px;
     background: var(--color-dark);
