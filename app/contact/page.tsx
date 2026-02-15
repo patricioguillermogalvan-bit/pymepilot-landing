@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Script from 'next/script'
 
 export const metadata: Metadata = {
   title: 'Contacto - PymePilot CRM WhatsApp',
@@ -80,21 +81,32 @@ export default function ContactPage() {
               </div>
               <span className="logo__text">PymePilot</span>
             </a>
-            <div className="nav__menu" style={{ position: 'static', maxWidth: 'none', width: 'auto', height: 'auto', padding: 0, boxShadow: 'none', display: 'flex', alignItems: 'center', gap: '1rem' }}>
-              <ul className="nav__list" style={{ flexDirection: 'row', gap: '0.25rem', marginBottom: 0 }}>
+
+            <button className="nav__toggle" id="nav-toggle" aria-label="Abrir menú">
+              <span className="hamburger"></span>
+            </button>
+
+            <div className="nav__menu" id="nav-menu">
+              <ul className="nav__list">
                 <li className="nav__item"><a href="/#solucion" className="nav__link">Solución</a></li>
-                <li className="nav__item"><a href="/#caso-iey" className="nav__link">Caso IEY</a></li>
+                <li className="nav__item">
+                  <a href="/#caso-iey" className="nav__link nav__link--featured">
+                    <span>Caso IEY</span>
+                    <svg className="verified-badge" width="18" height="18" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20.396 11c.002-.686-.164-1.363-.487-1.975a3.724 3.724 0 0 0-1.32-1.466c.009-.207.009-.414 0-.621a4.578 4.578 0 0 0-.654-2.357A4.505 4.505 0 0 0 16 2.648a4.166 4.166 0 0 0-2.398-.654c-.206-.009-.413-.009-.62 0A3.724 3.724 0 0 0 11 .604a3.724 3.724 0 0 0-1.975.487 3.724 3.724 0 0 0-1.466 1.32c-.207-.009-.414-.009-.621 0a4.578 4.578 0 0 0-2.357.654 4.505 4.505 0 0 0-1.933 1.935 4.578 4.578 0 0 0-.654 2.357c-.009.207-.009.414 0 .621A3.724 3.724 0 0 0 .604 11c-.002.686.164 1.363.487 1.975.323.612.782 1.134 1.32 1.466-.009.207-.009.414 0 .621a4.578 4.578 0 0 0 .654 2.357 4.505 4.505 0 0 0 1.933 1.935c.741.422 1.573.65 2.42.654.206.009.413.009.62 0a3.724 3.724 0 0 0 1.975.487 3.724 3.724 0 0 0 1.975-.487c.612-.323 1.134-.782 1.466-1.32.207.009.414.009.621 0a4.578 4.578 0 0 0 2.357-.654 4.505 4.505 0 0 0 1.933-1.935 4.578 4.578 0 0 0 .654-2.357c.009-.207.009-.414 0-.621a3.724 3.724 0 0 0 1.32-1.466c.323-.612.49-1.29.487-1.975z" fill="#1DA1F2"/><path d="M9.662 14.85l-3.429-3.428 1.293-1.294 2.136 2.136 4.559-4.559L15.514 9l-5.852 5.85z" fill="#fff"/></svg>
+                  </a>
+                </li>
                 <li className="nav__item"><a href="/#proceso" className="nav__link">Cómo Funciona</a></li>
                 <li className="nav__item"><a href="/#pricing" className="nav__link">Precio</a></li>
                 <li className="nav__item"><a href="/#faq" className="nav__link">FAQ</a></li>
               </ul>
-              <div className="nav__actions" style={{ flexDirection: 'row' }}>
+              <div className="nav__actions">
                 <a href="https://wa.me/5491157064734?text=Hola%2C%20quiero%20agendar%20una%20reuni%C3%B3n%20para%20conocer%20PYMEPILOT." className="btn btn--primary" target="_blank" rel="noopener">Agendá una reunión</a>
               </div>
             </div>
           </nav>
         </div>
       </header>
+      <Script src="/script.js" strategy="afterInteractive" />
 
       <div className="contact-page">
         {/* Hero */}
