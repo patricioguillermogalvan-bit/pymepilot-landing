@@ -4133,6 +4133,72 @@ button {
     }
 }
 
+/* Mobile fix - Issue #14: Large CTA buttons overflow on small screens */
+@media (max-width: 767px) {
+    .btn--large {
+        padding: var(--space-4) var(--space-5);
+        font-size: var(--text-base);
+        white-space: normal;
+        text-align: center;
+        word-break: break-word;
+    }
+
+    /* Pricing hero CTA - uppercase long text */
+    .pricing-hero__cta .btn--large {
+        font-size: var(--text-sm);
+        padding: var(--space-4);
+        max-width: 100%;
+    }
+
+    /* Ghost button with long text (Calculadora) */
+    .pricing-hero__cta-secondary .btn--large {
+        font-size: var(--text-sm);
+        padding: var(--space-3) var(--space-4);
+    }
+
+    /* CTA final - inline style override */
+    .cta-section .btn--large {
+        padding: var(--space-4) var(--space-5) !important;
+        font-size: var(--text-base) !important;
+        max-width: 100%;
+    }
+}
+
+/* Mobile fix - Issue #15: Inline styled containers with fixed max-width */
+@media (max-width: 767px) {
+    /* Comparison section copy below table */
+    .comparison [style*="max-width"] {
+        max-width: 100% !important;
+        padding-left: var(--space-4) !important;
+        padding-right: var(--space-4) !important;
+    }
+
+    /* CTA section benefits list */
+    .cta-section__benefits {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+}
+
+/* Mobile fix - Issue #16: Process step content truncation */
+@media (max-width: 767px) {
+    .step {
+        gap: var(--space-3);
+    }
+
+    .step__title {
+        font-size: var(--text-lg);
+    }
+
+    .step__time {
+        font-size: var(--text-xs);
+    }
+
+    .products__note {
+        padding: var(--space-4);
+    }
+}
+
 /* ========================================
    COOKIE CONSENT BANNER
    ======================================== */
