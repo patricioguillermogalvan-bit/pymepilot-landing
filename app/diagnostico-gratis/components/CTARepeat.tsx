@@ -10,7 +10,7 @@ export default function CTARepeat() {
   return (
     <section
       style={{
-        padding: '48px 20px',
+        padding: '28px 20px',
         textAlign: 'center',
         background: 'linear-gradient(180deg, #1a2a2c 0%, #293E40 100%)',
         borderTop: '1px solid rgba(129,181,161,0.15)',

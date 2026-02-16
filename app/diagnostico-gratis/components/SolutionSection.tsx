@@ -194,7 +194,7 @@ export default function SolutionSection() {
                   <p style={{ fontSize: 'clamp(12px, 1.8vw, 14px)', color: '#a3cabb', margin: '2px 0 0', fontWeight: 700 }}>
                     {s.metricUnit}
                   </p>
-                  <p style={{ fontSize: 13, color: 'rgba(255,255,255,0.7)', margin: 0, lineHeight: 1.4 }}>
+                  <p style={{ fontSize: 13, color: 'rgba(255,255,255,0.7)', margin: 0, marginTop: 6, lineHeight: 1.4 }}>
                     {s.metricDesc}
                   </p>
                 </div>

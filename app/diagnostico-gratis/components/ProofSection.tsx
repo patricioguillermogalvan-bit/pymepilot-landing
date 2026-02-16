@@ -5,7 +5,7 @@ import { TrendingDown, DollarSign, Users, TrendingUp, ArrowRight, ArrowUp, Check
 const stats = [
   {
     value: '-56%',
-    label: 'Clientes perdidos mensual',
+    label: 'Clientes perdidos mensuales',
     icon: TrendingDown,
   },
   {
@@ -118,7 +118,7 @@ export default function ProofSection() {
             </div>
           </div>
 
-          <p style={{ fontSize: 20, fontWeight: 700, color: '#FFFFFF', marginBottom: 16 }}>
+          <p style={{ fontSize: 'clamp(16px, 3.5vw, 20px)', fontWeight: 700, color: '#FFFFFF', marginBottom: 16, whiteSpace: 'nowrap' }}>
             Facturación recurrente en 6 meses
           </p>
 

@@ -67,7 +67,7 @@ export default function ProblemSection() {
     <section
       style={{
         position: 'relative',
-        padding: '80px 20px',
+        padding: '36px 20px 80px',
         background: 'linear-gradient(180deg, #293E40 0%, #344B4E 50%, #293E40 100%)',
         overflow: 'hidden',
       }}
@@ -212,7 +212,7 @@ export default function ProblemSection() {
                   <p style={{ fontSize: 'clamp(12px, 1.8vw, 14px)', color: p.impactLabelColor, margin: '2px 0 0', fontWeight: 700 }}>
                     {p.impactUnit}
                   </p>
-                  <p style={{ fontSize: 13, color: p.impactDescColor, margin: 0, lineHeight: 1.4 }}>
+                  <p style={{ fontSize: 13, color: p.impactDescColor, margin: 0, marginTop: 6, lineHeight: 1.4 }}>
                     {p.impactDesc}
                   </p>
                 </div>

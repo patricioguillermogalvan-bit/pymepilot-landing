@@ -42,26 +42,32 @@ export default function HeroSection() {
         }}
       />
 
-      <div style={{ maxWidth: 840, margin: '0 auto', position: 'relative', zIndex: 1, textAlign: 'center' }}>
+      <div style={{ maxWidth: 840, margin: '0 auto', position: 'relative', zIndex: 1, textAlign: 'left' }}>
         {/* Trust badge */}
         <div className="anim-fade-in-up" style={{ marginBottom: 36 }}>
           <span
-            className="glass-green"
+            className="glass-green badge-shimmer"
             style={{
               display: 'inline-flex',
               alignItems: 'center',
-              gap: 10,
+              gap: 12,
               borderRadius: 100,
-              padding: '10px 24px',
-              fontSize: 15,
+              padding: '8px 20px 8px 10px',
+              fontSize: 'clamp(12px, 3vw, 15px)',
               fontWeight: 700,
               color: '#FFFFFF',
               border: '2px solid #5a9a84',
               boxShadow: '0 4px 20px rgba(129,181,161,0.25)',
             }}
           >
-            <CheckCircle size={18} strokeWidth={2.5} style={{ color: '#81B5A1' }} />
-            Caso IEY&reg;: de 34% a 74% recurrente en 6 meses
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/assets/icons/IEY - PNG BLANCO CON ESPACIO-13 (1).png"
+              alt="IEY"
+              style={{ height: 28, width: 'auto', objectFit: 'contain' }}
+            />
+            <span style={{ width: 1, height: 20, background: 'rgba(129,181,161,0.4)', flexShrink: 0 }} />
+            Probado en distribuidora #1 de Accesorios MagSafe en Argentina
           </span>
         </div>
 
@@ -69,7 +75,7 @@ export default function HeroSection() {
         <h1
           className="anim-fade-in-up anim-delay-1"
           style={{
-            fontSize: 'clamp(36px, 7vw, 68px)',
+            fontSize: 'clamp(34px, 6vw, 60px)',
             fontWeight: 900,
             lineHeight: 1.06,
             letterSpacing: '-0.03em',
@@ -97,7 +103,7 @@ export default function HeroSection() {
             lineHeight: 1.7,
             color: 'rgba(255,255,255,0.85)',
             maxWidth: 700,
-            margin: '0 auto 14px',
+            margin: '0 0 14px',
           }}
         >
 
@@ -111,7 +117,7 @@ export default function HeroSection() {
             lineHeight: 1.7,
             color: 'rgba(255,255,255,0.6)',
             maxWidth: 640,
-            margin: '0 auto 48px',
+            margin: '0 0 48px',
           }}
         >
           Tu equipo recibe un informe diario por WhatsApp:
@@ -119,7 +125,7 @@ export default function HeroSection() {
         </p>
 
         {/* CTA primary - WHITE TEXT + WhatsApp logo */}
-        <div className="anim-fade-in-up anim-delay-4" style={{ marginBottom: 56 }}>
+        <div className="anim-fade-in-up anim-delay-4" style={{ marginBottom: 32 }}>
           <a
             href={WA_LINK}
             target="_blank"
