@@ -718,6 +718,80 @@ export default function CasoIEYPage() {
             )}
           </div>
 
+          {/* PDF content preview */}
+          <div
+            style={{
+              background: 'linear-gradient(135deg, rgba(90,154,132,0.08) 0%, rgba(129,181,161,0.04) 100%)',
+              border: '1px solid rgba(129,181,161,0.2)',
+              borderRadius: 16,
+              padding: '24px 20px',
+              marginBottom: 8,
+            }}
+          >
+            <p
+              style={{
+                fontSize: 15,
+                fontWeight: 800,
+                color: '#FFFFFF',
+                marginBottom: 16,
+                lineHeight: 1.4,
+              }}
+            >
+              Descarg&aacute; la gu&iacute;a completa en PDF con todo lo que necesit&aacute;s para implementarlo
+            </p>
+
+            <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
+              {[
+                'El patr\u00f3n de 5 etapas por el que tus clientes desaparecen en silencio',
+                'F\u00f3rmula de 4 pasos para calcular ciclos de reposici\u00f3n (implementable en Excel)',
+                'Sistema de alertas Amarillo / Naranja / Rojo para priorizar contactos',
+                'Plantillas de mensajes WhatsApp con 71% de tasa de respuesta',
+                'Diagn\u00f3stico de 10 se\u00f1ales para auditar tu distribuidora',
+                'Plan de implementaci\u00f3n de 30 d\u00edas paso a paso',
+              ].map((item, i) => (
+                <div
+                  key={i}
+                  style={{
+                    display: 'flex',
+                    alignItems: 'flex-start',
+                    gap: 10,
+                  }}
+                >
+                  <CheckCircle
+                    size={16}
+                    style={{
+                      color: '#81B5A1',
+                      flexShrink: 0,
+                      marginTop: 2,
+                    }}
+                  />
+                  <span
+                    style={{
+                      fontSize: 13,
+                      color: 'rgba(255,255,255,0.75)',
+                      lineHeight: 1.5,
+                    }}
+                  >
+                    {item}
+                  </span>
+                </div>
+              ))}
+            </div>
+
+            <p
+              style={{
+                fontSize: 12,
+                color: 'rgba(255,255,255,0.4)',
+                marginTop: 14,
+                marginBottom: 0,
+                lineHeight: 1.5,
+              }}
+            >
+              8 p&aacute;ginas con frameworks, datos reales de IEY&reg; y herramientas que pod&eacute;s usar hoy
+              mismo &mdash; con o sin PymePilot.
+            </p>
+          </div>
+
           {/* 2 CTAs */}
           <div
             className="grid-responsive"
