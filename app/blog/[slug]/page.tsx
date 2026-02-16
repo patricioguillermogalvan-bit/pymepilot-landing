@@ -109,7 +109,7 @@ export default async function BlogPostPage({
         .post-hero__meta-dot { color: #6B7C7F; }
 
         .post-layout { max-width: 1100px; margin: 0 auto; padding: 0 1.5rem 80px; display: grid; grid-template-columns: 1fr 220px; gap: 64px; align-items: start; }
-        .post-article { max-width: 720px; }
+        .post-article { max-width: 720px; width: 100%; min-width: 0; overflow-wrap: break-word; word-break: break-word; }
         .post-sidebar { position: relative; }
 
         .related-posts { max-width: 1100px; margin: 0 auto; padding: 0 1.5rem 80px; }
@@ -130,13 +130,19 @@ export default async function BlogPostPage({
 
         @media (max-width: 1024px) {
           .post-layout { grid-template-columns: 1fr; gap: 0; }
+          .post-article { max-width: 100%; }
           .post-sidebar { order: -1; margin-bottom: 32px; }
           .related-posts__grid { grid-template-columns: repeat(2, 1fr); }
         }
         @media (max-width: 768px) {
-          .post-hero { padding-top: 100px; }
+          .post-hero { padding: 100px 16px 32px; }
           .post-hero h1 { font-size: 1.75rem; }
+          .post-layout { padding: 0 16px 60px; }
+          .related-posts { padding: 0 16px 60px; }
           .related-posts__grid { grid-template-columns: 1fr; }
+          .blog-card__body { padding: 16px; }
+          .blog-card__tags { min-height: auto; }
+          .blog-card__title { min-height: auto; max-height: none; }
         }
       `}</style>
 

@@ -56,8 +56,12 @@ export default function BlogPage() {
         @media (max-width: 1024px) { .blog-grid { grid-template-columns: repeat(2, 1fr); } }
         @media (max-width: 768px) {
           .blog-hero h1 { font-size: 2rem; }
-          .blog-hero { padding-top: 100px; }
+          .blog-hero { padding: 100px 16px 48px; }
+          .blog-grid-section { padding: 0 16px 60px; }
           .blog-grid { grid-template-columns: 1fr; }
+          .blog-card__body { padding: 16px; }
+          .blog-card__tags { min-height: auto; }
+          .blog-card__title { min-height: auto; max-height: none; }
         }
       `}</style>
 

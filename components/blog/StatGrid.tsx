@@ -85,52 +85,23 @@ export function ComparisonRow({
   positive?: boolean
 }) {
   return (
-    <div
-      style={{
-        display: 'grid',
-        gridTemplateColumns: '1fr auto auto auto',
-        gap: '16px',
-        alignItems: 'center',
-        padding: '16px 20px',
-        borderBottom: '1px solid rgba(255,255,255,0.06)',
-      }}
-    >
-      <div style={{ fontSize: '0.95rem', color: '#D1DADC', lineHeight: 1.4 }}>
+    <div className="comparison-row">
+      <div className="comparison-row__label">
         {label}
       </div>
-      <div
-        style={{
-          fontSize: '0.95rem',
-          color: '#6B7C7F',
-          textAlign: 'right' as const,
-          minWidth: '80px',
-        }}
-      >
+      <div className="comparison-row__before">
         {before}
       </div>
-      <div
-        style={{
-          fontSize: '0.95rem',
-          fontWeight: 600,
-          color: '#FFFFFF',
-          textAlign: 'right' as const,
-          minWidth: '80px',
-        }}
-      >
+      <div className="comparison-row__after">
         {after}
       </div>
       <div
+        className="comparison-row__change"
         style={{
-          fontSize: '0.85rem',
-          fontWeight: 700,
           color: positive ? '#81B5A1' : '#E17055',
-          textAlign: 'right' as const,
-          minWidth: '70px',
           background: positive
             ? 'rgba(129,181,161,0.1)'
             : 'rgba(225,112,85,0.1)',
-          padding: '4px 10px',
-          borderRadius: '6px',
         }}
       >
         {change}
@@ -149,10 +120,18 @@ export function ComparisonTable({ children }: { children: ReactNode }) {
         .comparison-table__header span:not(:first-child) { text-align: right; min-width: 70px; }
         .comparison-table__header span:nth-child(3) { min-width: 80px; }
         .comparison-table__header span:nth-child(2) { min-width: 80px; }
+        .comparison-row { display: grid; grid-template-columns: 1fr auto auto auto; gap: 16px; align-items: center; padding: 16px 20px; border-bottom: 1px solid rgba(255,255,255,0.06); }
+        .comparison-row__label { font-size: 0.95rem; color: #D1DADC; line-height: 1.4; }
+        .comparison-row__before { font-size: 0.95rem; color: #6B7C7F; text-align: right; min-width: 80px; }
+        .comparison-row__after { font-size: 0.95rem; font-weight: 600; color: #FFFFFF; text-align: right; min-width: 80px; }
+        .comparison-row__change { font-size: 0.85rem; font-weight: 700; text-align: right; min-width: 70px; padding: 4px 10px; border-radius: 6px; }
         @media (max-width: 640px) {
-          .comparison-table__header, .comparison-table > div:not(.comparison-table__header) > div { grid-template-columns: 1fr !important; gap: 4px !important; text-align: left !important; }
           .comparison-table__header { display: none; }
-          .comparison-table > div:not(.comparison-table__header) > div { padding: 16px 20px !important; display: flex; flex-wrap: wrap; gap: 8px !important; }
+          .comparison-row { display: flex; flex-wrap: wrap; gap: 8px; padding: 16px; }
+          .comparison-row__label { width: 100%; font-weight: 600; }
+          .comparison-row__before, .comparison-row__after, .comparison-row__change { text-align: left; min-width: auto; font-size: 0.85rem; }
+          .comparison-row__before::before { content: 'Antes: '; color: #6B7C7F; font-size: 0.75rem; }
+          .comparison-row__after::before { content: 'Después: '; color: #6B7C7F; font-size: 0.75rem; }
         }
       `}</style>
       <div className="comparison-table">
