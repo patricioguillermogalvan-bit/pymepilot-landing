@@ -40,15 +40,13 @@ export default function CTARepeat() {
           textDecoration: 'none',
           border: '2px solid #81B5A1',
           boxShadow: '0 8px 32px rgba(129,181,161,0.4)',
-          letterSpacing: '0.025em',
-          textTransform: 'uppercase' as const,
           textShadow: '0 2px 6px rgba(0,0,0,0.25)',
         }}
       >
         <span className="anim-bounce-sub" style={{ display: 'flex' }}>
           <WhatsAppIcon size={20} />
         </span>
-        VER C&Oacute;MO FUNCIONA &mdash; REUNI&Oacute;N 15 MIN
+        Agendar reunión gratis
         <ArrowRight size={18} strokeWidth={3} />
       </a>
       <p style={{ marginTop: 16, fontSize: 14, color: 'rgba(255,255,255,0.45)', fontWeight: 500 }}>

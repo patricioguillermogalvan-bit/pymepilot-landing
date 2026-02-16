@@ -125,8 +125,6 @@ export default function CalculadoraPerdidaPage() {
     fontWeight: 600,
     color: 'rgba(255,255,255,0.4)',
     marginBottom: 4,
-    textTransform: 'uppercase',
-    letterSpacing: '0.05em',
   }
 
   const handleFocus = (e: React.FocusEvent<HTMLInputElement>) => {
@@ -219,9 +217,9 @@ export default function CalculadoraPerdidaPage() {
               marginBottom: 16,
             }}
           >
-            Cuánto Estás Perdiendo en{' '}
+            Cuánto estás perdiendo en{' '}
             <span style={{ color: '#81B5A1', textShadow: '0 0 30px rgba(129,181,161,0.4)' }}>
-              Clientes Inactivos
+              clientes inactivos
             </span>
           </h1>
           <p
@@ -389,13 +387,11 @@ export default function CalculadoraPerdidaPage() {
                   border: '2px solid #6da88e',
                   boxShadow: '0 8px 32px rgba(129,181,161,0.4)',
                   cursor: 'pointer',
-                  letterSpacing: '0.02em',
-                  textTransform: 'uppercase' as const,
                   textShadow: '0 1px 4px rgba(0,0,0,0.2)',
                   fontFamily: 'inherit',
                 }}
               >
-                CALCULAR MI PÉRDIDA
+                Calcular mi p&eacute;rdida
                 <ArrowRight size={20} strokeWidth={3} />
               </button>
             </div>
@@ -434,11 +430,9 @@ export default function CalculadoraPerdidaPage() {
                     color: '#FF8A80',
                     fontWeight: 700,
                     margin: 0,
-                    textTransform: 'uppercase',
-                    letterSpacing: '0.05em',
                   }}
                 >
-                  Pérdida Estimada
+                  Pérdida estimada
                 </p>
               </div>
               <div
@@ -452,7 +446,7 @@ export default function CalculadoraPerdidaPage() {
                 {formatARS(results.perdidaMensual)}
               </div>
               <div style={{ fontSize: 20, color: '#FF8A80', fontWeight: 700, marginTop: 4 }}>
-                /mes
+                mensual
               </div>
             </div>
 
@@ -464,7 +458,7 @@ export default function CalculadoraPerdidaPage() {
               <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 16 }}>
                 <AnalyticsIcon />
                 <h3 style={{ fontSize: 16, fontWeight: 800, color: '#FFFFFF', margin: 0 }}>
-                  Desglose Detallado
+                  Desglose detallado
                 </h3>
               </div>
               <ul
@@ -563,11 +557,9 @@ export default function CalculadoraPerdidaPage() {
                       color: '#FFB74D',
                       fontWeight: 700,
                       margin: '0 0 8px',
-                      textTransform: 'uppercase',
-                      letterSpacing: '0.03em',
                     }}
                   >
-                    Dato Clave
+                    Dato clave
                   </p>
                   <p style={{ fontSize: 14, color: 'rgba(255,255,255,0.75)', margin: 0, lineHeight: 1.6 }}>
                     En IEY®, el{' '}
@@ -605,13 +597,11 @@ export default function CalculadoraPerdidaPage() {
                   textDecoration: 'none',
                   border: '3px solid #6da88e',
                   boxShadow: '0 8px 40px rgba(129,181,161,0.5)',
-                  letterSpacing: '0.025em',
-                  textTransform: 'uppercase' as const,
                   textShadow: '0 2px 8px rgba(0,0,0,0.3)',
                 }}
               >
                 <WhatsAppIcon size={22} />
-                QUIERO RECUPERAR ESOS CLIENTES
+                Quiero recuperar esos clientes
                 <ArrowRight size={20} strokeWidth={3} />
               </a>
               <p style={{ marginTop: 14, fontSize: 13, color: 'rgba(255,255,255,0.4)' }}>

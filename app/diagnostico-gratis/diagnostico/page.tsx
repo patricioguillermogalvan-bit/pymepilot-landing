@@ -245,8 +245,6 @@ export default function DiagnosticoPage() {
                 padding: '6px 16px',
                 borderRadius: 100,
                 marginBottom: 24,
-                letterSpacing: '0.05em',
-                textTransform: 'uppercase' as const,
               }}
             >
               Pregunta {currentStep + 1}
@@ -369,8 +367,6 @@ export default function DiagnosticoPage() {
                 padding: '6px 16px',
                 borderRadius: 100,
                 marginBottom: 16,
-                letterSpacing: '0.05em',
-                textTransform: 'uppercase' as const,
               }}
             >
               Tu resultado
@@ -468,13 +464,11 @@ export default function DiagnosticoPage() {
                 textDecoration: 'none',
                 border: '3px solid #6da88e',
                 boxShadow: '0 8px 40px rgba(129,181,161,0.5)',
-                letterSpacing: '0.025em',
-                textTransform: 'uppercase' as const,
                 textShadow: '0 2px 8px rgba(0,0,0,0.3)',
               }}
             >
               <WhatsAppIcon size={22} />
-              AGENDAR DIAGNÓSTICO GRATIS
+              Agendar diagnóstico gratis
               <ArrowRight size={20} strokeWidth={3} />
             </a>
 

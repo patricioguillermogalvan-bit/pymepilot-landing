@@ -61,7 +61,7 @@ export default function HeroSection() {
             }}
           >
             <CheckCircle size={18} strokeWidth={2.5} style={{ color: '#81B5A1' }} />
-            Caso IEY&reg;: De 34% a 74% facturaci&oacute;n recurrente en 6 meses
+            Caso IEY&reg;: de 34% a 74% recurrente en 6 meses
           </span>
         </div>
 
@@ -77,8 +77,8 @@ export default function HeroSection() {
             color: '#FFFFFF',
           }}
         >
-          Tu distribuidora pierde clientes cada semana
-          <br />
+          Tu distribuidora pierde clientes cada semana{' '}
+          <br className="br-hide-mobile" />
           <span
             style={{
               color: '#81B5A1',
@@ -101,8 +101,8 @@ export default function HeroSection() {
           }}
         >
 
-          <strong style={{ color: '#FFFFFF' }}>PymePilot</strong> es el motor inteligente que detecta qu&eacute; clientes se est&aacute;n yendo,
-          cu&aacute;ndo necesitan reponer, y qu&eacute; ofrecerles para que vuelvan a comprar.
+          <strong style={{ color: '#FFFFFF' }}>PymePilot</strong> detecta qu&eacute; clientes se est&aacute;n yendo,
+          cu&aacute;ndo necesitan reponer y qu&eacute; ofrecerles para que vuelvan.
         </p>
         <p
           className="anim-fade-in-up anim-delay-3"
@@ -114,8 +114,8 @@ export default function HeroSection() {
             margin: '0 auto 48px',
           }}
         >
-          Nuestro sistema analiza tu base cada d&iacute;a y tu equipo recibe el informe
-          por WhatsApp con TODO listo: qui&eacute;n contactar HOY, qu&eacute; ofrecerle, y el mensaje sugerido.
+          Tu equipo recibe un informe diario por WhatsApp:
+          qui&eacute;n contactar, qu&eacute; ofrecerle y el mensaje listo.
         </p>
 
         {/* CTA primary - WHITE TEXT + WhatsApp logo */}
@@ -143,15 +143,13 @@ export default function HeroSection() {
               textDecoration: 'none',
               border: '3px solid #6da88e',
               boxShadow: '0 8px 40px rgba(129,181,161,0.5)',
-              letterSpacing: '0.025em',
-              textTransform: 'uppercase' as const,
               textShadow: '0 2px 8px rgba(0,0,0,0.3)',
             }}
           >
             <span className="anim-bounce-sub" style={{ display: 'flex' }}>
               <WhatsAppIcon size={26} />
             </span>
-            AGENDAR DIAGN&Oacute;STICO GRATIS &mdash; 15 MIN
+            Agendar diagnóstico gratis
             <ArrowRight size={22} strokeWidth={3} />
           </a>
         </div>

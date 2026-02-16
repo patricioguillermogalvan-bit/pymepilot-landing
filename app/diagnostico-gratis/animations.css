@@ -442,18 +442,40 @@ html, body {
   .grid-responsive {
     grid-template-columns: 1fr !important;
   }
+
+  /* CTAs: compact single-line on mobile */
   .cta-full-mobile {
     width: 100% !important;
     box-sizing: border-box;
     justify-content: center;
+    font-size: 14px !important;
+    padding: 15px 16px !important;
+    gap: 8px !important;
+    white-space: nowrap;
   }
+  .cta-full-mobile svg {
+    width: 18px !important;
+    height: 18px !important;
+    flex-shrink: 0;
+  }
+
+  /* Hide forced <br> on mobile for fluid titles */
+  .br-hide-mobile {
+    display: none;
+  }
+
+  /* Left-align blocks on mobile */
+  .left-on-mobile {
+    text-align: left !important;
+  }
+
   .founder-card-responsive {
     flex-direction: column !important;
     text-align: center !important;
   }
   .incentives-responsive {
     flex-direction: column !important;
-    align-items: center !important;
+    align-items: flex-start !important;
     gap: 12px !important;
   }
   .metric-responsive {

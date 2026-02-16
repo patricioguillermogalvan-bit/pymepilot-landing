@@ -97,12 +97,11 @@ export default function LeadMagnetTrigger() {
               fontWeight: 800,
               padding: '4px 10px',
               borderRadius: 8,
-              letterSpacing: '0.05em',
               boxShadow: '0 2px 12px rgba(129,181,161,0.4)',
               zIndex: 2,
             }}
           >
-            GRATIS
+            Gratis
           </span>
 
           {/* Minimize button */}
@@ -150,12 +149,11 @@ export default function LeadMagnetTrigger() {
                   fontSize: 16,
                   fontWeight: 800,
                   color: '#FFFFFF',
-                  letterSpacing: '0.02em',
                   lineHeight: 1.2,
                   marginBottom: 3,
                 }}
               >
-                RECURSOS GRATUITOS
+                Recursos gratuitos
               </div>
               <div
                 style={{
@@ -181,13 +179,12 @@ export default function LeadMagnetTrigger() {
               padding: '10px 20px',
               borderRadius: 8,
               textAlign: 'center',
-              letterSpacing: '0.02em',
               transition: 'opacity 0.2s, transform 0.2s',
               border: '1.5px solid #6da88e',
               textShadow: '0 1px 4px rgba(0,0,0,0.2)',
             }}
           >
-            VER RECURSOS →
+            Ver recursos &rarr;
           </div>
         </div>
       )}

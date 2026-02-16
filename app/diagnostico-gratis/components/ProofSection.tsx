@@ -5,7 +5,7 @@ import { TrendingDown, DollarSign, Users, TrendingUp, ArrowRight, ArrowUp, Check
 const stats = [
   {
     value: '-56%',
-    label: 'Clientes perdidos/mes',
+    label: 'Clientes perdidos mensual',
     icon: TrendingDown,
   },
   {
@@ -76,7 +76,7 @@ export default function ProofSection() {
               >
                 34%
               </div>
-              <div style={{ fontSize: 13, color: 'rgba(255,255,255,0.6)', marginTop: 4, fontWeight: 600, textTransform: 'uppercase' as const, letterSpacing: 2 }}>
+              <div style={{ fontSize: 13, color: 'rgba(255,255,255,0.6)', marginTop: 4, fontWeight: 600 }}>
                 Antes
               </div>
             </div>
@@ -112,14 +112,14 @@ export default function ProofSection() {
               >
                 74%
               </div>
-              <div style={{ fontSize: 13, color: 'rgba(255,255,255,0.6)', marginTop: 4, fontWeight: 600, textTransform: 'uppercase' as const, letterSpacing: 2 }}>
-                Despu&eacute;s
+              <div style={{ fontSize: 13, color: 'rgba(255,255,255,0.6)', marginTop: 4, fontWeight: 600 }}>
+                Después
               </div>
             </div>
           </div>
 
           <p style={{ fontSize: 20, fontWeight: 700, color: '#FFFFFF', marginBottom: 16 }}>
-            Facturaci&oacute;n Recurrente en 6 meses
+            Facturación recurrente en 6 meses
           </p>
 
           {/* Badge */}
@@ -218,7 +218,6 @@ export default function ProofSection() {
               color: 'rgba(255,255,255,0.5)',
               marginBottom: 20,
               fontWeight: 600,
-              letterSpacing: '0.02em',
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center',
@@ -278,14 +277,12 @@ export default function ProofSection() {
                   fontSize: 13,
                   padding: '8px 20px',
                   borderRadius: 100,
-                  letterSpacing: '0.08em',
-                  textTransform: 'uppercase' as const,
                   boxShadow: '0 4px 20px rgba(129,181,161,0.5)',
                   whiteSpace: 'nowrap',
                 }}
               >
                 <CheckCircle size={16} strokeWidth={3} />
-                CASO VALIDADO
+                Caso validado
               </span>
             </div>
 
@@ -329,10 +326,10 @@ export default function ProofSection() {
                 {/* Textos */}
                 <div style={{ textAlign: 'left' }}>
                   <div style={{ fontSize: 20, fontWeight: 900, color: '#FFFFFF', lineHeight: 1.3 }}>
-                    Sistema Operativo en IEY&reg;
+                    Sistema operativo en IEY&reg;
                   </div>
                   <div style={{ fontSize: 14, color: '#a3cabb', fontWeight: 600, marginTop: 4 }}>
-                    Distribuidor #1 Accesorios MagSafe Argentina
+                    Distribuidor #1 accesorios MagSafe Argentina
                   </div>
                 </div>
               </div>
@@ -380,7 +377,7 @@ export default function ProofSection() {
                   >
                     <CheckCircle size={18} color="#81B5A1" strokeWidth={2.5} />
                   </div>
-                  <div style={{ fontSize: 14, fontWeight: 800, color: '#FFFFFF' }}>M&eacute;tricas Reales</div>
+                  <div style={{ fontSize: 14, fontWeight: 800, color: '#FFFFFF' }}>Métricas reales</div>
                   <div style={{ fontSize: 12, color: 'rgba(255,255,255,0.5)', marginTop: 2 }}>No proyecciones</div>
                 </div>
 
@@ -407,7 +404,7 @@ export default function ProofSection() {
                   >
                     <CheckCircle size={18} color="#81B5A1" strokeWidth={2.5} />
                   </div>
-                  <div style={{ fontSize: 14, fontWeight: 800, color: '#FFFFFF' }}>6 Meses Operativo</div>
+                  <div style={{ fontSize: 14, fontWeight: 800, color: '#FFFFFF' }}>6 meses operativo</div>
                   <div style={{ fontSize: 12, color: 'rgba(255,255,255,0.5)', marginTop: 2 }}>Jul-Dic 2025</div>
                 </div>
 
@@ -434,7 +431,7 @@ export default function ProofSection() {
                   >
                     <CheckCircle size={18} color="#81B5A1" strokeWidth={2.5} />
                   </div>
-                  <div style={{ fontSize: 14, fontWeight: 800, color: '#FFFFFF' }}>Datos Verificables</div>
+                  <div style={{ fontSize: 14, fontWeight: 800, color: '#FFFFFF' }}>Datos verificables</div>
                   <div style={{ fontSize: 12, color: 'rgba(255,255,255,0.5)', marginTop: 2 }}>Auditables</div>
                 </div>
               </div>
@@ -457,11 +454,11 @@ export default function ProofSection() {
                     fontStyle: 'italic',
                   }}
                 >
-                  &ldquo;Como due&ntilde;o, lo que m&aacute;s valoro es la{' '}
+                  &ldquo;Lo que m&aacute;s valoro es la{' '}
                   <span style={{ color: '#81B5A1', fontWeight: 800, fontStyle: 'normal' }}>previsibilidad</span>.
-                  Pasar de 34% a 74% de facturaci&oacute;n recurrente sobre la facturaci&oacute;n total del canal me dio un{' '}
-                  <span style={{ color: '#81B5A1', fontWeight: 800, fontStyle: 'normal' }}>flujo de caja estable y predecible</span>.
-                  Me permite proyectar mucho mejor a mediano y largo plazo.&rdquo;
+                  Pasar de 34% a 74% recurrente me dio un{' '}
+                  <span style={{ color: '#81B5A1', fontWeight: 800, fontStyle: 'normal' }}>flujo de caja estable</span>.
+                  Ahora puedo proyectar a mediano y largo plazo.&rdquo;
                 </p>
                 <span
                   style={{

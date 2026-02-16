@@ -90,16 +90,14 @@ export default function StickyHeader() {
               padding: '11px 24px',
               borderRadius: 12,
               textDecoration: 'none',
-              letterSpacing: '0.025em',
               whiteSpace: 'nowrap',
               border: '2px solid #6da88e',
               boxShadow: '0 4px 20px rgba(129,181,161,0.4)',
-              textTransform: 'uppercase' as const,
               textShadow: '0 1px 4px rgba(0,0,0,0.2)',
             }}
           >
             <WhatsAppIcon size={18} />
-            AGENDAR AHORA
+            Agendar ahora
             <ArrowRight size={16} strokeWidth={3} />
           </a>
         </div>

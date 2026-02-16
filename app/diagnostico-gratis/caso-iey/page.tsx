@@ -32,7 +32,7 @@ const TIMELINE = [
   {
     month: 'Agosto',
     tag: 'Mes 1',
-    title: 'Primera Recuperación',
+    title: 'Primera recuperación',
     description:
       'Contactaron a los 23 clientes que llevaban más de 45 días sin comprar. 15 volvieron a hacer pedido esa misma semana.',
     metric: '15 de 23 clientes recuperados',
@@ -43,7 +43,7 @@ const TIMELINE = [
   {
     month: 'Septiembre',
     tag: 'Mes 2',
-    title: 'Reposición Predictiva',
+    title: 'Reposición predictiva',
     description:
       'El sistema empezó a detectar patrones de compra. Antes de que un cliente se quedara sin stock, recibía un mensaje personalizado.',
     metric: 'Tasa de recompra +22%',
@@ -53,8 +53,8 @@ const TIMELINE = [
   },
   {
     month: 'Octubre',
-    tag: 'Mes 3 — PUNTO DE INFLEXIÓN',
-    title: 'Todo Cambió Este Mes',
+    tag: 'Mes 3 — Punto de inflexi\u00f3n',
+    title: 'Todo cambió este mes',
     description:
       'La facturación recurrente cruzó el 50% por primera vez. Los vendedores dejaron de perseguir clientes y empezaron a atender demanda.',
     metric: '58% facturación recurrente',
@@ -213,9 +213,9 @@ export default function CasoIEYPage() {
               marginBottom: 20,
             }}
           >
-            Teníamos el Mismo{' '}
+            Teníamos el mismo{' '}
             <span style={{ color: '#81B5A1', textShadow: '0 0 30px rgba(129,181,161,0.4)' }}>
-              Problema que Vos
+              problema que vos
             </span>
           </h1>
           <p
@@ -289,7 +289,7 @@ export default function CasoIEYPage() {
               marginBottom: 12,
             }}
           >
-            Julio: El Problema
+            Julio: el problema
           </h2>
           <p
             className="anim-fade-in-up anim-delay-1"
@@ -371,8 +371,8 @@ export default function CasoIEYPage() {
               marginBottom: 12,
             }}
           >
-            La Transformación{' '}
-            <span style={{ color: '#81B5A1' }}>Mes a Mes</span>
+            La transformación{' '}
+            <span style={{ color: '#81B5A1' }}>mes a mes</span>
           </h2>
           <p
             className="anim-fade-in-up anim-delay-1"
@@ -454,8 +454,6 @@ export default function CasoIEYPage() {
                         padding: '4px 12px',
                         borderRadius: 100,
                         marginBottom: 12,
-                        letterSpacing: '0.05em',
-                        textTransform: 'uppercase',
                       }}
                     >
                       {step.tag}
@@ -525,8 +523,8 @@ export default function CasoIEYPage() {
               marginBottom: 12,
             }}
           >
-            3 Lecciones que{' '}
-            <span style={{ color: '#81B5A1' }}>Cambiaron Todo</span>
+            3 lecciones que{' '}
+            <span style={{ color: '#81B5A1' }}>cambiaron todo</span>
           </h2>
           <p
             className="anim-fade-in-up anim-delay-1"
@@ -574,7 +572,7 @@ export default function CasoIEYPage() {
                       padding: '14px 16px',
                     }}
                   >
-                    <p style={{ fontSize: 11, fontWeight: 700, color: '#FF8A80', margin: '0 0 4px', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
+                    <p style={{ fontSize: 11, fontWeight: 700, color: '#FCA5A5', marginBottom: 6 }}>
                       Antes
                     </p>
                     <p style={{ fontSize: 13, color: 'rgba(255,255,255,0.6)', margin: 0, lineHeight: 1.5 }}>
@@ -589,7 +587,7 @@ export default function CasoIEYPage() {
                       padding: '14px 16px',
                     }}
                   >
-                    <p style={{ fontSize: 11, fontWeight: 700, color: '#81B5A1', margin: '0 0 4px', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
+                    <p style={{ fontSize: 11, fontWeight: 700, color: '#81B5A1', marginBottom: 6 }}>
                       Después
                     </p>
                     <p style={{ fontSize: 13, color: 'rgba(255,255,255,0.6)', margin: 0, lineHeight: 1.5 }}>
@@ -624,8 +622,8 @@ export default function CasoIEYPage() {
               marginBottom: 12,
             }}
           >
-            ¿Te Identificás con{' '}
-            <span style={{ color: '#81B5A1' }}>Esta Historia</span>?
+            ¿Te identificás con{' '}
+            <span style={{ color: '#81B5A1' }}>esta historia</span>?
           </h2>
           <p
             className="anim-fade-in-up anim-delay-1"
@@ -750,13 +748,11 @@ export default function CasoIEYPage() {
                 textDecoration: 'none',
                 border: '2px solid #6da88e',
                 boxShadow: '0 8px 32px rgba(129,181,161,0.4)',
-                textTransform: 'uppercase',
-                letterSpacing: '0.02em',
                 textShadow: '0 1px 4px rgba(0,0,0,0.2)',
               }}
             >
               <WhatsAppIcon size={20} />
-              Descargar Caso Completo
+              Descargar caso completo
             </a>
 
             {/* CTA 2: Diagnóstico */}
@@ -779,8 +775,6 @@ export default function CasoIEYPage() {
                 borderRadius: 14,
                 textDecoration: 'none',
                 border: '2px solid rgba(255,255,255,0.25)',
-                textTransform: 'uppercase',
-                letterSpacing: '0.02em',
                 transition: 'border-color 0.2s, background 0.2s',
               }}
               onMouseEnter={(e) => {
@@ -792,7 +786,7 @@ export default function CasoIEYPage() {
                 e.currentTarget.style.background = 'transparent'
               }}
             >
-              Quiero Mi Diagnóstico
+              Quiero mi diagnóstico
               <ArrowRight size={18} strokeWidth={2.5} />
             </a>
           </div>

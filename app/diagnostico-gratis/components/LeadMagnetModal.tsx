@@ -11,7 +11,7 @@ import TargetScanIcon from './TargetScanIcon'
 const LEAD_MAGNETS = [
   {
     icon: MoneyLeakIcon,
-    title: 'Cuánto Estás Perdiendo en Clientes Inactivos',
+    title: 'Cuánto estás perdiendo en clientes inactivos',
     description: (
       <>
         Distribuidores con 80-120 clientes pierden entre
@@ -23,13 +23,13 @@ const LEAD_MAGNETS = [
         </span>
       </>
     ),
-    buttonText: 'CALCULAR AHORA',
+    buttonText: 'Calcular ahora',
     href: '/diagnostico-gratis/calculadora-perdida',
     color: '#81B5A1',
   },
   {
     icon: ChartGrowthIcon,
-    title: 'Un Distribuidor Tenía Tu Mismo Problema',
+    title: 'Un distribuidor tenía tu mismo problema',
     description: (
       <>
         IEY® perdía clientes sin saber cuáles, ni cuándo, ni por qué. No tenían
@@ -44,13 +44,13 @@ const LEAD_MAGNETS = [
         </span>
       </>
     ),
-    buttonText: 'DESCARGAR CASO',
+    buttonText: 'Descargar caso',
     href: '/diagnostico-gratis/caso-iey',
     color: '#6da88e',
   },
   {
     icon: TargetScanIcon,
-    title: 'Test: ¿Por Dónde Empezar a Mejorar?',
+    title: 'Test: ¿por dónde empezar a mejorar?',
     description: (
       <>
         Clientes que se van, pedidos que no se repiten, oportunidades que no ves.
@@ -62,7 +62,7 @@ const LEAD_MAGNETS = [
         </span>
       </>
     ),
-    buttonText: 'HACER TEST',
+    buttonText: 'Hacer test',
     href: '/diagnostico-gratis/diagnostico',
     color: '#a3cabb',
   },
@@ -180,9 +180,9 @@ export default function LeadMagnetModal({
               padding: '0 16px',
             }}
           >
-            ¿Cuántos Clientes Perdiste Este Mes
+            ¿Cuántos clientes perdiste este mes
             <br />
-            <span style={{ color: '#81B5A1' }}>Sin Darte Cuenta?</span>
+            <span style={{ color: '#81B5A1' }}>sin darte cuenta?</span>
           </h2>
           <div style={{ textAlign: 'left', maxWidth: 420, margin: '0 auto' }}>
             <p
@@ -274,8 +274,6 @@ export default function LeadMagnetModal({
                       textDecoration: 'none',
                       border: '1.5px solid #6da88e',
                       boxShadow: '0 4px 16px rgba(129,181,161,0.3)',
-                      letterSpacing: '0.02em',
-                      textTransform: 'uppercase' as const,
                       textShadow: '0 1px 4px rgba(0,0,0,0.2)',
                       transition: 'transform 0.2s, box-shadow 0.2s',
                     }}

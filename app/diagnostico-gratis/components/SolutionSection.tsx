@@ -6,43 +6,41 @@ const solutions = [
   {
     icon: Search,
     title: 'Detecta clientes en riesgo',
-    text: 'Analiza tu base todos los días y alerta cuándo un cliente rompió su ciclo de compra. Tu equipo contacta ANTES de que sea tarde.',
+    text: 'Alerta cuando un cliente rompe su ciclo de compra. Tu equipo contacta antes de perderlo.',
     badge: 'Motor Inteligente',
-    metricLabel: 'Facturación Recuperada:',
+    metricLabel: 'Facturación recuperada:',
     metricIcon: DollarSign,
-    metricValue: '$24M - $60M',
-    clarifier: 'millones',
-    metricUnit: 'por cliente/año',
-    metricDesc: 'Cada cliente recuperado = Facturación anual completa que vuelve a tu distribuidora',
-    multiplier: 'Recuperando 5 clientes al año: $120M - $300M millones vuelven a tu facturación',
+    metricValue: '$24–$60 millones',
+    clarifier: '',
+    metricUnit: 'por cliente recuperado',
+    metricDesc: 'Cada cliente que vuelve = toda su facturación anual de vuelta',
+    multiplier: '×5 mensual → $120–$300M al año',
   },
   {
     icon: Target,
     title: 'Anticipa reposiciones',
-    text: 'Aprende cada cuánto repone cada cliente y avisa a tu equipo 5-7 días ANTES de que necesite. Llegás primero que la competencia.',
+    text: 'Avisa a tu equipo 5–7 días antes de que cada cliente necesite reponer. Llegás primero.',
     badge: 'Motor Inteligente',
-    metricLabel: 'Facturación Protegida:',
+    metricLabel: 'Facturación protegida:',
     metricIcon: Shield,
-    metricValue: '$600K',
-    clarifier: 'mil',
-    metricValue2: '$3M',
-    clarifier2: 'millones',
-    metricUnit: 'por reposición',
-    metricDesc: 'Contactás antes que la competencia = Asegurás cada pedido (clientes grandes: $1.5 a $3 millones+)',
-    multiplier: 'Anticipando 10 reposiciones/mes: $72M - $360M millones/año asegurados',
+    metricValue: '$600 mil – $3 millones',
+    clarifier: '',
+    metricUnit: 'por reposición asegurada',
+    metricDesc: 'Llegás antes que la competencia y asegurás cada pedido',
+    multiplier: '×10 mensual → $72–$360M al año',
   },
   {
     icon: DollarSign,
-    title: 'Aumenta ticket con cross-sell',
-    text: 'Detecta productos que cada cliente nunca compró pero SÍ compran clientes similares. +88% ticket promedio en IEY®.',
+    title: 'Venta cruzada automática',
+    text: 'Sugiere líneas que tu cliente nunca compró pero sí compran similares. +88% ticket en IEY®.',
     badge: 'Motor Inteligente',
-    metricLabel: 'Facturación Adicional:',
+    metricLabel: 'Facturación adicional:',
     metricIcon: TrendingUp,
-    metricValue: '+$2M - $10M',
-    clarifier: 'millones',
-    metricUnit: 'por cliente/año',
-    metricDesc: 'Si incorpora nuevas líneas que roten bien, clientes grandes pueden sumar $5 a $10 millones adicionales anuales',
-    multiplier: '20 clientes adoptando nuevas líneas: +$40M - $200M millones/año adicionales',
+    metricValue: '+$2–$10 millones',
+    clarifier: '',
+    metricUnit: 'por cliente anual',
+    metricDesc: 'Clientes grandes pueden sumar $5–$10 millones anuales extra',
+    multiplier: '×20 mensual → +$40–$200M al año',
   },
 ]
 
@@ -67,15 +65,15 @@ export default function SolutionSection() {
             color: '#FFFFFF',
           }}
         >
-          C&oacute;mo PymePilot Recupera
-          <br />
+          Cómo PymePilot recupera{' '}
+          <br className="br-hide-mobile" />
           <span
             style={{
               color: '#81B5A1',
               textShadow: '0 0 40px rgba(129,181,161,0.4)',
             }}
           >
-            Lo Que Est&aacute;s Perdiendo
+            lo que estás perdiendo
           </span>
         </h2>
 
@@ -138,7 +136,7 @@ export default function SolutionSection() {
                 >
                   {s.title}
                 </h3>
-                <p style={{ fontSize: 15, lineHeight: 1.7, color: 'rgba(255,255,255,0.8)', margin: '0 0 20px' }}>
+                <p style={{ fontSize: 14, lineHeight: 1.6, color: 'rgba(255,255,255,0.8)', margin: '0 0 20px' }}>
                   {s.text}
                 </p>
 
@@ -185,20 +183,16 @@ export default function SolutionSection() {
                         fontSize: 13,
                         fontWeight: 900,
                         color: '#a3cabb',
-                        textTransform: 'uppercase' as const,
-                        letterSpacing: '0.03em',
                       }}
                     >
                       {s.metricLabel}
                     </span>
                   </div>
-                  <p style={{ fontSize: 'clamp(20px, 3vw, 24px)', fontWeight: 900, color: '#FFFFFF', margin: '0 0 4px' }}>
+                  <p style={{ fontSize: 'clamp(17px, 3vw, 22px)', fontWeight: 900, color: '#FFFFFF', margin: '0 0 4px' }}>
                     {s.metricValue}
-                    {s.clarifier && <span style={{ fontSize: 'clamp(13px, 1.8vw, 15px)', opacity: 0.8, fontWeight: 700 }}> {s.clarifier}</span>}
-                    {(s as any).metricValue2 && <>{' - '}{(s as any).metricValue2}</>}
-                    {(s as any).clarifier2 && <span style={{ fontSize: 'clamp(13px, 1.8vw, 15px)', opacity: 0.8, fontWeight: 700 }}> {(s as any).clarifier2}</span>}
-                    {' '}
-                    <span style={{ fontSize: 'clamp(14px, 2vw, 16px)', color: '#a3cabb' }}>{s.metricUnit}</span>
+                  </p>
+                  <p style={{ fontSize: 'clamp(12px, 1.8vw, 14px)', color: '#a3cabb', margin: '2px 0 0', fontWeight: 700 }}>
+                    {s.metricUnit}
                   </p>
                   <p style={{ fontSize: 13, color: 'rgba(255,255,255,0.7)', margin: 0, lineHeight: 1.4 }}>
                     {s.metricDesc}
@@ -242,14 +236,42 @@ export default function SolutionSection() {
             marginRight: 'auto',
           }}
         >
-          <p style={{ fontSize: 15, lineHeight: 1.7, color: 'rgba(255,255,255,0.8)', margin: 0 }}>
-            <strong style={{ color: '#FFFFFF' }}>C&oacute;mo funciona:</strong> Nos conectamos a tu
-            sistema actual (ERP, Excel, lo que sea) &rarr; El motor analiza autom&aacute;tico cada
-            d&iacute;a &rarr; Tu equipo recibe informe por WhatsApp con TODO listo.
+          <p style={{ fontSize: 17, fontWeight: 800, color: '#FFFFFF', margin: '0 0 20px' }}>
+            Cómo funciona
           </p>
-          <p style={{ fontSize: 15, lineHeight: 1.7, color: 'rgba(255,255,255,0.8)', margin: '12px 0 0' }}>
-            <strong style={{ color: '#FFFFFF' }}>Timeline:</strong> 1-2 semanas setup. 30 segundos
-            por contacto.
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 14 }}>
+            {[
+              { num: '1', text: 'Nos conectamos a tu sistema actual', sub: '(ERP, Excel, lo que sea)' },
+              { num: '2', text: 'El motor analiza automático cada día' },
+              { num: '3', text: 'Tu equipo recibe informe por WhatsApp', highlight: 'con todo listo' },
+            ].map((step) => (
+              <div key={step.num} style={{ display: 'flex', alignItems: 'flex-start', gap: 12 }}>
+                <span style={{
+                  flexShrink: 0,
+                  width: 28,
+                  height: 28,
+                  borderRadius: '50%',
+                  background: 'rgba(129,181,161,0.2)',
+                  border: '1.5px solid #6da88e',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  fontSize: 13,
+                  fontWeight: 800,
+                  color: '#a3cabb',
+                }}>
+                  {step.num}
+                </span>
+                <p style={{ fontSize: 15, color: 'rgba(255,255,255,0.8)', margin: 0, lineHeight: 1.5 }}>
+                  {step.text}
+                  {step.sub && <span style={{ color: 'rgba(255,255,255,0.45)', fontSize: 13 }}> {step.sub}</span>}
+                  {step.highlight && <span style={{ color: '#a3cabb', fontWeight: 700 }}> {step.highlight}</span>}
+                </p>
+              </div>
+            ))}
+          </div>
+          <p style={{ fontSize: 13, color: 'rgba(255,255,255,0.5)', margin: '16px 0 0', borderTop: '1px solid rgba(129,181,161,0.15)', paddingTop: 14 }}>
+            <strong style={{ color: 'rgba(255,255,255,0.7)' }}>Timeline:</strong> 1-2 semanas setup. 30 segundos por contacto.
           </p>
         </div>
       </div>

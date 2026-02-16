@@ -41,7 +41,7 @@ export default function GuaranteeCTA() {
       <div style={{ maxWidth: 740, margin: '0 auto', position: 'relative', zIndex: 1 }}>
         {/* Guarantee box */}
         <div
-          className="anim-fade-in-up"
+          className="anim-fade-in-up left-on-mobile"
           style={{
             background: 'linear-gradient(135deg, #3d7a63 0%, #4a8a70 50%, #3d7a63 100%)',
             border: '3px solid #6da88e',
@@ -53,9 +53,9 @@ export default function GuaranteeCTA() {
         >
           <div
             style={{
-              width: 80,
-              height: 80,
-              margin: '0 auto 24px',
+              width: 64,
+              height: 64,
+              margin: '0 0 20px',
               borderRadius: '50%',
               background: '#a3cabb',
               display: 'flex',
@@ -64,32 +64,35 @@ export default function GuaranteeCTA() {
               boxShadow: '0 8px 32px rgba(163,202,187,0.4)',
             }}
           >
-            <Shield size={40} color="#1a2a2c" strokeWidth={2} />
+            <Shield size={32} color="#1a2a2c" strokeWidth={2} />
           </div>
 
-          <h3 style={{ fontSize: 'clamp(24px, 4.5vw, 32px)', fontWeight: 900, color: '#FFFFFF', marginBottom: 16 }}>
-            Garant&iacute;a 90 D&iacute;as &mdash; 100% Money Back
+          <h3 style={{ fontSize: 'clamp(22px, 4.5vw, 32px)', fontWeight: 900, color: '#FFFFFF', marginBottom: 16, textAlign: 'left' }}>
+            Garantía 90 días
           </h3>
-          <p style={{ fontSize: 18, lineHeight: 1.6, color: 'rgba(255,255,255,0.85)', margin: 0 }}>
-            Si en 90 d&iacute;as no aumenta tu facturaci&oacute;n recurrente, te devolvemos TODO.
-            Sin preguntas. Sin letra chica.
+          <p style={{ fontSize: 'clamp(15px, 2.2vw, 18px)', lineHeight: 1.65, color: 'rgba(255,255,255,0.85)', margin: 0, textAlign: 'left' }}>
+            Si en 90 días no aumenta tu facturación recurrente, te devolvemos todo. Sin preguntas. Sin letra chica.
           </p>
         </div>
 
         {/* Urgency */}
         <div
-          className="glass-dark anim-fade-in-up anim-delay-1"
+          className="glass-dark anim-fade-in-up anim-delay-1 left-on-mobile"
           style={{
             borderRadius: 16,
             padding: '24px 28px',
             marginBottom: 48,
+            textAlign: 'left',
           }}
         >
-          <p style={{ fontSize: 'clamp(16px, 2.5vw, 19px)', lineHeight: 1.65, color: 'rgba(255,255,255,0.8)', margin: 0 }}>
-            Cada d&iacute;a sin seguimiento inteligente = clientes que se van en silencio.
-            <br />
-            IEY&reg; lo resolvi&oacute; en 6 meses.{' '}
-            <strong style={{ color: '#81B5A1' }}>&iquest;Cu&aacute;nto m&aacute;s vas a esperar?</strong>
+          <p style={{ fontSize: 'clamp(15px, 2.5vw, 18px)', fontWeight: 600, color: '#FFFFFF', margin: '0 0 8px', lineHeight: 1.5 }}>
+            Cada día sin seguimiento inteligente = <span style={{ color: '#FF8A80' }}>clientes que se van en silencio</span>
+          </p>
+          <p style={{ fontSize: 14, color: 'rgba(255,255,255,0.5)', margin: '0 0 8px' }}>
+            IEY&reg; lo resolvió en 6 meses.
+          </p>
+          <p style={{ fontSize: 'clamp(16px, 2.5vw, 19px)', fontWeight: 800, color: '#81B5A1', margin: 0 }}>
+            ¿Cuánto más vas a esperar?
           </p>
         </div>
 
@@ -118,15 +121,13 @@ export default function GuaranteeCTA() {
               textDecoration: 'none',
               border: '3px solid #6da88e',
               boxShadow: '0 12px 48px rgba(129,181,161,0.5)',
-              letterSpacing: '0.025em',
-              textTransform: 'uppercase' as const,
               textShadow: '0 2px 8px rgba(0,0,0,0.3)',
             }}
           >
             <span className="anim-bounce-sub" style={{ display: 'flex' }}>
               <WhatsAppIcon size={28} />
             </span>
-            AGENDAR DIAGN&Oacute;STICO GRATIS AHORA
+            Agendar diagnóstico gratis
             <ArrowRight size={24} strokeWidth={3} />
           </a>
         </div>
