@@ -12,7 +12,7 @@ export default function HeroSection() {
       style={{
         position: 'relative',
         overflow: 'hidden',
-        background: 'linear-gradient(135deg, #0D3320 0%, #14532D 40%, #1A1A1A 100%)',
+        background: 'linear-gradient(135deg, #1a2a2c 0%, #293E40 40%, #344B4E 100%)',
         padding: '72px 20px 88px',
       }}
     >
@@ -24,7 +24,7 @@ export default function HeroSection() {
           right: -60,
           width: 600,
           height: 600,
-          background: 'radial-gradient(circle, rgba(0,200,83,0.15) 0%, transparent 65%)',
+          background: 'radial-gradient(circle, rgba(129,181,161,0.15) 0%, transparent 65%)',
           borderRadius: '50%',
           pointerEvents: 'none',
         }}
@@ -36,7 +36,7 @@ export default function HeroSection() {
           left: -40,
           width: 500,
           height: 500,
-          background: 'radial-gradient(circle, rgba(0,200,83,0.1) 0%, transparent 65%)',
+          background: 'radial-gradient(circle, rgba(129,181,161,0.1) 0%, transparent 65%)',
           borderRadius: '50%',
           pointerEvents: 'none',
         }}
@@ -56,11 +56,11 @@ export default function HeroSection() {
               fontSize: 15,
               fontWeight: 700,
               color: '#FFFFFF',
-              border: '2px solid #00C853',
-              boxShadow: '0 4px 20px rgba(0,200,83,0.25)',
+              border: '2px solid #5a9a84',
+              boxShadow: '0 4px 20px rgba(129,181,161,0.25)',
             }}
           >
-            <CheckCircle size={18} strokeWidth={2.5} style={{ color: '#00E676' }} />
+            <CheckCircle size={18} strokeWidth={2.5} style={{ color: '#81B5A1' }} />
             Caso IEY&reg;: De 34% a 74% facturaci&oacute;n recurrente en 6 meses
           </span>
         </div>
@@ -81,8 +81,8 @@ export default function HeroSection() {
           <br />
           <span
             style={{
-              color: '#00E676',
-              textShadow: '0 0 40px rgba(0,200,83,0.5)',
+              color: '#81B5A1',
+              textShadow: '0 0 40px rgba(129,181,161,0.5)',
             }}
           >
             y nadie te avisa
@@ -134,15 +134,15 @@ export default function HeroSection() {
               display: 'inline-flex',
               alignItems: 'center',
               gap: 14,
-              background: 'linear-gradient(135deg, #00C853 0%, #00E676 100%)',
+              background: 'linear-gradient(135deg, #5a9a84 0%, #81B5A1 100%)',
               color: '#FFFFFF',
               fontSize: 'clamp(17px, 2.8vw, 22px)',
               fontWeight: 900,
               padding: '22px 48px',
               borderRadius: 16,
               textDecoration: 'none',
-              border: '3px solid #66BB6A',
-              boxShadow: '0 8px 40px rgba(0,200,83,0.5)',
+              border: '3px solid #6da88e',
+              boxShadow: '0 8px 40px rgba(129,181,161,0.5)',
               letterSpacing: '0.025em',
               textTransform: 'uppercase' as const,
               textShadow: '0 2px 8px rgba(0,0,0,0.3)',
@@ -164,15 +164,15 @@ export default function HeroSection() {
                 position: 'absolute',
                 inset: -4,
                 borderRadius: 24,
-                border: '3px solid #00C853',
-                boxShadow: '0 0 40px rgba(0,200,83,0.3), inset 0 0 40px rgba(0,200,83,0.05)',
+                border: '3px solid #5a9a84',
+                boxShadow: '0 0 40px rgba(129,181,161,0.3), inset 0 0 40px rgba(129,181,161,0.05)',
                 pointerEvents: 'none',
               }}
             />
             <div
               style={{
                 position: 'relative',
-                background: 'linear-gradient(135deg, #1B5E20 0%, #14532D 50%, #0D3320 100%)',
+                background: 'linear-gradient(135deg, #2a4a3e 0%, #293E40 50%, #1a2a2c 100%)',
                 borderRadius: 20,
                 padding: '64px 24px',
                 color: 'rgba(255,255,255,0.5)',
@@ -181,7 +181,7 @@ export default function HeroSection() {
               }}
             >
               <div style={{ fontSize: 48, marginBottom: 12 }}>&#128202;</div>
-              <p style={{ fontWeight: 700, color: '#A5D6A7' }}>Dashboard PymePilot</p>
+              <p style={{ fontWeight: 700, color: '#a3cabb' }}>Dashboard PymePilot</p>
               <p style={{ fontSize: 13, marginTop: 4, color: 'rgba(255,255,255,0.4)' }}>
                 Imagen pr&oacute;ximamente
               </p>

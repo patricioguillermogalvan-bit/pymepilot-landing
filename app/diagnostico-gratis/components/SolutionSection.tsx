@@ -51,7 +51,7 @@ export default function SolutionSection() {
     <section
       style={{
         padding: '80px 20px',
-        background: 'linear-gradient(180deg, #0D3320 0%, #14532D 50%, #1A1A1A 100%)',
+        background: 'linear-gradient(180deg, #1a2a2c 0%, #293E40 50%, #344B4E 100%)',
       }}
     >
       <div style={{ maxWidth: 1040, margin: '0 auto' }}>
@@ -71,8 +71,8 @@ export default function SolutionSection() {
           <br />
           <span
             style={{
-              color: '#00E676',
-              textShadow: '0 0 40px rgba(0,200,83,0.4)',
+              color: '#81B5A1',
+              textShadow: '0 0 40px rgba(129,181,161,0.4)',
             }}
           >
             Lo Que Est&aacute;s Perdiendo
@@ -96,18 +96,18 @@ export default function SolutionSection() {
                 className="hover-scale-lg anim-fade-in-up"
                 style={{
                   animationDelay: `${0.15 + i * 0.12}s`,
-                  background: 'linear-gradient(135deg, #00832D 0%, #00A844 100%)',
+                  background: 'linear-gradient(135deg, #3d7a63 0%, #4a8a70 100%)',
                   borderRadius: 24,
                   padding: '36px 28px',
-                  border: '2px solid #66BB6A',
-                  boxShadow: '0 8px 32px rgba(0,200,83,0.25)',
+                  border: '2px solid #6da88e',
+                  boxShadow: '0 8px 32px rgba(129,181,161,0.25)',
                   transition: 'box-shadow 0.3s ease, transform 0.3s ease',
                 }}
                 onMouseEnter={(e) => {
-                  e.currentTarget.style.boxShadow = '0 16px 48px rgba(0,200,83,0.4)'
+                  e.currentTarget.style.boxShadow = '0 16px 48px rgba(129,181,161,0.4)'
                 }}
                 onMouseLeave={(e) => {
-                  e.currentTarget.style.boxShadow = '0 8px 32px rgba(0,200,83,0.25)'
+                  e.currentTarget.style.boxShadow = '0 8px 32px rgba(129,181,161,0.25)'
                 }}
               >
                 {/* Icon */}
@@ -117,7 +117,7 @@ export default function SolutionSection() {
                     width: 64,
                     height: 64,
                     borderRadius: 18,
-                    background: '#A5D6A7',
+                    background: '#a3cabb',
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',
@@ -125,7 +125,7 @@ export default function SolutionSection() {
                     boxShadow: '0 8px 24px rgba(165,214,167,0.3)',
                   }}
                 >
-                  <Icon size={30} color="#0D3320" strokeWidth={2.5} />
+                  <Icon size={30} color="#1a2a2c" strokeWidth={2.5} />
                 </div>
 
                 <h3
@@ -148,8 +148,8 @@ export default function SolutionSection() {
                     display: 'inline-flex',
                     alignItems: 'center',
                     gap: 6,
-                    background: 'rgba(0,230,118,0.2)',
-                    border: '2px solid #A5D6A7',
+                    background: 'rgba(163,202,187,0.2)',
+                    border: '2px solid #a3cabb',
                     borderRadius: 12,
                     padding: '6px 16px',
                     fontSize: 13,
@@ -165,8 +165,8 @@ export default function SolutionSection() {
                 {/* Metric card */}
                 <div
                   style={{
-                    background: 'rgba(0,200,83,0.15)',
-                    border: '2px solid #66BB6A',
+                    background: 'rgba(129,181,161,0.15)',
+                    border: '2px solid #6da88e',
                     borderRadius: 14,
                     padding: '16px 18px',
                   }}
@@ -179,12 +179,12 @@ export default function SolutionSection() {
                       marginBottom: 8,
                     }}
                   >
-                    <MetricIcon size={18} color="#A5D6A7" strokeWidth={2.5} />
+                    <MetricIcon size={18} color="#a3cabb" strokeWidth={2.5} />
                     <span
                       style={{
                         fontSize: 13,
                         fontWeight: 900,
-                        color: '#A5D6A7',
+                        color: '#a3cabb',
                         textTransform: 'uppercase' as const,
                         letterSpacing: '0.03em',
                       }}
@@ -198,7 +198,7 @@ export default function SolutionSection() {
                     {(s as any).metricValue2 && <>{' - '}{(s as any).metricValue2}</>}
                     {(s as any).clarifier2 && <span style={{ fontSize: 'clamp(13px, 1.8vw, 15px)', opacity: 0.8, fontWeight: 700 }}> {(s as any).clarifier2}</span>}
                     {' '}
-                    <span style={{ fontSize: 'clamp(14px, 2vw, 16px)', color: '#A5D6A7' }}>{s.metricUnit}</span>
+                    <span style={{ fontSize: 'clamp(14px, 2vw, 16px)', color: '#a3cabb' }}>{s.metricUnit}</span>
                   </p>
                   <p style={{ fontSize: 13, color: 'rgba(255,255,255,0.7)', margin: 0, lineHeight: 1.4 }}>
                     {s.metricDesc}
@@ -215,12 +215,12 @@ export default function SolutionSection() {
                     background: 'rgba(255,255,255,0.08)',
                     backdropFilter: 'blur(8px)',
                     WebkitBackdropFilter: 'blur(8px)',
-                    border: '1px solid rgba(0,200,83,0.35)',
+                    border: '1px solid rgba(129,181,161,0.35)',
                     borderRadius: 10,
                     padding: '10px 14px',
                   }}
                 >
-                  <CheckCircle size={16} color="#A5D6A7" strokeWidth={3} style={{ flexShrink: 0 }} />
+                  <CheckCircle size={16} color="#a3cabb" strokeWidth={3} style={{ flexShrink: 0 }} />
                   <span style={{ fontSize: 13, fontWeight: 700, color: '#FFFFFF', lineHeight: 1.4 }}>
                     {s.multiplier}
                   </span>

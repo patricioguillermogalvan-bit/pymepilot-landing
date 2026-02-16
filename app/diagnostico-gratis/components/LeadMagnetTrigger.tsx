@@ -34,19 +34,19 @@ export default function LeadMagnetTrigger() {
             alignItems: 'center',
             gap: 8,
             cursor: 'pointer',
-            border: '1.5px solid rgba(0,200,83,0.3)',
+            border: '1.5px solid rgba(129,181,161,0.3)',
             fontFamily: 'inherit',
             transition: 'transform 200ms ease, box-shadow 200ms ease, border-color 200ms ease',
           }}
           onMouseEnter={(e) => {
             e.currentTarget.style.transform = 'translateY(-4px) scale(1.05)'
-            e.currentTarget.style.boxShadow = '0 12px 36px rgba(0,200,83,0.35)'
-            e.currentTarget.style.borderColor = 'rgba(0,200,83,0.5)'
+            e.currentTarget.style.boxShadow = '0 12px 36px rgba(129,181,161,0.35)'
+            e.currentTarget.style.borderColor = 'rgba(129,181,161,0.5)'
           }}
           onMouseLeave={(e) => {
             e.currentTarget.style.transform = ''
             e.currentTarget.style.boxShadow = ''
-            e.currentTarget.style.borderColor = 'rgba(0,200,83,0.3)'
+            e.currentTarget.style.borderColor = 'rgba(129,181,161,0.3)'
           }}
         >
           <SparkleIcon size={22} />
@@ -54,7 +54,7 @@ export default function LeadMagnetTrigger() {
             style={{
               fontSize: 13,
               fontWeight: 700,
-              color: '#00E676',
+              color: '#81B5A1',
             }}
           >
             Recursos Gratis
@@ -72,7 +72,7 @@ export default function LeadMagnetTrigger() {
           onClick={() => setIsOpen(true)}
           onMouseEnter={(e) => {
             e.currentTarget.style.transform = 'translateY(-4px) scale(1.02)'
-            e.currentTarget.style.boxShadow = '0 16px 48px rgba(0,200,83,0.3)'
+            e.currentTarget.style.boxShadow = '0 16px 48px rgba(129,181,161,0.3)'
           }}
           onMouseLeave={(e) => {
             e.currentTarget.style.transform = ''
@@ -91,14 +91,14 @@ export default function LeadMagnetTrigger() {
               position: 'absolute',
               top: -8,
               right: -8,
-              background: 'linear-gradient(135deg, #00C853 0%, #00E676 100%)',
+              background: 'linear-gradient(135deg, #5a9a84 0%, #81B5A1 100%)',
               color: '#FFFFFF',
               fontSize: 11,
               fontWeight: 800,
               padding: '4px 10px',
               borderRadius: 8,
               letterSpacing: '0.05em',
-              boxShadow: '0 2px 12px rgba(0,200,83,0.4)',
+              boxShadow: '0 2px 12px rgba(129,181,161,0.4)',
               zIndex: 2,
             }}
           >
@@ -174,7 +174,7 @@ export default function LeadMagnetTrigger() {
             className="trigger-cta-btn"
             style={{
               marginTop: 12,
-              background: 'linear-gradient(135deg, #00C853 0%, #00E676 100%)',
+              background: 'linear-gradient(135deg, #5a9a84 0%, #81B5A1 100%)',
               color: '#FFFFFF',
               fontSize: 13,
               fontWeight: 700,
@@ -183,7 +183,7 @@ export default function LeadMagnetTrigger() {
               textAlign: 'center',
               letterSpacing: '0.02em',
               transition: 'opacity 0.2s, transform 0.2s',
-              border: '1.5px solid #66BB6A',
+              border: '1.5px solid #6da88e',
               textShadow: '0 1px 4px rgba(0,0,0,0.2)',
             }}
           >

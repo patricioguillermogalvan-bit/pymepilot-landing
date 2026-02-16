@@ -15,10 +15,10 @@ const WA_DIAG =
   'https://wa.me/5491123994719?text=Hola!%20Me%20identifico%20con%20el%20caso%20IEY%C2%AE.%20Quiero%20un%20diagn%C3%B3stico%20de%2015%20min%20para%20mi%20distribuidora.'
 
 const METRICS = [
-  { value: '34% → 74%', label: 'Facturación recurrente', color: '#00E676' },
-  { value: '+150', label: 'Clientes bajo seguimiento', color: '#66BB6A' },
-  { value: '6 meses', label: 'Tiempo de transformación', color: '#A5D6A7' },
-  { value: '68%', label: 'Clientes recuperados', color: '#00E676' },
+  { value: '34% → 74%', label: 'Facturación recurrente', color: '#81B5A1' },
+  { value: '+150', label: 'Clientes bajo seguimiento', color: '#6da88e' },
+  { value: '6 meses', label: 'Tiempo de transformación', color: '#a3cabb' },
+  { value: '68%', label: 'Clientes recuperados', color: '#81B5A1' },
 ]
 
 const PROBLEMS = [
@@ -36,7 +36,7 @@ const TIMELINE = [
     description:
       'Contactaron a los 23 clientes que llevaban más de 45 días sin comprar. 15 volvieron a hacer pedido esa misma semana.',
     metric: '15 de 23 clientes recuperados',
-    metricColor: '#00E676',
+    metricColor: '#81B5A1',
     quote: '"No podíamos creer que tantos clientes simplemente estaban esperando que los contactáramos."',
     highlight: false,
   },
@@ -47,7 +47,7 @@ const TIMELINE = [
     description:
       'El sistema empezó a detectar patrones de compra. Antes de que un cliente se quedara sin stock, recibía un mensaje personalizado.',
     metric: 'Tasa de recompra +22%',
-    metricColor: '#00E676',
+    metricColor: '#81B5A1',
     quote: '"Los clientes nos decían: ¿cómo sabían que justo necesitaba?"',
     highlight: false,
   },
@@ -69,7 +69,7 @@ const TIMELINE = [
     description:
       'El sistema ya corría solo. Alertas automáticas, mensajes de seguimiento personalizados, y reportes semanales de clientes en riesgo.',
     metric: '74% facturación recurrente',
-    metricColor: '#00E676',
+    metricColor: '#81B5A1',
     quote: '"Hoy el sistema detecta un cliente en riesgo antes de que nosotros nos demos cuenta."',
     highlight: false,
   },
@@ -123,7 +123,7 @@ export default function CasoIEYPage() {
   }
 
   return (
-    <div style={{ background: '#0A0A0A', minHeight: '100vh', color: '#FFFFFF' }}>
+    <div style={{ background: '#1a2a2c', minHeight: '100vh', color: '#FFFFFF' }}>
       {/* Back button */}
       <div
         style={{
@@ -150,7 +150,7 @@ export default function CasoIEYPage() {
               fontWeight: 600,
               transition: 'color 0.2s',
             }}
-            onMouseEnter={(e) => { e.currentTarget.style.color = '#00E676' }}
+            onMouseEnter={(e) => { e.currentTarget.style.color = '#81B5A1' }}
             onMouseLeave={(e) => { e.currentTarget.style.color = 'rgba(255,255,255,0.6)' }}
           >
             <ArrowLeft size={18} />
@@ -164,7 +164,7 @@ export default function CasoIEYPage() {
         style={{
           position: 'relative',
           overflow: 'hidden',
-          background: 'linear-gradient(180deg, #0D3320 0%, #14532D 40%, #0A0A0A 100%)',
+          background: 'linear-gradient(180deg, #1a2a2c 0%, #293E40 40%, #1a2a2c 100%)',
           padding: '64px 20px 80px',
           textAlign: 'center',
         }}
@@ -176,7 +176,7 @@ export default function CasoIEYPage() {
             right: -60,
             width: 500,
             height: 500,
-            background: 'radial-gradient(circle, rgba(0,200,83,0.12) 0%, transparent 65%)',
+            background: 'radial-gradient(circle, rgba(129,181,161,0.12) 0%, transparent 65%)',
             borderRadius: '50%',
             pointerEvents: 'none',
           }}
@@ -196,11 +196,11 @@ export default function CasoIEYPage() {
               fontSize: 13,
               fontWeight: 700,
               color: '#FFFFFF',
-              border: '2px solid #00C853',
+              border: '2px solid #5a9a84',
               marginBottom: 28,
             }}
           >
-            <CheckCircle size={16} strokeWidth={2.5} style={{ color: '#00E676' }} />
+            <CheckCircle size={16} strokeWidth={2.5} style={{ color: '#81B5A1' }} />
             Caso de estudio verificable
           </span>
           <h1
@@ -214,7 +214,7 @@ export default function CasoIEYPage() {
             }}
           >
             Teníamos el Mismo{' '}
-            <span style={{ color: '#00E676', textShadow: '0 0 30px rgba(0,200,83,0.4)' }}>
+            <span style={{ color: '#81B5A1', textShadow: '0 0 30px rgba(129,181,161,0.4)' }}>
               Problema que Vos
             </span>
           </h1>
@@ -230,14 +230,14 @@ export default function CasoIEYPage() {
           >
             IEY® perdía clientes sin saberlo. En 6 meses pasaron de{' '}
             <span style={{ color: '#FF8A80', fontWeight: 700 }}>34%</span> a{' '}
-            <span style={{ color: '#00E676', fontWeight: 700 }}>74%</span> de facturación recurrente.
+            <span style={{ color: '#81B5A1', fontWeight: 700 }}>74%</span> de facturación recurrente.
             Esta es su historia.
           </p>
         </div>
       </section>
 
       {/* Métricas */}
-      <section style={{ padding: '56px 20px', background: '#0A0A0A' }}>
+      <section style={{ padding: '56px 20px', background: '#1a2a2c' }}>
         <div
           className="grid-responsive"
           style={{
@@ -278,7 +278,7 @@ export default function CasoIEYPage() {
       </section>
 
       {/* ═══════════ SECCIÓN 2: EL PROBLEMA ═══════════ */}
-      <section style={{ padding: '56px 20px', background: '#0D0D0D' }}>
+      <section style={{ padding: '56px 20px', background: '#1a2a2c' }}>
         <div style={{ maxWidth: 700, margin: '0 auto' }}>
           <h2
             className="anim-fade-in-up"
@@ -360,7 +360,7 @@ export default function CasoIEYPage() {
       </section>
 
       {/* ═══════════ SECCIÓN 3: TIMELINE ═══════════ */}
-      <section style={{ padding: '56px 20px', background: '#0A0A0A' }}>
+      <section style={{ padding: '56px 20px', background: '#1a2a2c' }}>
         <div style={{ maxWidth: 700, margin: '0 auto' }}>
           <h2
             className="anim-fade-in-up"
@@ -372,7 +372,7 @@ export default function CasoIEYPage() {
             }}
           >
             La Transformación{' '}
-            <span style={{ color: '#00E676' }}>Mes a Mes</span>
+            <span style={{ color: '#81B5A1' }}>Mes a Mes</span>
           </h2>
           <p
             className="anim-fade-in-up anim-delay-1"
@@ -397,7 +397,7 @@ export default function CasoIEYPage() {
                 top: 0,
                 bottom: 0,
                 width: 2,
-                background: 'linear-gradient(180deg, #00C853 0%, rgba(0,200,83,0.15) 100%)',
+                background: 'linear-gradient(180deg, #5a9a84 0%, rgba(129,181,161,0.15) 100%)',
               }}
             />
 
@@ -422,11 +422,11 @@ export default function CasoIEYPage() {
                       width: 24,
                       height: 24,
                       borderRadius: '50%',
-                      background: step.highlight ? '#FFD700' : '#00C853',
-                      border: `3px solid ${step.highlight ? '#FFD700' : '#00C853'}`,
+                      background: step.highlight ? '#FFD700' : '#5a9a84',
+                      border: `3px solid ${step.highlight ? '#FFD700' : '#5a9a84'}`,
                       boxShadow: step.highlight
                         ? '0 0 20px rgba(255,215,0,0.4)'
-                        : '0 0 12px rgba(0,200,83,0.3)',
+                        : '0 0 12px rgba(129,181,161,0.3)',
                     }}
                   />
 
@@ -447,10 +447,10 @@ export default function CasoIEYPage() {
                         display: 'inline-block',
                         fontSize: 11,
                         fontWeight: 800,
-                        color: step.highlight ? '#FFD700' : '#00E676',
+                        color: step.highlight ? '#FFD700' : '#81B5A1',
                         background: step.highlight
                           ? 'rgba(255,215,0,0.12)'
-                          : 'rgba(0,200,83,0.12)',
+                          : 'rgba(129,181,161,0.12)',
                         padding: '4px 12px',
                         borderRadius: 100,
                         marginBottom: 12,
@@ -514,7 +514,7 @@ export default function CasoIEYPage() {
       </section>
 
       {/* ═══════════ SECCIÓN 4: 3 LECCIONES ═══════════ */}
-      <section style={{ padding: '56px 20px', background: '#0D0D0D' }}>
+      <section style={{ padding: '56px 20px', background: '#1a2a2c' }}>
         <div style={{ maxWidth: 700, margin: '0 auto' }}>
           <h2
             className="anim-fade-in-up"
@@ -526,7 +526,7 @@ export default function CasoIEYPage() {
             }}
           >
             3 Lecciones que{' '}
-            <span style={{ color: '#00E676' }}>Cambiaron Todo</span>
+            <span style={{ color: '#81B5A1' }}>Cambiaron Todo</span>
           </h2>
           <p
             className="anim-fade-in-up anim-delay-1"
@@ -583,13 +583,13 @@ export default function CasoIEYPage() {
                   </div>
                   <div
                     style={{
-                      background: 'rgba(0,200,83,0.06)',
-                      border: '1px solid rgba(0,200,83,0.2)',
+                      background: 'rgba(129,181,161,0.06)',
+                      border: '1px solid rgba(129,181,161,0.2)',
                       borderRadius: 10,
                       padding: '14px 16px',
                     }}
                   >
-                    <p style={{ fontSize: 11, fontWeight: 700, color: '#00E676', margin: '0 0 4px', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
+                    <p style={{ fontSize: 11, fontWeight: 700, color: '#81B5A1', margin: '0 0 4px', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
                       Después
                     </p>
                     <p style={{ fontSize: 13, color: 'rgba(255,255,255,0.6)', margin: 0, lineHeight: 1.5 }}>
@@ -611,7 +611,7 @@ export default function CasoIEYPage() {
       <section
         style={{
           padding: '72px 20px',
-          background: 'linear-gradient(180deg, #0A0A0A 0%, #0D3320 100%)',
+          background: 'linear-gradient(180deg, #1a2a2c 0%, #1a2a2c 100%)',
         }}
       >
         <div style={{ maxWidth: 600, margin: '0 auto' }}>
@@ -625,7 +625,7 @@ export default function CasoIEYPage() {
             }}
           >
             ¿Te Identificás con{' '}
-            <span style={{ color: '#00E676' }}>Esta Historia</span>?
+            <span style={{ color: '#81B5A1' }}>Esta Historia</span>?
           </h2>
           <p
             className="anim-fade-in-up anim-delay-1"
@@ -654,9 +654,9 @@ export default function CasoIEYPage() {
                     display: 'flex',
                     alignItems: 'flex-start',
                     gap: 12,
-                    background: checked[i] ? 'rgba(0,200,83,0.08)' : 'transparent',
+                    background: checked[i] ? 'rgba(129,181,161,0.08)' : 'transparent',
                     border: checked[i]
-                      ? '1px solid rgba(0,200,83,0.3)'
+                      ? '1px solid rgba(129,181,161,0.3)'
                       : '1px solid rgba(255,255,255,0.08)',
                     borderRadius: 12,
                     padding: '14px 16px',
@@ -674,9 +674,9 @@ export default function CasoIEYPage() {
                       height: 22,
                       borderRadius: 6,
                       border: checked[i]
-                        ? '2px solid #00E676'
+                        ? '2px solid #81B5A1'
                         : '2px solid rgba(255,255,255,0.2)',
-                      background: checked[i] ? 'rgba(0,200,83,0.15)' : 'transparent',
+                      background: checked[i] ? 'rgba(129,181,161,0.15)' : 'transparent',
                       display: 'flex',
                       alignItems: 'center',
                       justifyContent: 'center',
@@ -685,7 +685,7 @@ export default function CasoIEYPage() {
                     }}
                   >
                     {checked[i] && (
-                      <CheckCircle size={14} strokeWidth={3} style={{ color: '#00E676' }} />
+                      <CheckCircle size={14} strokeWidth={3} style={{ color: '#81B5A1' }} />
                     )}
                   </div>
                   <span
@@ -741,15 +741,15 @@ export default function CasoIEYPage() {
                 alignItems: 'center',
                 justifyContent: 'center',
                 gap: 10,
-                background: 'linear-gradient(135deg, #00C853 0%, #00E676 100%)',
+                background: 'linear-gradient(135deg, #5a9a84 0%, #81B5A1 100%)',
                 color: '#FFFFFF',
                 fontSize: 14,
                 fontWeight: 900,
                 padding: '18px 20px',
                 borderRadius: 14,
                 textDecoration: 'none',
-                border: '2px solid #66BB6A',
-                boxShadow: '0 8px 32px rgba(0,200,83,0.4)',
+                border: '2px solid #6da88e',
+                boxShadow: '0 8px 32px rgba(129,181,161,0.4)',
                 textTransform: 'uppercase',
                 letterSpacing: '0.02em',
                 textShadow: '0 1px 4px rgba(0,0,0,0.2)',

@@ -11,7 +11,7 @@ html, body {
   padding: 0;
   width: 100%;
   overflow-x: hidden;
-  background: #0A0A0A;
+  background: #1a2a2c;
 }
 
 /* ========== ANIMATIONS ========== */
@@ -28,8 +28,8 @@ html, body {
 }
 
 @keyframes pulseGlow {
-  0%, 100% { box-shadow: 0 0 24px rgba(0, 200, 83, 0.4); }
-  50% { box-shadow: 0 0 48px rgba(0, 200, 83, 0.7); }
+  0%, 100% { box-shadow: 0 0 24px rgba(129, 181, 161, 0.4); }
+  50% { box-shadow: 0 0 48px rgba(129, 181, 161, 0.7); }
 }
 
 @keyframes pulseSlow {
@@ -301,10 +301,10 @@ html, body {
 
 @keyframes triggerPulse {
   0%, 100% {
-    box-shadow: 0 8px 32px rgba(0,0,0,0.4), 0 0 20px rgba(0,200,83,0.1);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.4), 0 0 20px rgba(129,181,161,0.1);
   }
   50% {
-    box-shadow: 0 8px 36px rgba(0,0,0,0.4), 0 0 32px rgba(0,200,83,0.2);
+    box-shadow: 0 8px 36px rgba(0,0,0,0.4), 0 0 32px rgba(129,181,161,0.2);
     transform: scale(1.01);
   }
 }
@@ -325,10 +325,10 @@ html, body {
   background: rgba(15, 15, 15, 0.92);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  border: 1.5px solid rgba(0,200,83,0.25);
+  border: 1.5px solid rgba(129,181,161,0.25);
   border-radius: 16px;
   padding: 20px;
-  box-shadow: 0 8px 32px rgba(0,0,0,0.4), 0 0 20px rgba(0,200,83,0.1);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.4), 0 0 20px rgba(129,181,161,0.1);
   transition: transform 200ms ease, box-shadow 200ms ease;
 }
 
@@ -380,7 +380,7 @@ html, body {
   position: absolute;
   inset: 0;
   border-radius: inherit;
-  background: rgba(0, 230, 118, 0.5);
+  background: rgba(163, 202, 187, 0.5);
   filter: blur(24px);
   opacity: 0;
   transition: opacity 0.4s ease;
@@ -388,7 +388,7 @@ html, body {
 }
 .cta-glow:hover {
   transform: translateY(-4px) scale(1.04);
-  box-shadow: 0 16px 56px rgba(0, 200, 83, 0.5);
+  box-shadow: 0 16px 56px rgba(129, 181, 161, 0.5);
 }
 .cta-glow:hover::before {
   opacity: 0.5;
@@ -406,7 +406,7 @@ html, body {
   position: absolute;
   inset: -4px;
   border-radius: inherit;
-  background: rgba(0, 230, 118, 0.4);
+  background: rgba(163, 202, 187, 0.4);
   filter: blur(28px);
   opacity: 0.4;
   transition: opacity 0.4s ease;
@@ -414,7 +414,7 @@ html, body {
 }
 .cta-dark:hover {
   transform: translateY(-4px) scale(1.06);
-  box-shadow: 0 20px 60px rgba(0, 200, 83, 0.6);
+  box-shadow: 0 20px 60px rgba(129, 181, 161, 0.6);
 }
 .cta-dark:hover::before {
   opacity: 0.7;
@@ -430,10 +430,10 @@ html, body {
 }
 
 .glass-green {
-  background: rgba(0, 200, 83, 0.08);
+  background: rgba(129, 181, 161, 0.08);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(0, 200, 83, 0.2);
+  border: 1px solid rgba(129, 181, 161, 0.2);
 }
 
 /* ========== MOBILE RESPONSIVE ========== */

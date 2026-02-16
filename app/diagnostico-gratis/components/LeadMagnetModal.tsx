@@ -18,14 +18,14 @@ const LEAD_MAGNETS = [
         <span style={{ color: '#FF8A80', fontWeight: 700 }}> $8 y $18 millones por mes</span> en
         clientes que &quot;desaparecieron&quot; sin que se dieran cuenta.
         <br /><br />
-        <span style={{ color: '#00E676', fontWeight: 600 }}>
+        <span style={{ color: '#81B5A1', fontWeight: 600 }}>
           ¿Cuánto perdés VOS? Calculalo en 30 segundos.
         </span>
       </>
     ),
     buttonText: 'CALCULAR AHORA',
     href: '/diagnostico-gratis/calculadora-perdida',
-    color: '#00E676',
+    color: '#81B5A1',
   },
   {
     icon: ChartGrowthIcon,
@@ -36,7 +36,7 @@ const LEAD_MAGNETS = [
         forma de anticiparse.
         <br /><br />
         Hoy tienen{' '}
-        <span style={{ color: '#00E676', fontWeight: 700 }}>74%</span> de
+        <span style={{ color: '#81B5A1', fontWeight: 700 }}>74%</span> de
         facturación recurrente.
         <br /><br />
         <span style={{ fontWeight: 600 }}>
@@ -46,7 +46,7 @@ const LEAD_MAGNETS = [
     ),
     buttonText: 'DESCARGAR CASO',
     href: '/diagnostico-gratis/caso-iey',
-    color: '#66BB6A',
+    color: '#6da88e',
   },
   {
     icon: TargetScanIcon,
@@ -57,14 +57,14 @@ const LEAD_MAGNETS = [
         Sabés que algo falla, pero{' '}
         <span style={{ color: '#FF8A80', fontWeight: 600 }}>no sabés por dónde atacar primero</span>.
         <br /><br />
-        <span style={{ color: '#00E676', fontWeight: 600 }}>
+        <span style={{ color: '#81B5A1', fontWeight: 600 }}>
           6 preguntas simples. Tu diagnóstico personalizado.
         </span>
       </>
     ),
     buttonText: 'HACER TEST',
     href: '/diagnostico-gratis/diagnostico',
-    color: '#A5D6A7',
+    color: '#a3cabb',
   },
 ]
 
@@ -124,12 +124,12 @@ export default function LeadMagnetModal({
           maxWidth: 560,
           maxHeight: '90vh',
           overflowY: 'auto',
-          background: 'linear-gradient(135deg, #0D3320 0%, #14532D 40%, #1A1A1A 100%)',
-          border: '2px solid rgba(0, 200, 83, 0.3)',
+          background: 'linear-gradient(135deg, #1a2a2c 0%, #293E40 40%, #344B4E 100%)',
+          border: '2px solid rgba(129, 181, 161, 0.3)',
           borderRadius: 24,
           padding: '40px 28px 32px',
           boxShadow:
-            '0 24px 80px rgba(0, 0, 0, 0.6), 0 0 60px rgba(0, 200, 83, 0.15)',
+            '0 24px 80px rgba(0, 0, 0, 0.6), 0 0 60px rgba(129, 181, 161, 0.15)',
           animation: 'modalSlideUp 0.3s ease-out',
         }}
       >
@@ -182,7 +182,7 @@ export default function LeadMagnetModal({
           >
             ¿Cuántos Clientes Perdiste Este Mes
             <br />
-            <span style={{ color: '#00E676' }}>Sin Darte Cuenta?</span>
+            <span style={{ color: '#81B5A1' }}>Sin Darte Cuenta?</span>
           </h2>
           <div style={{ textAlign: 'left', maxWidth: 420, margin: '0 auto' }}>
             <p
@@ -201,7 +201,7 @@ export default function LeadMagnetModal({
                 'Cómo recuperarlos en los próximos 30 días',
               ].map((text, i) => (
                 <li key={i} style={{ display: 'flex', alignItems: 'flex-start', fontSize: 13, color: 'rgba(255,255,255,0.85)' }}>
-                  <span style={{ color: '#00E676', marginRight: 8, flexShrink: 0 }}>✓</span>
+                  <span style={{ color: '#81B5A1', marginRight: 8, flexShrink: 0 }}>✓</span>
                   <span>{text}</span>
                 </li>
               ))}
@@ -265,15 +265,15 @@ export default function LeadMagnetModal({
                       alignItems: 'center',
                       gap: 8,
                       background:
-                        'linear-gradient(135deg, #00C853 0%, #00E676 100%)',
+                        'linear-gradient(135deg, #5a9a84 0%, #81B5A1 100%)',
                       color: '#FFFFFF',
                       fontSize: 13,
                       fontWeight: 800,
                       padding: '9px 18px',
                       borderRadius: 10,
                       textDecoration: 'none',
-                      border: '1.5px solid #66BB6A',
-                      boxShadow: '0 4px 16px rgba(0,200,83,0.3)',
+                      border: '1.5px solid #6da88e',
+                      boxShadow: '0 4px 16px rgba(129,181,161,0.3)',
                       letterSpacing: '0.02em',
                       textTransform: 'uppercase' as const,
                       textShadow: '0 1px 4px rgba(0,0,0,0.2)',
@@ -282,12 +282,12 @@ export default function LeadMagnetModal({
                     onMouseEnter={(e) => {
                       e.currentTarget.style.transform = 'translateY(-2px)'
                       e.currentTarget.style.boxShadow =
-                        '0 6px 24px rgba(0,200,83,0.5)'
+                        '0 6px 24px rgba(129,181,161,0.5)'
                     }}
                     onMouseLeave={(e) => {
                       e.currentTarget.style.transform = 'translateY(0)'
                       e.currentTarget.style.boxShadow =
-                        '0 4px 16px rgba(0,200,83,0.3)'
+                        '0 4px 16px rgba(129,181,161,0.3)'
                     }}
                   >
                     {item.buttonText}

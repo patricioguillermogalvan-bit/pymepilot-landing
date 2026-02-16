@@ -107,7 +107,7 @@ const MOTOR_RESULTS: Record<Motor, MotorResult> = {
     headline: 'Tu prioridad #1: aumentar el ticket promedio',
     description:
       'Tenés una base estable pero el ticket está estancado. El Motor de Expansión identifica oportunidades de cross-sell y up-sell personalizadas para cada cliente. IEY® subió su ticket promedio un 28% en 5 meses con este motor.',
-    color: '#00E676',
+    color: '#81B5A1',
   },
 }
 
@@ -156,7 +156,7 @@ export default function DiagnosticoPage() {
   const progress = result ? 100 : (currentStep / QUESTIONS.length) * 100
 
   return (
-    <div style={{ background: '#0A0A0A', minHeight: '100vh', color: '#FFFFFF' }}>
+    <div style={{ background: '#1a2a2c', minHeight: '100vh', color: '#FFFFFF' }}>
       {/* Back button */}
       <div
         style={{
@@ -192,7 +192,7 @@ export default function DiagnosticoPage() {
               transition: 'color 0.2s',
             }}
             onMouseEnter={(e) => {
-              e.currentTarget.style.color = '#00E676'
+              e.currentTarget.style.color = '#81B5A1'
             }}
             onMouseLeave={(e) => {
               e.currentTarget.style.color = 'rgba(255,255,255,0.6)'
@@ -215,7 +215,7 @@ export default function DiagnosticoPage() {
           style={{
             height: '100%',
             width: `${progress}%`,
-            background: 'linear-gradient(90deg, #00C853, #00E676)',
+            background: 'linear-gradient(90deg, #5a9a84, #81B5A1)',
             transition: 'width 0.4s ease',
             borderRadius: '0 2px 2px 0',
           }}
@@ -240,8 +240,8 @@ export default function DiagnosticoPage() {
                 display: 'inline-block',
                 fontSize: 14,
                 fontWeight: 800,
-                color: '#00E676',
-                background: 'rgba(0,200,83,0.12)',
+                color: '#81B5A1',
+                background: 'rgba(129,181,161,0.12)',
                 padding: '6px 16px',
                 borderRadius: 100,
                 marginBottom: 24,
@@ -288,8 +288,8 @@ export default function DiagnosticoPage() {
                   lineHeight: 1.4,
                 }}
                 onMouseEnter={(e) => {
-                  e.currentTarget.style.borderColor = '#00C853'
-                  e.currentTarget.style.background = 'rgba(0,200,83,0.08)'
+                  e.currentTarget.style.borderColor = '#5a9a84'
+                  e.currentTarget.style.background = 'rgba(129,181,161,0.08)'
                 }}
                 onMouseLeave={(e) => {
                   e.currentTarget.style.borderColor = 'rgba(255,255,255,0.1)'
@@ -459,15 +459,15 @@ export default function DiagnosticoPage() {
                 display: 'inline-flex',
                 alignItems: 'center',
                 gap: 12,
-                background: 'linear-gradient(135deg, #00C853 0%, #00E676 100%)',
+                background: 'linear-gradient(135deg, #5a9a84 0%, #81B5A1 100%)',
                 color: '#FFFFFF',
                 fontSize: 'clamp(15px, 2.8vw, 19px)',
                 fontWeight: 900,
                 padding: '20px 40px',
                 borderRadius: 16,
                 textDecoration: 'none',
-                border: '3px solid #66BB6A',
-                boxShadow: '0 8px 40px rgba(0,200,83,0.5)',
+                border: '3px solid #6da88e',
+                boxShadow: '0 8px 40px rgba(129,181,161,0.5)',
                 letterSpacing: '0.025em',
                 textTransform: 'uppercase' as const,
                 textShadow: '0 2px 8px rgba(0,0,0,0.3)',

@@ -12,9 +12,9 @@ export default function CTARepeat() {
       style={{
         padding: '48px 20px',
         textAlign: 'center',
-        background: 'linear-gradient(180deg, #0A0A0A 0%, #111111 100%)',
-        borderTop: '1px solid rgba(0,200,83,0.15)',
-        borderBottom: '1px solid rgba(0,200,83,0.15)',
+        background: 'linear-gradient(180deg, #1a2a2c 0%, #293E40 100%)',
+        borderTop: '1px solid rgba(129,181,161,0.15)',
+        borderBottom: '1px solid rgba(129,181,161,0.15)',
       }}
     >
       <a
@@ -31,15 +31,15 @@ export default function CTARepeat() {
           display: 'inline-flex',
           alignItems: 'center',
           gap: 12,
-          background: 'linear-gradient(135deg, #00A844 0%, #00C853 100%)',
+          background: 'linear-gradient(135deg, #4a8a70 0%, #5a9a84 100%)',
           color: '#FFFFFF',
           fontSize: 'clamp(15px, 2.5vw, 18px)',
           fontWeight: 900,
           padding: '18px 40px',
           borderRadius: 14,
           textDecoration: 'none',
-          border: '2px solid #00E676',
-          boxShadow: '0 8px 32px rgba(0,200,83,0.4)',
+          border: '2px solid #81B5A1',
+          boxShadow: '0 8px 32px rgba(129,181,161,0.4)',
           letterSpacing: '0.025em',
           textTransform: 'uppercase' as const,
           textShadow: '0 2px 6px rgba(0,0,0,0.25)',

@@ -70,7 +70,7 @@ export default function ProblemSection() {
       style={{
         position: 'relative',
         padding: '80px 20px',
-        background: 'linear-gradient(180deg, #111111 0%, #1A1A1A 50%, #111111 100%)',
+        background: 'linear-gradient(180deg, #293E40 0%, #344B4E 50%, #293E40 100%)',
         overflow: 'hidden',
       }}
     >
@@ -134,7 +134,7 @@ export default function ProblemSection() {
                 className="hover-scale-lg anim-fade-in-up"
                 style={{
                   animationDelay: `${0.15 + i * 0.12}s`,
-                  background: '#1E1E1E',
+                  background: '#344B4E',
                   borderRadius: 24,
                   padding: '36px 28px',
                   border: `2px solid ${p.borderColor}33`,

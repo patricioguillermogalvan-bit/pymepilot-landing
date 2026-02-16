@@ -5,8 +5,8 @@ export default function MinimalFooter() {
       style={{
         padding: '20px 24px',
         textAlign: 'center',
-        background: '#0A0A0A',
-        borderTop: '1px solid rgba(0,200,83,0.1)',
+        background: '#1a2a2c',
+        borderTop: '1px solid rgba(129,181,161,0.1)',
         fontSize: 13,
         color: 'rgba(255,255,255,0.3)',
       }}

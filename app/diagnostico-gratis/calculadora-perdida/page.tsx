@@ -103,8 +103,8 @@ export default function CalculadoraPerdidaPage() {
     fontSize: 16,
     fontWeight: 600,
     color: '#FFFFFF',
-    background: 'rgba(0,200,83,0.06)',
-    border: '1.5px solid rgba(0,200,83,0.2)',
+    background: 'rgba(129,181,161,0.06)',
+    border: '1.5px solid rgba(129,181,161,0.2)',
     borderRadius: 12,
     outline: 'none',
     transition: 'border-color 0.2s, box-shadow 0.2s',
@@ -130,17 +130,17 @@ export default function CalculadoraPerdidaPage() {
   }
 
   const handleFocus = (e: React.FocusEvent<HTMLInputElement>) => {
-    e.currentTarget.style.borderColor = '#00C853'
-    e.currentTarget.style.boxShadow = '0 0 0 3px rgba(0,200,83,0.15)'
+    e.currentTarget.style.borderColor = '#5a9a84'
+    e.currentTarget.style.boxShadow = '0 0 0 3px rgba(129,181,161,0.15)'
   }
 
   const handleBlur = (e: React.FocusEvent<HTMLInputElement>) => {
-    e.currentTarget.style.borderColor = 'rgba(0,200,83,0.2)'
+    e.currentTarget.style.borderColor = 'rgba(129,181,161,0.2)'
     e.currentTarget.style.boxShadow = 'none'
   }
 
   return (
-    <div style={{ background: '#0A0A0A', minHeight: '100vh', color: '#FFFFFF' }}>
+    <div style={{ background: '#1a2a2c', minHeight: '100vh', color: '#FFFFFF' }}>
       {/* Back button */}
       <div
         style={{
@@ -168,7 +168,7 @@ export default function CalculadoraPerdidaPage() {
               transition: 'color 0.2s',
             }}
             onMouseEnter={(e) => {
-              e.currentTarget.style.color = '#00E676'
+              e.currentTarget.style.color = '#81B5A1'
             }}
             onMouseLeave={(e) => {
               e.currentTarget.style.color = 'rgba(255,255,255,0.6)'
@@ -185,7 +185,7 @@ export default function CalculadoraPerdidaPage() {
         style={{
           position: 'relative',
           overflow: 'hidden',
-          background: 'linear-gradient(180deg, #0D3320 0%, #14532D 40%, #0A0A0A 100%)',
+          background: 'linear-gradient(180deg, #1a2a2c 0%, #293E40 40%, #1a2a2c 100%)',
           padding: '56px 20px 64px',
           textAlign: 'center',
         }}
@@ -197,7 +197,7 @@ export default function CalculadoraPerdidaPage() {
             left: -40,
             width: 400,
             height: 400,
-            background: 'radial-gradient(circle, rgba(0,200,83,0.1) 0%, transparent 65%)',
+            background: 'radial-gradient(circle, rgba(129,181,161,0.1) 0%, transparent 65%)',
             borderRadius: '50%',
             pointerEvents: 'none',
           }}
@@ -220,7 +220,7 @@ export default function CalculadoraPerdidaPage() {
             }}
           >
             Cuánto Estás Perdiendo en{' '}
-            <span style={{ color: '#00E676', textShadow: '0 0 30px rgba(0,200,83,0.4)' }}>
+            <span style={{ color: '#81B5A1', textShadow: '0 0 30px rgba(129,181,161,0.4)' }}>
               Clientes Inactivos
             </span>
           </h1>
@@ -242,7 +242,7 @@ export default function CalculadoraPerdidaPage() {
       </section>
 
       {/* Calculator Form */}
-      <section style={{ padding: '56px 20px', background: '#0A0A0A' }}>
+      <section style={{ padding: '56px 20px', background: '#1a2a2c' }}>
         <div style={{ maxWidth: 520, margin: '0 auto' }}>
           <div
             className="glass-dark anim-fade-in-up"
@@ -252,7 +252,7 @@ export default function CalculadoraPerdidaPage() {
               {/* Field 1 */}
               <div>
                 <label style={labelStyle}>
-                  <Users size={16} style={{ verticalAlign: 'middle', marginRight: 6, color: '#00E676' }} />
+                  <Users size={16} style={{ verticalAlign: 'middle', marginRight: 6, color: '#81B5A1' }} />
                   ¿Cuántos clientes activos tenés?
                 </label>
                 <div
@@ -289,7 +289,7 @@ export default function CalculadoraPerdidaPage() {
               {/* Field 2 */}
               <div>
                 <label style={labelStyle}>
-                  <TrendingDown size={16} style={{ verticalAlign: 'middle', marginRight: 6, color: '#00E676' }} />
+                  <TrendingDown size={16} style={{ verticalAlign: 'middle', marginRight: 6, color: '#81B5A1' }} />
                   ¿Cuántos dejaron de comprar en los últimos 3 meses?
                 </label>
                 <div
@@ -329,7 +329,7 @@ export default function CalculadoraPerdidaPage() {
               {/* Field 3 */}
               <div>
                 <label style={labelStyle}>
-                  <DollarSign size={16} style={{ verticalAlign: 'middle', marginRight: 6, color: '#00E676' }} />
+                  <DollarSign size={16} style={{ verticalAlign: 'middle', marginRight: 6, color: '#81B5A1' }} />
                   Ticket promedio mensual por cliente (ARS)
                 </label>
                 <div
@@ -380,14 +380,14 @@ export default function CalculadoraPerdidaPage() {
                   alignItems: 'center',
                   justifyContent: 'center',
                   gap: 10,
-                  background: 'linear-gradient(135deg, #00C853 0%, #00E676 100%)',
+                  background: 'linear-gradient(135deg, #5a9a84 0%, #81B5A1 100%)',
                   color: '#FFFFFF',
                   fontSize: 17,
                   fontWeight: 900,
                   padding: '18px 32px',
                   borderRadius: 14,
-                  border: '2px solid #66BB6A',
-                  boxShadow: '0 8px 32px rgba(0,200,83,0.4)',
+                  border: '2px solid #6da88e',
+                  boxShadow: '0 8px 32px rgba(129,181,161,0.4)',
                   cursor: 'pointer',
                   letterSpacing: '0.02em',
                   textTransform: 'uppercase' as const,
@@ -409,7 +409,7 @@ export default function CalculadoraPerdidaPage() {
           id="resultado"
           style={{
             padding: '56px 20px 72px',
-            background: 'linear-gradient(180deg, #0D0D0D 0%, #0D3320 100%)',
+            background: 'linear-gradient(180deg, #1a2a2c 0%, #1a2a2c 100%)',
             animation: 'fadeInUp 0.5s ease-out',
           }}
         >
@@ -535,7 +535,7 @@ export default function CalculadoraPerdidaPage() {
                   }}
                 >
                   <span>Recupero potencial con PymePilot</span>
-                  <span style={{ color: '#00E676', fontWeight: 700, flexShrink: 0, marginLeft: 12 }}>
+                  <span style={{ color: '#81B5A1', fontWeight: 700, flexShrink: 0, marginLeft: 12 }}>
                     {formatARS(results.recuperoPotencial)}
                   </span>
                 </li>
@@ -571,7 +571,7 @@ export default function CalculadoraPerdidaPage() {
                   </p>
                   <p style={{ fontSize: 14, color: 'rgba(255,255,255,0.75)', margin: 0, lineHeight: 1.6 }}>
                     En IEY®, el{' '}
-                    <strong style={{ color: '#00E676' }}>68% de los clientes que dejaron de comprar</strong>{' '}
+                    <strong style={{ color: '#81B5A1' }}>68% de los clientes que dejaron de comprar</strong>{' '}
                     volvieron a hacerlo cuando se los contactó en el momento justo con el mensaje correcto.
                   </p>
                 </div>
@@ -596,15 +596,15 @@ export default function CalculadoraPerdidaPage() {
                   display: 'inline-flex',
                   alignItems: 'center',
                   gap: 12,
-                  background: 'linear-gradient(135deg, #00C853 0%, #00E676 100%)',
+                  background: 'linear-gradient(135deg, #5a9a84 0%, #81B5A1 100%)',
                   color: '#FFFFFF',
                   fontSize: 'clamp(15px, 2.8vw, 19px)',
                   fontWeight: 900,
                   padding: '20px 40px',
                   borderRadius: 16,
                   textDecoration: 'none',
-                  border: '3px solid #66BB6A',
-                  boxShadow: '0 8px 40px rgba(0,200,83,0.5)',
+                  border: '3px solid #6da88e',
+                  boxShadow: '0 8px 40px rgba(129,181,161,0.5)',
                   letterSpacing: '0.025em',
                   textTransform: 'uppercase' as const,
                   textShadow: '0 2px 8px rgba(0,0,0,0.3)',

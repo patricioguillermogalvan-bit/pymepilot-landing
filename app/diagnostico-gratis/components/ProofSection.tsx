@@ -26,7 +26,7 @@ export default function ProofSection() {
       style={{
         position: 'relative',
         padding: '80px 20px',
-        background: '#0A0A0A',
+        background: '#1a2a2c',
       }}
     >
       {/* Subtle green overlay */}
@@ -34,7 +34,7 @@ export default function ProofSection() {
         style={{
           position: 'absolute',
           inset: 0,
-          background: 'rgba(0,200,83,0.03)',
+          background: 'rgba(129,181,161,0.03)',
           pointerEvents: 'none',
         }}
       />
@@ -46,11 +46,11 @@ export default function ProofSection() {
           style={{
             maxWidth: 660,
             margin: '0 auto 56px',
-            background: 'linear-gradient(135deg, #00832D 0%, #00A844 50%, #00832D 100%)',
+            background: 'linear-gradient(135deg, #3d7a63 0%, #4a8a70 50%, #3d7a63 100%)',
             borderRadius: 24,
             padding: 'clamp(36px, 5vw, 56px) clamp(24px, 4vw, 48px)',
-            border: '2px solid #66BB6A',
-            boxShadow: '0 12px 48px rgba(0,200,83,0.3)',
+            border: '2px solid #6da88e',
+            boxShadow: '0 12px 48px rgba(129,181,161,0.3)',
             textAlign: 'center',
           }}
         >
@@ -88,14 +88,14 @@ export default function ProofSection() {
                   width: 56,
                   height: 56,
                   borderRadius: 16,
-                  background: '#00E676',
+                  background: '#81B5A1',
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',
-                  boxShadow: '0 8px 28px rgba(0,230,118,0.4)',
+                  boxShadow: '0 8px 28px rgba(163,202,187,0.4)',
                 }}
               >
-                <ArrowRight size={30} color="#0D0D0D" strokeWidth={3} />
+                <ArrowRight size={30} color="#1a2a2c" strokeWidth={3} />
               </div>
             </div>
 
@@ -106,8 +106,8 @@ export default function ProofSection() {
                   fontSize: 'clamp(48px, 10vw, 80px)',
                   fontWeight: 900,
                   lineHeight: 1,
-                  color: '#C8E6C9',
-                  textShadow: '0 0 40px rgba(200,255,200,0.5)',
+                  color: '#c8ddd4',
+                  textShadow: '0 0 40px rgba(200,221,212,0.5)',
                 }}
               >
                 74%
@@ -128,8 +128,8 @@ export default function ProofSection() {
               display: 'inline-flex',
               alignItems: 'center',
               gap: 8,
-              background: 'rgba(0,230,118,0.25)',
-              border: '2px solid #A5D6A7',
+              background: 'rgba(163,202,187,0.25)',
+              border: '2px solid #a3cabb',
               borderRadius: 100,
               padding: '8px 20px',
               fontSize: 16,
@@ -159,11 +159,11 @@ export default function ProofSection() {
                 className="hover-lift anim-fade-in-up"
                 style={{
                   animationDelay: `${0.1 + i * 0.1}s`,
-                  background: 'linear-gradient(135deg, #14532D 0%, #1B5E20 100%)',
+                  background: 'linear-gradient(135deg, #293E40 0%, #2a4a3e 100%)',
                   borderRadius: 20,
                   padding: '32px 24px',
-                  border: '2px solid #00C853',
-                  boxShadow: '0 4px 20px rgba(0,200,83,0.2)',
+                  border: '2px solid #5a9a84',
+                  boxShadow: '0 4px 20px rgba(129,181,161,0.2)',
                 }}
               >
                 {/* Icon */}
@@ -173,15 +173,15 @@ export default function ProofSection() {
                     width: 56,
                     height: 56,
                     borderRadius: 16,
-                    background: '#00E676',
+                    background: '#81B5A1',
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',
                     marginBottom: 16,
-                    boxShadow: '0 8px 24px rgba(0,230,118,0.3)',
+                    boxShadow: '0 8px 24px rgba(163,202,187,0.3)',
                   }}
                 >
-                  <Icon size={28} color="#0D0D0D" strokeWidth={2.5} />
+                  <Icon size={28} color="#1a2a2c" strokeWidth={2.5} />
                 </div>
 
                 {/* Value */}
@@ -225,11 +225,11 @@ export default function ProofSection() {
               gap: 10,
             }}
           >
-            <span className="anim-bounce-sub" style={{ display: 'flex', color: '#00E676' }}>
+            <span className="anim-bounce-sub" style={{ display: 'flex', color: '#81B5A1' }}>
               <ArrowUp size={22} strokeWidth={3} />
             </span>
             Resultados reales validados en:
-            <span className="anim-bounce-sub" style={{ display: 'flex', color: '#00E676' }}>
+            <span className="anim-bounce-sub" style={{ display: 'flex', color: '#81B5A1' }}>
               <ArrowUp size={22} strokeWidth={3} />
             </span>
           </p>
@@ -241,11 +241,11 @@ export default function ProofSection() {
               position: 'relative',
               maxWidth: 640,
               margin: '0 auto',
-              background: 'linear-gradient(135deg, #0D3320 0%, #14532D 50%, #0D3320 100%)',
+              background: 'linear-gradient(135deg, #1a2a2c 0%, #293E40 50%, #1a2a2c 100%)',
               borderRadius: 24,
               padding: '48px 32px 40px',
-              border: '4px solid #00C853',
-              boxShadow: '0 16px 64px rgba(0,200,83,0.35), 0 0 0 1px rgba(0,200,83,0.1)',
+              border: '4px solid #5a9a84',
+              boxShadow: '0 16px 64px rgba(129,181,161,0.35), 0 0 0 1px rgba(129,181,161,0.1)',
               transition: 'transform 0.3s ease',
               overflow: 'visible',
             }}
@@ -259,7 +259,7 @@ export default function ProofSection() {
                 transform: 'translate(-50%, -50%)',
                 width: 500,
                 height: 500,
-                background: 'radial-gradient(circle, rgba(0,200,83,0.15) 0%, transparent 60%)',
+                background: 'radial-gradient(circle, rgba(129,181,161,0.15) 0%, transparent 60%)',
                 borderRadius: '50%',
                 pointerEvents: 'none',
               }}
@@ -272,15 +272,15 @@ export default function ProofSection() {
                   display: 'inline-flex',
                   alignItems: 'center',
                   gap: 8,
-                  background: 'linear-gradient(135deg, #00C853, #00E676)',
-                  color: '#0D3320',
+                  background: 'linear-gradient(135deg, #5a9a84, #81B5A1)',
+                  color: '#1a2a2c',
                   fontWeight: 900,
                   fontSize: 13,
                   padding: '8px 20px',
                   borderRadius: 100,
                   letterSpacing: '0.08em',
                   textTransform: 'uppercase' as const,
-                  boxShadow: '0 4px 20px rgba(0,200,83,0.5)',
+                  boxShadow: '0 4px 20px rgba(129,181,161,0.5)',
                   whiteSpace: 'nowrap',
                 }}
               >
@@ -331,7 +331,7 @@ export default function ProofSection() {
                   <div style={{ fontSize: 20, fontWeight: 900, color: '#FFFFFF', lineHeight: 1.3 }}>
                     Sistema Operativo en IEY&reg;
                   </div>
-                  <div style={{ fontSize: 14, color: '#A5D6A7', fontWeight: 600, marginTop: 4 }}>
+                  <div style={{ fontSize: 14, color: '#a3cabb', fontWeight: 600, marginTop: 4 }}>
                     Distribuidor #1 Accesorios MagSafe Argentina
                   </div>
                 </div>
@@ -341,7 +341,7 @@ export default function ProofSection() {
               <div
                 style={{
                   height: 2,
-                  background: 'linear-gradient(90deg, transparent, #00C853, transparent)',
+                  background: 'linear-gradient(90deg, transparent, #5a9a84, transparent)',
                   margin: '0 auto 28px',
                   maxWidth: 400,
                 }}
@@ -371,14 +371,14 @@ export default function ProofSection() {
                       width: 36,
                       height: 36,
                       borderRadius: '50%',
-                      background: 'rgba(0,200,83,0.2)',
+                      background: 'rgba(129,181,161,0.2)',
                       display: 'flex',
                       alignItems: 'center',
                       justifyContent: 'center',
                       margin: '0 auto 10px',
                     }}
                   >
-                    <CheckCircle size={18} color="#00E676" strokeWidth={2.5} />
+                    <CheckCircle size={18} color="#81B5A1" strokeWidth={2.5} />
                   </div>
                   <div style={{ fontSize: 14, fontWeight: 800, color: '#FFFFFF' }}>M&eacute;tricas Reales</div>
                   <div style={{ fontSize: 12, color: 'rgba(255,255,255,0.5)', marginTop: 2 }}>No proyecciones</div>
@@ -398,14 +398,14 @@ export default function ProofSection() {
                       width: 36,
                       height: 36,
                       borderRadius: '50%',
-                      background: 'rgba(0,200,83,0.2)',
+                      background: 'rgba(129,181,161,0.2)',
                       display: 'flex',
                       alignItems: 'center',
                       justifyContent: 'center',
                       margin: '0 auto 10px',
                     }}
                   >
-                    <CheckCircle size={18} color="#00E676" strokeWidth={2.5} />
+                    <CheckCircle size={18} color="#81B5A1" strokeWidth={2.5} />
                   </div>
                   <div style={{ fontSize: 14, fontWeight: 800, color: '#FFFFFF' }}>6 Meses Operativo</div>
                   <div style={{ fontSize: 12, color: 'rgba(255,255,255,0.5)', marginTop: 2 }}>Jul-Dic 2025</div>
@@ -425,14 +425,14 @@ export default function ProofSection() {
                       width: 36,
                       height: 36,
                       borderRadius: '50%',
-                      background: 'rgba(0,200,83,0.2)',
+                      background: 'rgba(129,181,161,0.2)',
                       display: 'flex',
                       alignItems: 'center',
                       justifyContent: 'center',
                       margin: '0 auto 10px',
                     }}
                   >
-                    <CheckCircle size={18} color="#00E676" strokeWidth={2.5} />
+                    <CheckCircle size={18} color="#81B5A1" strokeWidth={2.5} />
                   </div>
                   <div style={{ fontSize: 14, fontWeight: 800, color: '#FFFFFF' }}>Datos Verificables</div>
                   <div style={{ fontSize: 12, color: 'rgba(255,255,255,0.5)', marginTop: 2 }}>Auditables</div>
@@ -445,7 +445,7 @@ export default function ProofSection() {
                   background: 'rgba(0,0,0,0.3)',
                   borderRadius: 16,
                   padding: '22px 24px',
-                  borderLeft: '4px solid #00C853',
+                  borderLeft: '4px solid #5a9a84',
                 }}
               >
                 <p
@@ -458,15 +458,15 @@ export default function ProofSection() {
                   }}
                 >
                   &ldquo;Como due&ntilde;o, lo que m&aacute;s valoro es la{' '}
-                  <span style={{ color: '#00E676', fontWeight: 800, fontStyle: 'normal' }}>previsibilidad</span>.
+                  <span style={{ color: '#81B5A1', fontWeight: 800, fontStyle: 'normal' }}>previsibilidad</span>.
                   Pasar de 34% a 74% de facturaci&oacute;n recurrente sobre la facturaci&oacute;n total del canal me dio un{' '}
-                  <span style={{ color: '#00E676', fontWeight: 800, fontStyle: 'normal' }}>flujo de caja estable y predecible</span>.
+                  <span style={{ color: '#81B5A1', fontWeight: 800, fontStyle: 'normal' }}>flujo de caja estable y predecible</span>.
                   Me permite proyectar mucho mejor a mediano y largo plazo.&rdquo;
                 </p>
                 <span
                   style={{
                     fontSize: 13,
-                    color: '#00E676',
+                    color: '#81B5A1',
                     fontWeight: 800,
                     marginTop: 12,
                     display: 'block',

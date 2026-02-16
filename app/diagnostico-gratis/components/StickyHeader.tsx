@@ -25,10 +25,10 @@ export default function StickyHeader() {
           left: 0,
           right: 0,
           zIndex: 1000,
-          background: 'linear-gradient(90deg, #0D3320 0%, #14532D 50%, #0D3320 100%)',
-          borderBottom: '3px solid #00C853',
+          background: 'linear-gradient(90deg, #1a2a2c 0%, #293E40 50%, #1a2a2c 100%)',
+          borderBottom: '3px solid #5a9a84',
           boxShadow: scrolled
-            ? '0 4px 24px rgba(0,200,83,0.15), 0 2px 8px rgba(0,0,0,0.3)'
+            ? '0 4px 24px rgba(129,181,161,0.15), 0 2px 8px rgba(0,0,0,0.3)'
             : '0 2px 8px rgba(0,0,0,0.2)',
           transition: 'box-shadow 0.3s ease',
         }}
@@ -50,10 +50,10 @@ export default function StickyHeader() {
             style={{ display: 'flex', alignItems: 'center', gap: 10, cursor: 'default' }}
           >
             <svg className="header-logo-icon" width="36" height="36" viewBox="0 0 48 48" fill="none">
-              <rect x="2.6" y="2.6" width="20.25" height="20.25" rx="4.2" fill="#66BB6A" />
-              <rect x="25.1" y="2.6" width="20.25" height="20.25" rx="4.2" fill="#A5D6A7" />
-              <rect x="2.6" y="25.1" width="20.25" height="20.25" rx="4.2" fill="#E8F5E9" />
-              <rect x="25.1" y="25.1" width="20.25" height="20.25" rx="4.2" fill="#81C784" />
+              <rect x="2.6" y="2.6" width="20.25" height="20.25" rx="4.2" fill="#6da88e" />
+              <rect x="25.1" y="2.6" width="20.25" height="20.25" rx="4.2" fill="#a3cabb" />
+              <rect x="2.6" y="25.1" width="20.25" height="20.25" rx="4.2" fill="#d9e8e0" />
+              <rect x="25.1" y="25.1" width="20.25" height="20.25" rx="4.2" fill="#81B5A1" />
             </svg>
             <span
               className="header-logo-text"
@@ -64,7 +64,7 @@ export default function StickyHeader() {
                 letterSpacing: '-0.02em',
               }}
             >
-              Pyme<span style={{ color: '#00E676' }}>Pilot</span>
+              Pyme<span style={{ color: '#81B5A1' }}>Pilot</span>
             </span>
           </div>
 
@@ -83,7 +83,7 @@ export default function StickyHeader() {
               display: 'inline-flex',
               alignItems: 'center',
               gap: 8,
-              background: 'linear-gradient(135deg, #00C853 0%, #00E676 100%)',
+              background: 'linear-gradient(135deg, #5a9a84 0%, #81B5A1 100%)',
               color: '#FFFFFF',
               fontWeight: 900,
               fontSize: 14,
@@ -92,8 +92,8 @@ export default function StickyHeader() {
               textDecoration: 'none',
               letterSpacing: '0.025em',
               whiteSpace: 'nowrap',
-              border: '2px solid #66BB6A',
-              boxShadow: '0 4px 20px rgba(0,200,83,0.4)',
+              border: '2px solid #6da88e',
+              boxShadow: '0 4px 20px rgba(129,181,161,0.4)',
               textTransform: 'uppercase' as const,
               textShadow: '0 1px 4px rgba(0,0,0,0.2)',
             }}
@@ -105,7 +105,7 @@ export default function StickyHeader() {
         </div>
       </header>
       {/* Spacer - matches hero dark green bg */}
-      <div style={{ height: 68, background: '#0D3320' }} />
+      <div style={{ height: 68, background: '#1a2a2c' }} />
     </>
   )
 }

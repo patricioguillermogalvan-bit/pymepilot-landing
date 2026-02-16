@@ -18,7 +18,7 @@ export default function GuaranteeCTA() {
       style={{
         position: 'relative',
         padding: '96px 20px',
-        background: 'linear-gradient(180deg, #0A0A0A 0%, #0D0D0D 100%)',
+        background: 'linear-gradient(180deg, #1a2a2c 0%, #1a2a2c 100%)',
         overflow: 'hidden',
         textAlign: 'center',
       }}
@@ -32,7 +32,7 @@ export default function GuaranteeCTA() {
           transform: 'translate(-50%, -50%)',
           width: 800,
           height: 800,
-          background: 'radial-gradient(circle, rgba(0,200,83,0.12) 0%, transparent 55%)',
+          background: 'radial-gradient(circle, rgba(129,181,161,0.12) 0%, transparent 55%)',
           borderRadius: '50%',
           pointerEvents: 'none',
         }}
@@ -43,12 +43,12 @@ export default function GuaranteeCTA() {
         <div
           className="anim-fade-in-up"
           style={{
-            background: 'linear-gradient(135deg, #00832D 0%, #00A844 50%, #00832D 100%)',
-            border: '3px solid #66BB6A',
+            background: 'linear-gradient(135deg, #3d7a63 0%, #4a8a70 50%, #3d7a63 100%)',
+            border: '3px solid #6da88e',
             borderRadius: 28,
             padding: '48px 36px',
             marginBottom: 40,
-            boxShadow: '0 12px 48px rgba(0,200,83,0.3)',
+            boxShadow: '0 12px 48px rgba(129,181,161,0.3)',
           }}
         >
           <div
@@ -57,14 +57,14 @@ export default function GuaranteeCTA() {
               height: 80,
               margin: '0 auto 24px',
               borderRadius: '50%',
-              background: '#A5D6A7',
+              background: '#a3cabb',
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center',
-              boxShadow: '0 8px 32px rgba(165,214,167,0.4)',
+              boxShadow: '0 8px 32px rgba(163,202,187,0.4)',
             }}
           >
-            <Shield size={40} color="#0D3320" strokeWidth={2} />
+            <Shield size={40} color="#1a2a2c" strokeWidth={2} />
           </div>
 
           <h3 style={{ fontSize: 'clamp(24px, 4.5vw, 32px)', fontWeight: 900, color: '#FFFFFF', marginBottom: 16 }}>
@@ -89,7 +89,7 @@ export default function GuaranteeCTA() {
             Cada d&iacute;a sin seguimiento inteligente = clientes que se van en silencio.
             <br />
             IEY&reg; lo resolvi&oacute; en 6 meses.{' '}
-            <strong style={{ color: '#00E676' }}>&iquest;Cu&aacute;nto m&aacute;s vas a esperar?</strong>
+            <strong style={{ color: '#81B5A1' }}>&iquest;Cu&aacute;nto m&aacute;s vas a esperar?</strong>
           </p>
         </div>
 
@@ -109,15 +109,15 @@ export default function GuaranteeCTA() {
               display: 'inline-flex',
               alignItems: 'center',
               gap: 14,
-              background: 'linear-gradient(135deg, #00C853 0%, #00E676 100%)',
+              background: 'linear-gradient(135deg, #5a9a84 0%, #81B5A1 100%)',
               color: '#FFFFFF',
               fontSize: 'clamp(17px, 3vw, 24px)',
               fontWeight: 900,
               padding: '24px 52px',
               borderRadius: 20,
               textDecoration: 'none',
-              border: '3px solid #66BB6A',
-              boxShadow: '0 12px 48px rgba(0,200,83,0.5)',
+              border: '3px solid #6da88e',
+              boxShadow: '0 12px 48px rgba(129,181,161,0.5)',
               letterSpacing: '0.025em',
               textTransform: 'uppercase' as const,
               textShadow: '0 2px 8px rgba(0,0,0,0.3)',
@@ -149,7 +149,7 @@ export default function GuaranteeCTA() {
                 display: 'inline-flex',
                 alignItems: 'center',
                 gap: 8,
-                color: '#00E676',
+                color: '#81B5A1',
                 fontSize: 15,
                 fontWeight: 700,
               }}
@@ -181,7 +181,7 @@ export default function GuaranteeCTA() {
                 position: 'absolute',
                 inset: -6,
                 borderRadius: '50%',
-                background: '#00C853',
+                background: '#5a9a84',
                 opacity: 0.3,
                 filter: 'blur(10px)',
               }}
@@ -192,14 +192,14 @@ export default function GuaranteeCTA() {
                 width: 72,
                 height: 72,
                 borderRadius: '50%',
-                background: 'linear-gradient(135deg, #00C853 0%, #00A844 100%)',
+                background: 'linear-gradient(135deg, #5a9a84 0%, #4a8a70 100%)',
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
                 color: '#FFFFFF',
                 fontWeight: 900,
                 fontSize: 24,
-                border: '3px solid #66BB6A',
+                border: '3px solid #6da88e',
               }}
             >
               PG
@@ -222,7 +222,7 @@ export default function GuaranteeCTA() {
             <span
               style={{
                 fontSize: 13,
-                color: '#00E676',
+                color: '#81B5A1',
                 fontWeight: 800,
                 marginTop: 10,
                 display: 'block',
