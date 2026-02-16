@@ -8,6 +8,7 @@ import ProblemSection from './components/ProblemSection'
 import SolutionSection from './components/SolutionSection'
 import GuaranteeCTA from './components/GuaranteeCTA'
 import MinimalFooter from './components/MinimalFooter'
+import LeadMagnetTrigger from './components/LeadMagnetTrigger'
 
 export default function DiagnosticoGratisPage() {
   return (
@@ -48,6 +49,7 @@ export default function DiagnosticoGratisPage() {
         <GuaranteeCTA />
       </main>
       <MinimalFooter />
+      <LeadMagnetTrigger />
     </>
   )
 }

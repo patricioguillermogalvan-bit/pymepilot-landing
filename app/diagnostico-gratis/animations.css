@@ -75,6 +75,268 @@ html, body {
   animation: float 4s ease-in-out infinite;
 }
 
+/* ========== MODAL ========== */
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes modalSlideUp {
+  from { opacity: 0; transform: translateY(24px) scale(0.97); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+/* ========== LEAD MAGNET ICONS ========== */
+
+/* MoneyLeak: gotas cayendo */
+@keyframes lmDrip {
+  0%   { transform: translateY(-8px); opacity: 0; }
+  50%  { opacity: 1; }
+  100% { transform: translateY(0); opacity: 0.3; }
+}
+
+.lm-drop { animation: lmDrip 2s ease-in-out infinite; }
+.lm-drop-1 { animation-delay: 0s; }
+.lm-drop-2 { animation-delay: 0.3s; }
+.lm-drop-3 { animation-delay: 0.6s; }
+
+.lm-drip-arrow {
+  animation: lmDrip 2s ease-in-out infinite;
+  animation-delay: 0.15s;
+}
+
+/* ChartGrowth: barras creciendo */
+@keyframes lmBarGrow {
+  from { transform: scaleY(0); }
+  to   { transform: scaleY(1); }
+}
+
+.lm-bar { transform-origin: center bottom; }
+.lm-bar-2 { animation: lmBarGrow 1s ease-out 0.2s both; }
+.lm-bar-3 { animation: lmBarGrow 1s ease-out 0.4s both; }
+
+/* ChartGrowth: línea dibujándose */
+@keyframes lmDrawLine {
+  from { stroke-dashoffset: 60; }
+  to   { stroke-dashoffset: 0; }
+}
+
+.lm-growth-line {
+  stroke-dasharray: 60;
+  animation: lmDrawLine 1.8s ease-out 0.5s both;
+}
+
+/* ChartGrowth: punto final pulsante */
+@keyframes lmEndpointPulse {
+  0%, 100% { r: 3; opacity: 1; }
+  50%      { r: 5; opacity: 0.6; }
+}
+
+.lm-endpoint-pulse {
+  animation: lmEndpointPulse 1.5s ease-in-out 2s infinite;
+}
+
+/* TargetScan: anillos expandiéndose */
+@keyframes lmRingPulse {
+  0%   { transform: scale(0.85); opacity: 0; }
+  50%  { opacity: 0.5; }
+  100% { transform: scale(1); opacity: 0.15; }
+}
+
+.lm-ring {
+  transform-origin: 24px 24px;
+  animation: lmRingPulse 3s ease-out infinite;
+}
+.lm-ring-1 { animation-delay: 0s; }
+.lm-ring-2 { animation-delay: 0.3s; }
+.lm-ring-3 { animation-delay: 0.6s; }
+
+/* TargetScan: centro pulsante */
+@keyframes lmCenterPulse {
+  0%, 100% { r: 3; opacity: 1; }
+  50%      { r: 4.5; opacity: 0.7; }
+}
+
+.lm-center-pulse {
+  animation: lmCenterPulse 2s ease-in-out infinite;
+}
+
+/* ========== ALERT LOSS ICON ========== */
+
+@keyframes alPulse {
+  0%, 100% { opacity: 0.08; transform: scale(1); }
+  50%      { opacity: 0.2; transform: scale(1.1); }
+}
+
+@keyframes alShake {
+  0%, 100% { transform: translateX(0); }
+  25%      { transform: translateX(-1px); }
+  75%      { transform: translateX(1px); }
+}
+
+@keyframes alarmShake {
+  0%, 100% { transform: translateX(0) rotate(0); }
+  5%       { transform: translateX(-4px) rotate(-0.7deg); }
+  10%      { transform: translateX(4px) rotate(0.7deg); }
+  15%      { transform: translateX(-3px) rotate(-0.5deg); }
+  20%      { transform: translateX(3px) rotate(0.5deg); }
+  25%      { transform: translateX(-2px) rotate(-0.3deg); }
+  30%      { transform: translateX(0) rotate(0); }
+}
+
+@keyframes alarmBorderPulse {
+  0%, 100% { border-color: #FF5252; box-shadow: 0 0 20px rgba(255,82,82,0.15); }
+  50%      { border-color: #FF8A80; box-shadow: 0 0 40px rgba(255,82,82,0.35), 0 0 80px rgba(255,82,82,0.1); }
+}
+
+.alarm-box {
+  animation:
+    alarmShake 2.5s cubic-bezier(0.36, 0.07, 0.19, 0.97) infinite,
+    alarmBorderPulse 2s ease-in-out infinite;
+}
+
+.al-glow {
+  transform-origin: 20px 22px;
+  animation: alPulse 2.5s ease-in-out infinite;
+}
+
+.al-triangle {
+  animation: alShake 3s ease-in-out 2s infinite;
+}
+
+/* ========== ANALYTICS ICON ========== */
+
+@keyframes anBarGrow {
+  from { transform: scaleY(0); }
+  to   { transform: scaleY(1); }
+}
+
+@keyframes anDrawLine {
+  from { stroke-dashoffset: 40; }
+  to   { stroke-dashoffset: 0; }
+}
+
+@keyframes anEndpointPulse {
+  0%, 100% { r: 2.5; opacity: 1; }
+  50%      { r: 4; opacity: 0.6; }
+}
+
+.an-bar { transform-origin: center bottom; }
+.an-bar-2 { animation: anBarGrow 1s ease-out 0.2s both; }
+.an-bar-3 { animation: anBarGrow 1s ease-out 0.4s both; }
+
+.an-trend-line {
+  stroke-dasharray: 40;
+  animation: anDrawLine 1.8s ease-out 0.5s both;
+}
+
+.an-endpoint {
+  animation: anEndpointPulse 1.5s ease-in-out 2s infinite;
+}
+
+/* ========== INSIGHT ICON ========== */
+
+@keyframes inGlow {
+  0%, 100% { opacity: 0.06; transform: scale(1); }
+  50%      { opacity: 0.15; transform: scale(1.08); }
+}
+
+@keyframes inRayFlash {
+  0%, 100% { opacity: 0; transform: scaleY(0.5); }
+  50%      { opacity: 0.8; transform: scaleY(1); }
+}
+
+.in-glow {
+  transform-origin: 20px 18px;
+  animation: inGlow 3s ease-in-out infinite;
+}
+
+.in-ray {
+  transform-origin: center center;
+  animation: inRayFlash 2.5s ease-in-out infinite;
+}
+.in-ray-1 { animation-delay: 0s; }
+.in-ray-2 { animation-delay: 0.4s; }
+.in-ray-3 { animation-delay: 0.8s; }
+
+/* ========== SPARKLE ICON ========== */
+
+@keyframes sparkleRotate {
+  0%   { transform: rotate(0deg) scale(1); }
+  50%  { transform: rotate(180deg) scale(1.1); }
+  100% { transform: rotate(360deg) scale(1); }
+}
+
+@keyframes sparkleTwinkle {
+  0%, 100% { opacity: 0; transform: scale(0); }
+  50%      { opacity: 1; transform: scale(1); }
+}
+
+.sparkle-rotate {
+  animation: sparkleRotate 4s linear infinite;
+}
+
+.sparkle-twinkle {
+  animation: sparkleTwinkle 2s ease-in-out infinite;
+}
+
+.sparkle-twinkle-delayed {
+  animation: sparkleTwinkle 2s ease-in-out infinite;
+  animation-delay: 1s;
+}
+
+/* ========== TRIGGER FLOATING BUTTON ========== */
+
+@keyframes triggerSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes triggerPulse {
+  0%, 100% {
+    box-shadow: 0 8px 32px rgba(0,0,0,0.4), 0 0 20px rgba(0,200,83,0.1);
+  }
+  50% {
+    box-shadow: 0 8px 36px rgba(0,0,0,0.4), 0 0 32px rgba(0,200,83,0.2);
+    transform: scale(1.01);
+  }
+}
+
+.trigger-entrance {
+  animation: triggerSlideUp 600ms cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.trigger-idle {
+  animation: triggerSlideUp 600ms cubic-bezier(0.34, 1.56, 0.64, 1) forwards,
+             triggerPulse 3s ease-in-out 1s infinite;
+}
+
+.trigger-float {
+  bottom: 32px;
+  right: 32px;
+  width: 280px;
+  background: rgba(15, 15, 15, 0.92);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1.5px solid rgba(0,200,83,0.25);
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.4), 0 0 20px rgba(0,200,83,0.1);
+  transition: transform 200ms ease, box-shadow 200ms ease;
+}
+
+.trigger-cta-btn:hover {
+  opacity: 0.9 !important;
+  transform: translateY(-1px);
+}
+
 /* ========== HOVER UTILITIES ========== */
 
 .hover-lift {
@@ -213,5 +475,15 @@ html, body {
   }
   .header-logo-text {
     font-size: 16px !important;
+  }
+  .trigger-float {
+    bottom: 0 !important;
+    right: 0 !important;
+    left: 0 !important;
+    width: auto !important;
+    margin: 0 16px;
+    border-radius: 16px 16px 0 0 !important;
+    padding: 16px 20px !important;
+    padding-bottom: calc(16px + env(safe-area-inset-bottom)) !important;
   }
 }
