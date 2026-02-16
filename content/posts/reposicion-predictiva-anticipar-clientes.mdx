@@ -1,11 +1,11 @@
 ---
 title: "Reposición Predictiva: Cómo Anticiparte a Tus Clientes Antes Que la Competencia"
 description: "Guía práctica para implementar reposición predictiva en tu distribuidora mayorista. Dejá de esperar pedidos y empezá a anticipar necesidades con datos reales."
-date: "2025-03-02"
+date: "2026-02-04"
 tags: ["reposición predictiva", "anticipar pedidos clientes", "predicción demanda mayorista", "gestión stock b2b"]
 image: "/blog/images/reposicion-predictiva.jpg"
 imageAlt: "Reposición predictiva para distribuidoras mayoristas - Anticipar pedidos"
-author: "Patricio Guillermo"
+author: "Patricio Guillermo Galván"
 ---
 
 ## Introducción: De Reactivo a Predictivo
@@ -13,16 +13,16 @@ author: "Patricio Guillermo"
 **Escenario común en distribuidoras:**
 
 **Lunes 11am** - Tu cliente te escribe por WhatsApp:
-> "Pato, necesito 50 fundas MagSafe para mañana. ¿Tenés stock?"
+> "Pato, necesito 50 fundas Mate de línea 17 para mañana. ¿Tenés stock?"
 
 **Tu respuesta:**
 > "Dejame verificar stock y te confirmo en 2 horas"
 
 **2 horas después:**
-> "Tengo 30 en stock. Las otras 20 te las consigo para el jueves."
+> "Tengo 30 en stock. La carga ya está en Ezeiza, deberia llegarnos a deposito el lunes próximo."
 
 **Respuesta del cliente:**
-> "No me sirve, necesito todo para mañana. Voy a buscar con otro proveedor."
+> "No me sirve, necesito todo para mañana. Cualquier cosa te escribo, gracias."
 
 **Resultado:** Perdiste la venta. No por precio. No por calidad. Perdiste por **timing**.
 
@@ -41,10 +41,10 @@ Tu sistema detecta:
 **Tu acción proactiva (viernes 4pm):**
 
 Le escribís:
-> "Hola Martín, ¿cómo andás? Por tu patrón de compra, calculo que entre lunes-miércoles vas a necesitar reposición de fundas. Tenemos stock completo de tus modelos habituales (negras + transparentes). ¿Te armo cotización para que tengas todo listo el lunes?"
+> "Hola Martín, ¿cómo andás? Por las fechas en las que solés comprar, calculo que entre lunes-miércoles vas a necesitar reposición de fundas. Tenemos stock completo de los modelos habituales que nos pedís (negras + transparentes). ¿Te armo cotización para que tengas todo listo el lunes?"
 
 **Respuesta del cliente (viernes 6pm):**
-> "Perfecto Pato! Pasame precio de 50 negras + 30 transparentes. Haceme el envío para el martes."
+> "Perfecto Pato! Pasame precio de 50 negras + 30 transparentes. Haceme el envío para el martes por favor."
 
 **Resultado:**
 - Venta cerrada 3 días antes de que el cliente necesite
@@ -114,7 +114,7 @@ Tu sistema detecta momento de reposición
 **1. Mayor tasa de conversión**
 
 Cuando contactás en el momento correcto:
-- Cliente está en "modo compra" (tiene el problema top-of-mind)
+- Cliente está en "modo compra" (tiene el problema en mente)
 - No tiene que buscar alternativas (vos se las diste)
 - Decisión es más rápida (menos fricción)
 
@@ -173,7 +173,7 @@ Cuando vos contactás proactivamente:
 
 ## Cómo Calcularlo: La Fórmula Simple
 
-No necesitás un data scientist. Esto se hace con Excel básico.
+No necesitás un científico de datos. Esto se hace con Excel básico.
 
 ### Paso 1: Definir el "Ciclo de Reposición"
 
@@ -232,7 +232,7 @@ No contactás el día exacto de la fecha esperada. Contactás **3-5 días ANTES*
 
 - Si contactás 10 días antes: Muy temprano, no tiene urgencia, te olvida
 - Si contactás el día exacto: Puede que ya haya comprado a otro
-- Si contactás 3-5 días antes: **Sweet spot** - está pensando en reordenar pero todavía no buscó proveedor
+- Si contactás 3-5 días antes: **Timming Perfectot** - está pensando en reordenar pero todavía no buscó proveedor
 
 **Fórmula:**
 ```
@@ -306,7 +306,7 @@ Columna J: Ventana Ajustada (=IF(I<3, F-4, IF(I<7, F-6, F-8)))
 
 ---
 
-### Opción 2: Google Sheets + Automatización Básica (Gratis/Low Cost)
+### Opción 2: Google Sheets + Automatización Básica (Gratis/Bajo Costo)
 
 **Complejidad:** Media-Alta | **Setup:** 6-8 horas | **Mantenimiento:** 10 min/semana
 
@@ -330,7 +330,7 @@ Columna J: Ventana Ajustada (=IF(I<3, F-4, IF(I<7, F-6, F-8)))
 
 1. **Análisis predictivo:** Calcula ciclo de reposición por cliente, ajusta por estacionalidad, detecta anomalías.
 
-2. **Alertas inteligentes:** Dashboard diario con priorización por valor. Push notifications en app móvil.
+2. **Alertas inteligentes:** Dashboard diario con priorización por valor. Push notifications en WhatsApp.
 
 3. **Generación de mensajes:** Templates de WhatsApp personalizados con historial de compra incluido.
 
@@ -342,126 +342,17 @@ Columna J: Ventana Ajustada (=IF(I<3, F-4, IF(I<7, F-6, F-8)))
 
 ### Comparativa de Opciones
 
-| Feature | Excel Manual | Google Sheets + Scripts | PymePilot |
-|---------|-------------|------------------------|-----------|
-| **Costo mensual** | $0 | $0-20 USD | $495k-$600k ARS |
-| **Setup inicial** | 3-4 hrs | 6-8 hrs | 1-2 hrs |
-| **Mantenimiento semanal** | 30 min | 10 min | 0 min |
-| **Alertas automáticas** | No | Sí | Sí |
-| **Integración WhatsApp** | Manual | Parcial | Nativa |
-| **Reportes automáticos** | No | Básicos | Avanzados |
-| **Soporte técnico** | No | No | Sí |
-| **Escalabilidad** | 50 clientes | 150 clientes | 500+ clientes |
-| **Mejor para** | Validar concepto | DIY tech-savvy | Escalar negocio |
+<StatGrid cols={3}>
+  <StatCard value="Excel Manual" label="$0/mes · Setup 3-4 hrs" detail="30 min/sem · Hasta 50 clientes · Sin alertas" accent={false} />
+  <StatCard value="Google Sheets" label="$0-20 USD/mes · Setup 6-8 hrs" detail="10 min/sem · Hasta 150 clientes · Alertas básicas" accent={false} />
+  <StatCard value="PymePilot" label="$495-600K ARS/mes · Setup 1-2 hrs" detail="0 min/sem · 500+ clientes · WhatsApp nativo" />
+</StatGrid>
 
 **Recomendación:**
 
 - **Mes 1-2:** Empezá con Excel manual (validar que funciona)
 - **Mes 3-6:** Si funciona, automatizá con Google Sheets o PymePilot
 - **Mes 6+:** Si tenés +100 clientes, migrá a PymePilot (ROI claro)
-
----
-
-## 3 Casos de Uso Reales
-
-### Caso 1: Distribuidora de Insumos de Limpieza (Córdoba)
-
-**Contexto:**
-- 80 clientes (supermercados chicos, hoteles, empresas)
-- Producto: Insumos de limpieza (detergentes, lavandina, etc)
-- Problema: Clientes compraban cuando "se acordaban", no cuando necesitaban
-
-**Implementación:**
-
-1. **Análisis de datos (2 semanas):** Exportaron historial de 12 meses. Identificaron 3 segmentos: Supermercados (ciclo 15-18 días), Hoteles (20-25 días), Empresas (30-40 días).
-
-2. **Sistema predictivo (Google Sheets):** Alertas automáticas vía email. Lista diaria de clientes en ventana de contacto.
-
-3. **Protocolo de contacto:** WhatsApp personalizado 4 días antes de fecha esperada. Mensaje incluye productos habituales + promoción si hay.
-
-**Resultados (6 meses):**
-
-<ComparisonTable>
-  <ComparisonRow label="Frecuencia de compra promedio" before="32 días" after="23 días" change="-28%" />
-  <ComparisonRow label="Ticket promedio" before="$280.000" after="$365.000" change="+30%" />
-  <ComparisonRow label="Clientes que compran mensual" before="45%" after="71%" change="+58%" />
-  <ComparisonRow label="Facturación mensual" before="$19.2M" after="$28.8M" change="+50%" />
-</ComparisonTable>
-
-**Quote del dueño:**
-
-> "Antes esperábamos que nos llamen. Ahora sabemos exactamente cuándo cada cliente va a necesitar stock. No competimos por precio, competimos llegando primero."
-
----
-
-### Caso 2: IEY® - Distribuidora de Accesorios Tech (Buenos Aires)
-
-**Contexto:**
-- 150 clientes mayoristas (locales retail, e-commerce)
-- Producto: Accesorios MagSafe, fundas, protectores
-- Problema: 40% de clientes inactivos (+60 días sin comprar)
-
-**Implementación:**
-
-1. **Análisis inicial:** Patrón promedio: 22 días entre compras. 68% de clientes tenían ciclo predecible. 32% erráticos (se contactaban manualmente cada 30 días).
-
-2. **Sistema PymePilot:** Dashboard con clientes priorizados por proximidad a fecha esperada, ticket histórico (VIP primero) y probabilidad de conversión.
-
-3. **Protocolo:** 4 días antes: WhatsApp proactivo. Si no responde: Follow-up día de fecha esperada. Si responde pero no compra: Agendar recordatorio +7 días.
-
-**Resultados (3 meses):**
-
-<StatGrid cols={3}>
-  <StatCard value="80%" label="Clientes reactivados" detail="48 de 60 inactivos recuperados" />
-  <StatCard value="68%" label="Tasa de respuesta" detail="vs 22% con mensajes genéricos" />
-  <StatCard value="-60%" label="Tiempo de seguimiento" detail="De 15 hrs a 6 hrs/semana" />
-</StatGrid>
-
-**ROI:**
-
-<StatGrid cols={3}>
-  <StatCard value="$495K/mes" label="Inversión" detail="Plan Growth PymePilot" />
-  <StatCard value="$6.4M/mes" label="Retorno" detail="Ventas recuperadas directas" />
-  <StatCard value="7 días" label="Payback" detail="Primera campaña: $2.8M" />
-</StatGrid>
-
----
-
-### Caso 3: Distribuidora de Alimentos Congelados (Rosario)
-
-**Contexto:**
-- 120 clientes (restaurantes, hoteles, catering)
-- Producto: Carnes, verduras congeladas, productos premium
-- Problema: Clientes pedían "cuando se quedaban sin stock" (última hora)
-
-**Implementación:**
-
-1. **Segmentación por tipo de cliente:**
-   - **Restaurantes:** Alta rotación (cada 5-7 días). Ventana: 2 días antes.
-   - **Hoteles:** Media rotación (cada 10-15 días). Ventana: 3 días antes.
-   - **Catering:** Baja rotación, alto volumen (cada 20-30 días). Ventana: 5 días antes.
-
-2. **Sistema híbrido:** Excel para tracking, WhatsApp Business API para mensajes automáticos (con aprobación), dashboards semanales para vendedores.
-
-3. **Protocolo especial:** Mensaje incluye stock habitual + productos nuevos/promociones. Opción de "auto-reorden" para clientes frecuentes.
-
-**Resultados (4 meses):**
-
-<StatGrid cols={2}>
-  <StatCard value="-71%" label="Pedidos urgentes" detail="De 40% a 12% de pedidos" />
-  <StatCard value="-$180K/mes" label="Costo envíos express" detail="Logística planificada 48-72hrs" />
-</StatGrid>
-
-<ComparisonTable>
-  <ComparisonRow label="Restaurantes — Facturación" before="Base" after="+8%" change="+8%" />
-  <ComparisonRow label="Hoteles — Facturación" before="Base" after="+18%" change="+18%" />
-  <ComparisonRow label="Catering — Facturación" before="Base" after="+25%" change="+25%" />
-  <ComparisonRow label="NPS (Net Promoter Score)" before="Base" after="+34 pts" change="+34" />
-</ComparisonTable>
-
-**Quote del gerente comercial:**
-
-> "Lo que más nos sorprendió fue que los clientes AGRADECEN que les escribamos. No lo ven como spam, lo ven como servicio. Pasamos de ser 'un proveedor más' a 'su proveedor de confianza'."
 
 ---
 
@@ -600,13 +491,16 @@ Implementaste reposición predictiva pero no sabés si funciona mejor que métod
 
 **Métricas mínimas a trackear:**
 
-| Métrica | Cómo medirla | Frecuencia |
-|---------|--------------|------------|
-| **Tasa de respuesta** | (Respuestas / Mensajes enviados) x 100 | Semanal |
-| **Tasa de conversión** | (Pedidos generados / Respuestas) x 100 | Semanal |
-| **Ticket promedio** | Suma de pedidos / Cantidad de pedidos | Mensual |
-| **ROI de tiempo** | Facturación generada / Horas invertidas | Mensual |
-| **Comparativa** | Proactivo vs Reactivo (% de ventas) | Trimestral |
+<StatGrid cols={3}>
+  <StatCard value="Tasa de respuesta" label="(Respuestas / Mensajes) × 100" detail="Medición semanal" />
+  <StatCard value="Tasa de conversión" label="(Pedidos / Respuestas) × 100" detail="Medición semanal" />
+  <StatCard value="Ticket promedio" label="Suma pedidos / Cantidad" detail="Medición mensual" />
+</StatGrid>
+
+<StatGrid cols={2}>
+  <StatCard value="ROI de tiempo" label="Facturación / Horas invertidas" detail="Medición mensual" />
+  <StatCard value="Comparativa" label="Proactivo vs Reactivo (% ventas)" detail="Medición trimestral" />
+</StatGrid>
 
 **Benchmark saludable (IEY®):**
 
@@ -788,4 +682,4 @@ Mientras leías este artículo, tu competencia contactó a 5 de tus clientes ofr
 ---
 
 **Sobre el Autor:**
-Patricio (Pato) es Wholesale Channel Manager en IEY® donde gestiona 150+ clientes mayoristas y fundador de PymePilot, sistema de CRM especializado en distribuidoras B2B. Documenta públicamente todo su proceso de automatización.
+Patricio Guillermo Galván es Encargado del Canal Mayorista de IEY® donde gestiona 150+ clientes mayoristas y fundador de PymePilot, sistema de CRM especializado en distribuidoras B2B. Documenta públicamente todo su proceso de automatización.
