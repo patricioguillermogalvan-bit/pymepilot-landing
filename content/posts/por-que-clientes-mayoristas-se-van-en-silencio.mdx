@@ -1,0 +1,584 @@
+---
+title: "¿Por Qué el 68% de Tus Clientes Mayoristas Se Van en Silencio? (Y Cómo Recuperarlos)"
+description: "Descubrí las 5 razones ocultas por las que tus clientes mayoristas desaparecen sin avisar y el sistema probado para recuperar el 30-40% antes de perderlos definitivamente."
+date: "2025-02-23"
+tags: ["recuperar clientes mayoristas", "clientes inactivos", "retención b2b", "seguimiento mayorista"]
+image: "/blog/images/clientes-mayoristas-se-van.jpg"
+imageAlt: "Gráfico de retención de clientes mayoristas - Por qué se van en silencio"
+author: "Patricio Guillermo"
+---
+
+## Introducción: El Problema Invisible
+
+Todas las distribuidoras tienen el mismo problema. Y casi ninguna lo está midiendo.
+
+**El problema:** Clientes que compraban regularmente, de repente dejan de hacerlo. Sin queja. Sin aviso. Sin explicación.
+
+Vos seguís operando normal. Atendiendo clientes activos. Buscando clientes nuevos.
+
+Y mientras tanto, 20-30-50 clientes que solían facturarte **$400.000 ARS** mensuales están comprándole a tu competencia.
+
+**Cuando te das cuenta, ya es tarde.**
+
+Esta es la historia de cómo IEY® descubrió que estaba perdiendo 68% de sus clientes nuevos en los primeros 6 meses, y qué hicimos para revertirlo.
+
+---
+
+## La Estadística Que Nadie Quiere Ver
+
+### De Dónde Sale el 68%
+
+En IEY® analizamos nuestra base de clientes mayoristas de los últimos 24 meses (2023-2024).
+
+**Metodología simple:**
+1. Identificamos todos los clientes que hicieron su primera compra (150 clientes nuevos en ese período)
+2. Definimos "cliente activo" como: mínimo 1 compra cada 90 días
+3. Medimos cuántos seguían activos a los 6 meses de su primera compra
+
+**Resultado:** 68% de los clientes nuevos dejaron de comprar antes de los 6 meses.
+
+### Qué Significa Esto en Plata
+
+Si tu distribuidora es como IEY®:
+
+<StatGrid cols={3}>
+  <StatCard value="$80-150K" label="Costo de adquisición" detail="Marketing, visitas, muestras" />
+  <StatCard value="$400K/mes" label="Ticket de reposición" detail="Facturación mensual perdida" />
+  <StatCard value="$4.8M" label="LTV no capturado" detail="12 meses proyectados por cliente" />
+</StatGrid>
+
+**Costo real de perder 68% de clientes nuevos:**
+
+Si adquiriste 100 clientes nuevos este año:
+- 68 se van en 6 meses
+- Cada uno representa **$4.800.000 ARS** en LTV perdido
+
+<StatGrid cols={1}>
+  <StatCard value="$326.400.000 ARS" label="Total que dejaste en la mesa" detail="68 clientes × $4.8M LTV perdido — sin contar que están comprándole a tu competencia" />
+</StatGrid>
+
+### Por Qué Nadie Lo Mide
+
+Porque es invisible.
+
+**El cliente que se queja es fácil de detectar:** Te manda mensaje, reclama precio, pide descuento. Sabés que hay un problema.
+
+**El cliente que desaparece en silencio es imposible de detectar manualmente:**
+- No hay un "momento de ruptura" claro
+- Simplemente deja de comprar
+- Cuando te das cuenta (60-90 días después), ya tiene otro proveedor
+
+**Analogía:** Es como tener una canilla goteando. Perdés 10 litros por día, pero no lo ves hasta que te llega la factura del agua.
+
+---
+
+## 5 Razones Por Las Que Tus Clientes No Vuelven
+
+### 1. No Sabés Cuándo Deberían Reordenar
+
+**El problema:**
+
+La mayoría de las distribuidoras operan así:
+- Cliente compra
+- Esperas que te contacte cuando necesite más
+- Si no lo hace, asumís que "está bien de stock"
+
+**La realidad:**
+
+Tu cliente tiene un ciclo de reposición predecible:
+- Local retail repone stock cada 15-30 días
+- Revendedor compra cada 20-40 días según rotación
+- E-commerce mayorista reordena cada 10-25 días
+
+Si no conocés ese patrón, no podés detectar cuando algo está mal.
+
+**Ejemplo real (IEY®):**
+
+**Cliente "TechStore CABA":**
+- Patrón histórico: Compra fundas MagSafe cada 21 días (promedio de 12 compras anteriores)
+- Última compra: 15 de enero
+- Hoy: 10 de febrero (26 días después)
+- **Alerta:** Pasaron 5 días del momento esperado de reorden
+
+Sin sistema de seguimiento, yo me hubiera dado cuenta del problema recién en marzo (60+ días). Para ese momento, TechStore ya tenía nuevo proveedor.
+
+**Solución:**
+
+Implementá sistema de tracking de recurrencia:
+1. Analizá historial de compras de cada cliente
+2. Calculá promedio de días entre compras
+3. Alert automated cuando se desvían del patrón
+
+**Herramienta:** PymePilot hace esto automáticamente. Si no tenés presupuesto para software, podés hacerlo manual con Excel:
+```
+Columna A: Cliente
+Columna B: Última compra (fecha)
+Columna C: Promedio días entre compras (calculado de historial)
+Columna D: Fecha esperada próxima compra (B + C)
+Columna E: Días de atraso (HOY - D)
+```
+
+Ordenás por Columna E descendente = tenés a tus clientes con más riesgo arriba.
+
+---
+
+### 2. La Competencia Los Contacta ANTES Que Vos
+
+**El problema:**
+
+Tu cliente no es monógamo. Tiene 3-5 proveedores en su agenda de WhatsApp.
+
+Cuando necesita reposición:
+1. Le escribe al primero que se le viene a la mente (top-of-mind)
+2. Si ese proveedor responde rápido, compra
+3. Si no responde, prueba el siguiente
+
+**No compra al más barato. Compra al más conveniente.**
+
+**Caso real:**
+
+Cliente "Distribuidora Oeste" me contó esto textual:
+
+> "Pato, tengo 4 proveedores de fundas. Cuando necesito stock, le escribo al que me acuerdo en ese momento. El primero que me responde con precio y stock disponible, gana. No tengo tiempo para esperar 24 horas a cada uno."
+
+Esto me hizo entender: **La batalla no es por precio. Es por timing.**
+
+**Solución:**
+
+Contactá ANTES de que necesite comprar:
+
+**Mensaje proactivo (3 días antes de su ciclo de reorden esperado):**
+
+> "Hola, ¿cómo andás? Por tu patrón de compra, calculo que esta semana vas a necesitar reposición de los productos que solés comprar. Tenemos stock completo. ¿Te armo cotización? Abrazo, Pato"
+
+**Resultado en IEY®:**
+
+<StatGrid cols={2}>
+  <StatCard value="71%" label="Tasa de respuesta" detail="vs 25% con mensajes genéricos" />
+  <StatCard value="48%" label="Tasa de conversión" detail="Casi 1 de cada 2 respuestas = pedido" />
+</StatGrid>
+
+---
+
+### 3. Olvidaron Que Existís
+
+**El problema:**
+
+Tu cliente no te odia. No tiene nada contra vos.
+
+Simplemente... olvidó que existís.
+
+**Por qué pasa:**
+
+- Tiene 50 mensajes de WhatsApp por día
+- Hace 60 días que no le escribiste
+- Cuando necesita producto, busca "proveedor de [X]" en Google
+- Encuentra uno nuevo con web linda
+- Te reemplaza sin siquiera darse cuenta
+
+**Dato brutal:** En IEY® medimos que clientes que no contactábamos en 45+ días tenían 67% de probabilidad de comprar a otro proveedor en su próximo pedido.
+
+**Solución:**
+
+**Touchpoints regulares (sin ser invasivo):**
+
+No hace falta enviar mensajes comerciales cada semana. Pero sí mantener presencia:
+
+**Touchpoint 1: Día 15 post-compra (Soft touch)**
+> "Hola, ¿llegó todo OK en el pedido anterior? Cualquier cosa, avisame."
+
+**Touchpoint 2: Día 30 (Educativo)**
+> Compartir contenido útil: nuevo modelo, tips de storage/rotación de stock, tendencias del mercado.
+
+**Touchpoint 3: Día 45+ (Proactivo)**
+> "Hola, ¿necesitás reposición esta semana? Te tengo los productos en stock."
+
+**Frecuencia:** 1 mensaje cada 15-20 días. No más. No menos.
+
+---
+
+### 4. Cambió Su Necesidad (Y No Les Preguntaste)
+
+**El problema:**
+
+Clientes evolucionan. Su negocio cambia. Sus necesidades cambian.
+
+Pero vos seguís vendiéndoles lo mismo que hace 6 meses.
+
+**Ejemplos reales en IEY®:**
+
+**Cliente A:**
+- Compraba fundas básicas ($500-800/unidad)
+- Su negocio creció, ahora vende en zona premium
+- Necesita fundas premium ($1,500-2,500/unidad)
+- Como nunca le ofrecimos, buscó otro proveedor
+
+**Cliente B:**
+- Compraba solo accesorios MagSafe
+- Expandió a casos para tablets
+- No sabíamos que vendía tablets
+- Perdimos oportunidad de cross-sell
+
+**Cliente C:**
+- Local retail con 2 sucursales
+- Abrió 3 sucursales más (5 total)
+- Su volumen de compra debería haber 2.5x
+- Pero seguía comprando lo mismo (tiene otros proveedores)
+
+**Solución:**
+
+**Check-in trimestral:**
+
+Cada 3 meses, llamada de 10 minutos (no WhatsApp, LLAMADA):
+
+Preguntas clave:
+1. "¿Cómo te fue este trimestre vs el anterior?"
+2. "¿Cambiaste algo en el negocio?" (nueva sucursal, nueva línea de producto, etc)
+3. "¿Qué productos te están pidiendo que no tenés?" (oportunidad de oferta)
+4. "¿Hay algo que necesites que no te estemos ofreciendo?"
+
+**Resultado en IEY®:**
+
+De 40 llamadas de check-in que hicimos:
+
+<StatGrid cols={3}>
+  <StatCard value="12" label="Necesidades nuevas descubiertas" detail="De 40 llamadas realizadas" />
+  <StatCard value="7" label="Cross-sell cerrados" detail="Productos que no les vendíamos" />
+  <StatCard value="+35%" label="Incremento de ticket" detail="En los 7 clientes con cross-sell" />
+</StatGrid>
+
+**ROI:** 4 horas invertidas en llamadas = **$8.400.000 ARS** en ventas adicionales (7 clientes x $1.200.000 incremento promedio anual).
+
+---
+
+### 5. Mal Timing en Tu Seguimiento
+
+**El problema:**
+
+Contactás cuando VOS tenés tiempo. No cuando el cliente está tomando decisión de compra.
+
+**Ejemplo:**
+
+Viernes 6pm, cliente ya cerró su semana, planifica compras para lunes.
+
+Vos le escribís sábado 10am: "¿Necesitás stock?"
+
+Resultado: No te responde (está desconectado). Para el lunes ya compró a otro.
+
+**Solución:**
+
+**Timing óptimo para contactar clientes B2B mayoristas (data de IEY®):**
+
+<ComparisonTable>
+  <ComparisonRow label="Lunes 9-11am" before="58%" after="35%" change="Bueno" positive={true} />
+  <ComparisonRow label="Martes 9-11am" before="71%" after="48%" change="Óptimo" positive={true} />
+  <ComparisonRow label="Miércoles 10am-12pm" before="65%" after="42%" change="Bueno" positive={true} />
+  <ComparisonRow label="Jueves 9-11am" before="62%" after="40%" change="Bueno" positive={true} />
+  <ComparisonRow label="Viernes 9-12pm" before="48%" after="28%" change="Regular" positive={false} />
+  <ComparisonRow label="Viernes 2-6pm" before="22%" after="12%" change="Malo" positive={false} />
+  <ComparisonRow label="Sábado/Domingo" before="8%" after="3%" change="Evitar" positive={false} />
+</ComparisonTable>
+
+*Columnas: Día y hora | Tasa de Respuesta | Tasa de Conversión | Rating*
+
+**Mejor momento:** Martes 9-11am (cuando planifican semana)
+
+**Peor momento:** Viernes tarde / Fin de semana
+
+**Implementación:**
+
+Si usás sistema: Programá mensajes para enviar en horarios óptimos.
+
+Si es manual: Bloqueá en tu calendario "Martes 9-11am: Seguimiento clientes".
+
+---
+
+## La Solución: Sistema de Reactivación Inteligente
+
+Recuperar clientes inactivos no es magia. Es sistema.
+
+Acá el proceso exacto que uso en IEY® para recuperar 30-40% de clientes que desaparecieron:
+
+### Paso 1: Identificar Patrones de Compra
+
+**Objetivo:** Saber cuándo cada cliente DEBERÍA comprar.
+
+**Cómo hacerlo:**
+
+1. **Exportá historial de ventas** (últimos 12 meses mínimo)
+   - Cliente | Fecha compra | Productos | Monto
+
+2. **Calculá promedio de días entre compras por cliente:**
+```
+Ejemplo Cliente X:
+Compra 1: 15 Enero
+Compra 2: 5 Febrero (21 días después)
+Compra 3: 28 Febrero (23 días después)
+Compra 4: 22 Marzo (22 días después)
+
+Promedio: 22 días entre compras
+```
+
+3. **Identificá desviaciones del patrón:**
+```
+Última compra: 10 Abril
+Hoy: 15 Mayo (35 días después)
+Desvío: +13 días vs promedio (22 días)
+
+STATUS: ALERTA - Cliente fuera de patrón
+```
+
+**Herramienta:**
+
+- Manual: Excel con fórmulas (DATEDIF, AVERAGE)
+- Automatizado: PymePilot (calcula automáticamente)
+
+---
+
+### Paso 2: Automatizar Alertas (No Spam)
+
+**Objetivo:** Recibir notificación ANTES de perder al cliente definitivamente.
+
+**Niveles de alerta:**
+
+🟡 **Alerta Temprana:** +5 días del patrón normal
+- Acción: Monitorear (todavía no contactar)
+
+🟠 **Alerta Media:** +10 días del patrón
+- Acción: Preparar mensaje personalizado
+
+🔴 **Alerta Crítica:** +20 días del patrón
+- Acción: Contactar HOY (riesgo alto de pérdida)
+
+**Implementación:**
+
+Si usás Excel:
+- Columna "Días de atraso" con formato condicional (verde/amarillo/rojo)
+- Ordená por "Días de atraso" descendente
+- Revisá diariamente los primeros 10
+
+Si usás PymePilot:
+- Dashboard automático con clientes priorizados por riesgo
+- Notificaciones push cuando cliente pasa a alerta crítica
+
+---
+
+### Paso 3: Personalizar el Approach
+
+**Objetivo:** Contactar con mensaje relevante, no spam genérico.
+
+**Template base (adaptá según contexto):**
+```
+Hola [Nombre], ¿cómo andás?
+
+[CONTEXTO ESPECÍFICO]:
+- Vi que hace [X] días no te veo por acá
+- Antes comprabas [producto] cada [Y] días
+
+[OFERTA PERSONALIZADA]:
+- Tenemos stock de [producto que suele comprar]
+- [OPCIONAL: Promoción/novedad relevante]
+
+[PREGUNTA ABIERTA]:
+¿Necesitás reposición esta semana o estás bien de stock?
+
+Abrazo,
+[Tu nombre]
+```
+
+**Ejemplo real (funciona):**
+
+> Hola Carlos, ¿todo bien? Vi que hace 28 días no comprás fundas MagSafe. Antes lo hacías cada 20 días aprox. Llegó stock nuevo de las transparentes que siempre te llevás + los nuevos modelos con glitter que están pegando fuerte. ¿Necesitás que te arme cotización o estás cubierto? Abrazo, Pato
+
+**Por qué funciona:**
+1. Personalizado (menciona patrón específico, no genérico)
+2. Proactivo (ofrezco solución, no solo pregunto)
+3. Sin presión (pregunta abierta, doy espacio)
+
+---
+
+## Caso Real: Cómo IEY® Recuperó 30% de Clientes Inactivos
+
+**Contexto (Octubre 2024):**
+
+Teníamos 150 clientes en base de datos.
+
+<StatGrid cols={3}>
+  <StatCard value="68" label="Activos" detail="Compraron últimos 30 días" />
+  <StatCard value="32" label="Semi-activos" detail="Compraron últimos 60 días" />
+  <StatCard value="50" label="Inactivos" detail="60+ días sin comprar" accent={false} />
+</StatGrid>
+
+**Objetivo:** Recuperar mínimo 15 de esos 50 clientes (30%).
+
+### Fase 1: Segmentación (Semana 1)
+
+Dividimos los 50 inactivos en 3 grupos:
+
+**Grupo A - Alta Prioridad (20 clientes):**
+- Ticket histórico alto (**$500.000+** mensual)
+- Inactividad: 60-90 días (todavía recuperables)
+- Patrón de compra claro (compraban regularmente antes)
+
+**Grupo B - Media Prioridad (18 clientes):**
+- Ticket medio (**$300.000 - $500.000** mensual)
+- Inactividad: 90-120 días
+
+**Grupo C - Baja Prioridad (12 clientes):**
+- Ticket bajo o errático
+- Inactividad: +120 días (probablemente perdidos)
+
+**Decisión:** Enfocarnos en Grupo A primero.
+
+### Fase 2: Investigación Pre-Contacto (Semana 1-2)
+
+Para cada cliente de Grupo A, revisamos:
+
+1. **Historial de compra:**
+   - ¿Qué productos compraba?
+   - ¿Cada cuánto?
+   - ¿Último ticket vs promedio?
+
+2. **Contexto de negocio (stalking LinkedIn/Instagram):**
+   - ¿Sigue operando el local?
+   - ¿Cambió algo en su negocio?
+   - ¿Publicó algo relevante?
+
+3. **Última interacción:**
+   - ¿Hubo algún problema en última compra?
+   - ¿Dejó algún feedback?
+
+**Tiempo invertido:** 15 min por cliente = 5 horas total
+
+**Descubrimientos importantes:**
+- 3 clientes habían cerrado su negocio (eliminamos de lista)
+- 2 clientes cambiaron de rubro (no compran más nuestros productos)
+- 15 clientes seguían operando normal (RECUPERABLES)
+
+**Nueva meta:** Recuperar 15 de 15 clientes recuperables del Grupo A.
+
+### Fase 3: Contacto Personalizado (Semana 2-3)
+
+Armamos mensaje personalizado para cada uno de los 15.
+
+**Ejemplo Cliente 1: "TechStore Palermo"**
+
+Contexto investigado:
+- Compraba fundas premium cada 25 días
+- Última compra: 75 días atrás
+- Instagram: Sigue posteando productos (sigue activo)
+- Problema detectado: En última compra se quejó de demora en entrega
+
+**Mensaje enviado:**
+
+> Hola Martín, ¿cómo andás? Hace 2 meses que no te veo por acá. Sé que en la última compra tuvimos demora de envío (mi culpa, problema con logística). Ya lo solucionamos. Ahora tenemos stock en depósito CABA, entregas en 24-48hs garantizado. Vi en tu Instagram que estás vendiendo bien. ¿Te armo cotización de fundas premium para esta semana? Abrazo, Pato
+
+**Respuesta (mismo día):**
+
+> "Pato! Justo necesitaba hablar con vos. Pasame precio de 40 fundas transparentes + 30 de los modelos nuevos que vi en tu catálogo."
+
+**Resultado:** Cliente recuperado. Pedido de **$520.000 ARS**.
+
+**Por qué funcionó:**
+1. Reconocí el error pasado (accountability)
+2. Mostré que lo solucioné (credibilidad)
+3. Mencioné algo específico de su negocio (personalización)
+
+### Fase 4: Resultados (Semana 4)
+
+**De los 15 clientes contactados:**
+
+<ComparisonTable>
+  <ComparisonRow label="Respondieron (total)" before="15 contactados" after="9 respuestas" change="60%" positive={true} />
+  <ComparisonRow label="Pedido inmediato" before="" after="6 clientes" change="40%" positive={true} />
+  <ComparisonRow label="Pidieron cotización (compraron después)" before="" after="2 clientes" change="13%" positive={true} />
+  <ComparisonRow label="No pueden comprar (temporal)" before="" after="1 cliente" change="7%" positive={false} />
+  <ComparisonRow label="Sin respuesta" before="" after="6 clientes" change="40%" positive={false} />
+</ComparisonTable>
+
+**Total recuperados: 9 de 15 (60% tasa de recuperación)**
+
+**Facturación recuperada:**
+
+<StatGrid cols={3}>
+  <StatCard value="$3.6M" label="Mes 1" detail="9 pedidos inmediatos" />
+  <StatCard value="$7.2M" label="Mes 2-3" detail="9 clientes × 2 meses × $400K" />
+  <StatCard value="$43.2M" label="Proyección 12 meses" detail="9 clientes × $4.8M LTV" />
+</StatGrid>
+
+**ROI:**
+
+<StatGrid cols={3}>
+  <StatCard value="12 hs" label="Tiempo invertido" detail="Investigación + mensajes + seguimiento" />
+  <StatCard value="$10.8M" label="Retorno en 3 meses" detail="Costo herramientas: $0 (Excel + WhatsApp)" />
+  <StatCard value="$900K/hora" label="Ratio ganancia" detail="Por cada hora invertida" />
+</StatGrid>
+
+---
+
+## Checklist: 10 Señales de Que Estás Perdiendo Clientes
+
+Descargá este checklist gratuito para auditar tu distribuidora:
+
+1. **No sabés cuándo cada cliente debería reordenar** — Si no tenés un sistema que te avise "Cliente X debería haber comprado hace 10 días", estás perdiendo clientes en silencio.
+
+2. **Más del 30% de tu base de clientes está inactiva (+60 días sin comprar)** — Benchmark saludable: menos de 20% inactivos. Si tenés +30%, hay problema de retención.
+
+3. **Tu seguimiento es reactivo (esperás que te contacten), no proactivo** — Si no contactás clientes antes de que necesiten, la competencia lo hace.
+
+4. **Tus vendedores gastan +50% tiempo en tareas administrativas vs ventas** — Señal de que no hay automatización de seguimiento.
+
+5. **No medís "tasa de respuesta" a tus mensajes de WhatsApp/Email** — Si no sabés cuántos responden, no podés mejorar tu approach.
+
+6. **Perdiste clientes y no sabés por qué se fueron** — Sin encuesta de salida o análisis post-mortem, vas a repetir errores.
+
+7. **Tu base de datos de clientes está desactualizada** — Datos sucios = seguimiento imposible.
+
+8. **No hacés check-ins regulares con tus top 20% clientes** — Los clientes que más facturan necesitan más atención. Si no la das, se van igual.
+
+9. **No sabés el "Lifetime Value" promedio de tus clientes** — Si no sabés cuánto vale un cliente en 12 meses, no sabés cuánto esfuerzo invertir en recuperarlo.
+
+10. **Tus vendedores contactan clientes "cuando se acuerdan", sin sistema** — Seguimiento sin sistema = seguimiento que no escala.
+
+**¿Cuántas señales identificaste?**
+
+- **0-2:** Tu sistema de retención está sano (solo optimizar detalles)
+- **3-5:** Hay oportunidad clara de mejora (empezá por #1, #2, #3)
+- **6-8:** Estás perdiendo plata significativa (necesitás sistema YA)
+- **9-10:** Crisis de retención (prioridad #1 es implementar seguimiento inteligente)
+
+---
+
+## Próximos Pasos
+
+### Si Identificaste 3+ Señales:
+
+**Opción 1: Implementá Sistema Manual (Gratis)**
+
+Descargá nuestro Template de Excel: "Sistema de Seguimiento de Clientes Mayoristas". Incluye fórmulas pre-armadas para calcular recurrencia y tutorial paso a paso de implementación.
+
+**Tiempo de setup:** 3-4 horas. **Resultados esperados:** Recuperar 10-20% de clientes inactivos en primer mes.
+
+---
+
+**Opción 2: Automatizá con PymePilot (Probá Gratis 14 Días)**
+
+Si tu distribuidora tiene:
+- 50+ clientes mayoristas
+- Facturación +**$10.000.000 ARS** mensual
+- Vendedores gastando +10 horas/semana en seguimiento manual
+
+PymePilot puede ahorrarte 60% de ese tiempo (como hizo con IEY®).
+
+En la demo te muestro:
+1. Cómo el sistema detecta clientes en riesgo automáticamente
+2. Dashboard de priorización (a quién contactar HOY)
+3. Templates de mensajes personalizados
+4. ROI estimado para TU distribuidora (con tus números)
+
+**Sin compromiso. Sin presión de venta.**
+
+---
+
+**Sobre el Autor:**
+Patricio (Pato) es Wholesale Channel Manager en IEY® (150+ clientes B2B) y fundador de PymePilot. Documenta públicamente su proceso de automatización.
