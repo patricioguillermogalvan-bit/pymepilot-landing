@@ -77,6 +77,28 @@ html, body {
 
 /* ========== TRUST BADGE ========== */
 
+/* Initial burst — intense on first load */
+@keyframes badgeEntryGlow {
+  0% {
+    border-color: #5a9a84;
+    box-shadow: 0 4px 20px rgba(129,181,161,0.25);
+  }
+  40% {
+    border-color: #a3cabb;
+    box-shadow: 0 4px 40px rgba(129,181,161,0.7), 0 0 80px rgba(129,181,161,0.35);
+  }
+  100% {
+    border-color: #5a9a84;
+    box-shadow: 0 4px 20px rgba(129,181,161,0.25);
+  }
+}
+
+@keyframes badgeEntryShimmer {
+  0% { left: -100%; opacity: 1; }
+  100% { left: 200%; opacity: 1; }
+}
+
+/* Subtle loop after entry */
 @keyframes badgeShimmer {
   0% { left: -100%; }
   100% { left: 200%; }
@@ -96,7 +118,9 @@ html, body {
 .badge-shimmer {
   position: relative;
   overflow: hidden;
-  animation: badgeBorderGlow 3s ease-in-out 1.5s infinite;
+  animation:
+    badgeEntryGlow 1.6s ease-out 0.6s both,
+    badgeBorderGlow 3s ease-in-out 2.5s infinite;
 }
 
 .badge-shimmer::after {
@@ -109,12 +133,14 @@ html, body {
   background: linear-gradient(
     90deg,
     transparent 0%,
-    rgba(255,255,255,0.08) 30%,
-    rgba(255,255,255,0.18) 50%,
-    rgba(255,255,255,0.08) 70%,
+    rgba(255,255,255,0.15) 25%,
+    rgba(255,255,255,0.35) 50%,
+    rgba(255,255,255,0.15) 75%,
     transparent 100%
   );
-  animation: badgeShimmer 3s ease-in-out 2s infinite;
+  animation:
+    badgeEntryShimmer 1s ease-in-out 0.8s both,
+    badgeShimmer 3s ease-in-out 3s infinite;
   pointer-events: none;
 }
 
