@@ -175,6 +175,7 @@ export default function LegalPageLayout({ title, lastUpdated, children }: LegalP
                 </li>
                 <li className="nav__item"><a href="/#proceso" className="nav__link">Cómo Funciona</a></li>
                 <li className="nav__item"><a href="/#pricing" className="nav__link">Precio</a></li>
+                <li className="nav__item"><a href="/blog" className="nav__link">Blog</a></li>
                 <li className="nav__item"><a href="/#faq" className="nav__link">FAQ</a></li>
               </ul>
               <div className="nav__actions">
